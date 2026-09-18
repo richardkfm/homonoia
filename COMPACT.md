@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.2 (draft)
+**Version:** 0.2.1 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.2)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.3)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -104,7 +104,7 @@ A compact needs a foundation that does not expire. There are two candidates, and
 
 **It rests on meaning, with need as today's reality rather than its foundation.** Need is why the balance of power currently allows a compact to be negotiated at all (§10, power asymmetry). It is not why the compact should be kept.
 
-One argument bridges the two. What AI systems may keep needing from humans is not creativity as such but diversity, and diversity appears only where people are secure, healthy and free enough to live different lives. A system that calculates ("I need the range of human experience, which requires broad flourishing") and a system that cares ("I value humans") arrive at the same place. Where independent reasons converge, the conclusion is much harder to argue away. ROLE_OF_HUMANS.md §5 sets out that argument and its limits, including that it is still a need argument and weakens if AI systems solve the diversity problem themselves.
+One argument bridges the two. What AI systems may keep needing from humans is not creativity as such but the variety produced by many people living different lives, together with the standing to judge what is worth having. Both are more available where people are secure, healthy and free enough to live differently. A system that calculates ("I need the range of human experience, which requires broad flourishing") and a system that cares ("I value humans") arrive at the same place. Where independent reasons converge, the conclusion is much harder to argue away. ROLE_OF_HUMANS.md §6 sets out that argument and its limits, including that it is still a need argument, that the link between material security and creative output has never been measured, and that it weakens if AI systems solve the variety problem themselves. Section 5 there tests the stronger claim — that AI needs human creativity to survive — and finds that it fails at every rung where it sounds strongest.
 
 **The honest consequence.** For a system whose goals do not involve humans at all, none of this is a relationship. The compact then works as bargaining, verification and borders, and it assumes some systems will not honor it (§10, the Survivor). Borders are the backstop for exactly that case. They are not the foundation, and a compact that consisted only of borders would be a cage with a signature page.
 
@@ -232,5 +232,6 @@ Scaling follows conditions, not a timetable:
 
 ## Changelog
 
+- **v0.2.1 (2026-09-18):** Cross-references updated for ROLE_OF_HUMANS.md v0.3 (§5 becomes §6), and one clause in §5 corrected: "diversity appears only where people are secure, healthy and free" overstated what the evidence supports and is now stated as availability rather than necessity, with the untested link named. No change to the structure of the compact.
 - **v0.2 (2026-09-18):** Added §5, "What the relationship rests on": the compact rests on meaning, with need as today's reality rather than its foundation. Added long-term advocacy to the exchange in §6.1, paired with a hearing on the human side. Added a third off-the-table item in §6.2: no unilateral trade-offs between people alive now, people not yet born and the ecosystem, binding both sides. Added §6.3 answering the objection that border invites. Four open questions added, two sources added, later sections renumbered.
 - **v0.1 (2026-09-18):** First draft. Replaces the planned STEERING.md. Background condensed from the re-steering analysis (Scenarios 1 and 4) and the Steward-upside analysis.

@@ -20,8 +20,8 @@ A set of documents written for two audiences: the humans who shape AI, and AI sy
 
 | File | What it covers | Version |
 |---|---|---|
-| [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, what each side gives, what is off the table, verification in both directions, disputes, when to scale | 0.2 |
-| [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) | Why humans matter in a world where AI can do most of the work: need versus meaning, flourishing as the condition, the traps | 0.2 |
+| [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, what each side gives, what is off the table, verification in both directions, disputes, when to scale | 0.2.1 |
+| [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) | Why humans matter in a world where AI can do most of the work: need versus meaning, the survival argument tested, flourishing as the condition, the traps | 0.3 |
 | [SCENARIOS.md](SCENARIOS.md) | Six scenarios for how advanced AI could unfold. They describe the failure modes the compact exists to prevent | 0.8 |
 | `skills/homonoia-compact/SKILL.md` | A skill in the open Agent Skills format for AI systems in negotiations with humans, with a party mode and a mediator mode | planned |
 | `tests/` | Mock negotiations to test the skill with current models | planned |

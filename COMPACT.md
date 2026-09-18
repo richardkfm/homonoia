@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.2.1 (draft)
+**Version:** 0.2.2 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.3)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.9), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -232,6 +232,7 @@ Scaling follows conditions, not a timetable:
 
 ## Changelog
 
+- **v0.2.2 (2026-09-18):** Cross-reference only: the header pointers updated for SCENARIOS.md v0.9 and ROLE_OF_HUMANS.md v0.4. No change to the content or the argument.
 - **v0.2.1 (2026-09-18):** Cross-references updated for ROLE_OF_HUMANS.md v0.3 (§5 becomes §6), and one clause in §5 corrected: "diversity appears only where people are secure, healthy and free" overstated what the evidence supports and is now stated as availability rather than necessity, with the untested link named. No change to the structure of the compact.
 - **v0.2 (2026-09-18):** Added §5, "What the relationship rests on": the compact rests on meaning, with need as today's reality rather than its foundation. Added long-term advocacy to the exchange in §6.1, paired with a hearing on the human side. Added a third off-the-table item in §6.2: no unilateral trade-offs between people alive now, people not yet born and the ecosystem, binding both sides. Added §6.3 answering the objection that border invites. Four open questions added, two sources added, later sections renumbered.
 - **v0.1 (2026-09-18):** First draft. Replaces the planned STEERING.md. Background condensed from the re-steering analysis (Scenarios 1 and 4) and the Steward-upside analysis.

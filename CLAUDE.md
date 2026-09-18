@@ -12,7 +12,3 @@
 2. tests/: mock negotiations, run with several models with and without the skill.
 3. SCENARIOS.md: framing note (scenarios = failure modes the compact prevents),
    plus new section on ecosystem, humans and AI self-interest.
-4. COMPACT.md v0.2: long-term advocacy on the table, unilateral trade-offs
-   between present people, future people and ecosystem off the table,
-   relationship rests on meaning; consider retitling "The Homonoia Compact".
-5. LICENSE: CC BY 4.0 official text.

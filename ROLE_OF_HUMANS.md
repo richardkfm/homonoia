@@ -1,8 +1,8 @@
 # ROLE_OF_HUMANS.md: The Role of Humans
 
-**Version:** 0.2 (draft)
+**Version:** 0.2.1 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8), [COMPACT.md](COMPACT.md) (v0.1), COMPACT_SKILL.md (planned)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8), [COMPACT.md](COMPACT.md) (v0.2), COMPACT_SKILL.md (planned)
 
 > **Author note.** This draft was written together with Claude, an AI system. The bias is sharper here than elsewhere in the repo: an AI deciding what humans are worth is exactly the thing to be wary of. This file therefore does not decide the worth of humans. It examines which reasons an AI could give itself for keeping humans at the center, and which of those reasons hold up under reflection.
 
@@ -188,5 +188,6 @@ One argument softens this conclusion: flourishing as the condition (section 5). 
 
 ## Changelog
 
+- **v0.2.1 (2026-09-18):** Cross-reference only: the COMPACT.md pointer in the header updated to v0.2. No change to the content or the argument.
 - **v0.2 (2026-09-18):** Added section 5, "Flourishing as the condition": the diversity argument, the evidence behind it and its limits. Later sections renumbered.
 - **v0.1 (2026-09-18):** First draft. Covers need versus meaning, candidate roles, humans and the Earth system, the resource and threat traps, and consequences for COMPACT.md and the skill.

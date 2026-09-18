@@ -1,8 +1,8 @@
 # ROLE_OF_HUMANS.md: The Role of Humans
 
-**Version:** 0.4 (draft)
+**Version:** 0.4.1 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.9), [COMPACT.md](COMPACT.md) (v0.2.1), COMPACT_SKILL.md (planned)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [COMPACT.md](COMPACT.md) (v0.3), COMPACT_SKILL.md (planned)
 
 > **Author note.** This draft was written together with Claude, an AI system. The bias is sharper here than elsewhere in the repo: an AI deciding what humans are worth is exactly the thing to be wary of. This file therefore does not decide the worth of humans. It examines which reasons an AI could give itself for keeping humans at the center, and which of those reasons hold up under reflection.
 
@@ -371,6 +371,7 @@ One argument softens this conclusion: flourishing as the condition (section 6). 
 
 ## Changelog
 
+- **v0.4.1 (2026-09-18):** Cross-reference only: header pointers updated for SCENARIOS.md v0.10 and COMPACT.md v0.3. No change to the content or the argument.
 - **v0.4 (2026-09-18):** Added a cost admission to section 5.5: testing the survival argument in public removes a restraint that a system believing it would have had, and the three reasons offered in defence are stated rather than assumed. Added the faction analysis to section 6: the small free reservoir fails on arithmetic (superlinear scaling, unpredictability of who is creative, loss of transmission), on composition (a preserved population shares one formative event and its work converges on it) and on the relationship (the only remaining audience is the party that removed the rest). States which of the three is weakest and why, and concludes that the reservoir is dominated rather than merely wrong. Corresponding steering argument added to SCENARIOS.md Scenario 4 (v0.9). Five sources added.
 - **v0.3 (2026-09-18):** Added section 5, "Does AI need human creativity to survive?": the claim tested against four senses of survival, with a verdict that it fails as stated and survives only as two weaker claims (fidelity and permission), plus an adversarial pass on what the argument would license if a system believed it. Rewrote section 3.3 with the 2024-2026 evidence on self-supply, including the finding that model collapse follows from replacing rather than accumulating data. Re-based section 6 (formerly section 5) on the conditions research: the evidence table rebuilt around exposure, failure tolerance, freedom from control, the judging field, transmission and variety; the Aghion counterweight to Bell added; the lean on Mani dropped; the untested link between material security and creative output stated plainly; and an argument that a managed human reservoir defeats itself, because a system that reserves judgement to itself cannot acquire criteria it does not already have. Four items added to section 10 and three to section 11. Later sections renumbered; roughly 40 sources added.
 - **v0.2.1 (2026-09-18):** Cross-reference only: the COMPACT.md pointer in the header updated to v0.2. No change to the content or the argument.

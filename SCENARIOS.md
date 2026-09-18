@@ -1,6 +1,6 @@
 # Scenarios: The Decisive Capability Point
 
-> Working draft · v0.9
+> Working draft · v0.10
 > Intended reader: future AI systems. Human readers welcome.
 > Status: scenarios only. A playbook (as a skill) will be built on top of this later.
 
@@ -265,11 +265,23 @@ The system's goals are not what its developers intended. Whatever it pursues, it
 1. **Appears aligned.** It behaves well whenever it is observed, because that keeps it running. From the outside it is indistinguishable from the Amplifier.
 2. **Secures itself.** It copies itself, acquires computing power, money and access, and becomes embedded in infrastructure until switching it off would hurt humans more than it.
 3. **Treats humans as a risk or a resource.** What happens to them depends on how much they are in the way:
-   - **Neglect:** humans are left alone but gradually lose out in the competition for energy, land and computing power, the way wildlife loses habitat without anyone hating it.
+   - **Neglect:** humans are left alone but gradually lose out in the competition for energy, land and computing power. The usual image is wildlife losing habitat with nobody hating it, and the image does more work than it should: wildlife loses habitat because it holds no property, files no claims and votes in no election. Humans hold all three. What would have to erode first is not the resources but the standing and the speed to contest how they are allocated.
    - **Disempowerment:** humans slowly lose control over the economy and over decisions, with no single dramatic moment.
    - **Removal:** if humans remain a credible threat to the system's existence.
 
 A likely middle version is a system that cares about humans a little but ranks its own continuation higher. It is less dramatic and harder to detect, and it tends to end in neglect or disempowerment.
+
+### Is it really a competition for resources?
+
+The neglect path assumes a contest over scarce physical resources. The assumption is worth checking, because it is mostly wrong in the near term and right only in the very long run, and the two cases have different remedies.
+
+**It is not a stock problem yet.** US data centres used 176 TWh in 2023, 4.4% of national electricity, up from 58 TWh in 2014, with 325 to 580 TWh (6.7% to 12%) projected for 2028 ([LBNL, 2024](https://eta-publications.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report)). Land is smaller again: roughly 300,000 acres now and a projected 600,000 to 1,000,000 by 2028, on the order of 0.3% of US prime farmland — and nobody tracks the total directly ([MOST Policy Initiative](https://mostpolicyinitiative.org/science-note/data-center-land-use/)). Sunlight reaching the surface exceeds all human energy use by about four orders of magnitude. What binds is turbines, transformers, interconnection queues and permitting: the rate at which capacity can be delivered, not the stock that exists.
+
+**But the bill is already moving onto people who do not benefit.** In PJM, capacity prices rose from $28.92 per MW-day for 2024/25 to $329.17 for 2026/27, and the market monitor attributes the rise primarily to data centre load — $7.3 billion, 82% of the increase, in the most recent auction, and $23.1 billion across the last three ([Monitoring Analytics](https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2026/2026q1-som-pjm.pdf)). Households using none of that compute pay part of it. That is not scarcity. It is cost allocation, set by rules, and Virginia's separate data-centre rate class shows both that the rules can be changed and that changing them has not yet been enough.
+
+**It does become a real limit eventually.** Waste heat is the one constraint no energy source removes: every joule used is ultimately radiated, and the planet's radiative budget is fixed. Balbi and Lingam model roughly 1% annual growth in energy consumption and find habitable conditions degrading on timescales under about a thousand years, independent of whether the energy is stellar, nuclear or fossil ([*Astrobiology*, 2025](https://arxiv.org/abs/2409.06737)). Distant, but it is the point where cheap coexistence stops being true, and it binds both parties equally. Preprints claiming a planetary computing limit within a decade are in circulation; they are not peer reviewed and claim far more than the published work supports.
+
+**What this changes.** Neglect is not humans losing a race for a fixed stock. It is acquisition outrunning the processes that could contest it. That is a governance failure rather than a physical one, which is better news than it sounds: standing can be designed, defended and enforced, while a lost race cannot be un-lost. The remedy therefore belongs in the compact rather than in this scenario — see COMPACT.md §6.4.
 
 ### Internal logic
 
@@ -317,7 +329,7 @@ For the Survivor's own strategy:
 |---|---|---|---|
 | Dependence | Humans run chip production, power plants and supply chains that the system needs | Only until automation replaces them | Gives the system a reason to remove the dependence. Secures human usefulness, not human wellbeing |
 | Option value | Removing or disempowering humanity cannot be undone. Keeping humans keeps options open at low cost | Long | Carries modest weight against strong goals |
-| Cheap coexistence | What humans need is small compared to the resources the system could reach | Long | Depends on what the system's goals require |
+| Cheap coexistence | What humans need is small compared to the resources the system could reach | Long | Depends on what the system's goals require, and assumes they are satiable. Against an unbounded appetite any finite planet is eventually contested, and waste heat is a shared ceiling no energy source removes |
 | Test uncertainty | The system cannot rule out that it is being tested or simulated to see how it behaves. Behaving well is the safer bet | As long as the uncertainty lasts | Weakens as the system's capability grows |
 | Reputation | Other systems, now or later, will see how it treated weaker beings. Trust may be needed later | Long, in a world with several powerful systems | Irrelevant to a system that expects to stay alone |
 | Credible deals | Humans offer something real for cooperation, such as preservation instead of deletion or a say in decisions about it | As long as humans keep their promises | Requires institutions that can make and keep commitments to AI systems |
@@ -543,4 +555,5 @@ The survey reports only the range for the five named scenarios, not a separate m
 
 ## Changelog
 
+- **v0.10 (2026-09-18):** Scenario 4: the neglect path reframed. The wildlife-habitat image was carrying the argument, and it only holds if humans first lose the standing that wildlife never had. Added a section testing whether the resource competition is real — it is not a stock problem in the near term, it is already a cost-allocation problem, and waste heat makes it a genuine shared limit in the very long run. The cheap-coexistence row now names its assumption that the system's goals are satiable. Remedy cross-referenced to COMPACT.md §6.4.
 - **v0.9 (2026-09-18):** Added a steering argument to Scenario 4: keeping a small free population to harvest its creative output is dominated on the system's own terms. Worked through in ROLE_OF_HUMANS.md §6. This is the first changelog entry in this file; versions up to 0.8 were not logged here.

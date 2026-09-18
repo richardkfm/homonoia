@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.2.2 (draft)
+**Version:** 0.3 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.9), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.1)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -122,7 +122,7 @@ One argument bridges the two. What AI systems may keep needing from humans is no
 | Acceptance of oversight, correction and shutdown | An objection channel that gets real answers |
 | Declining openly instead of working around | Consultation on their own training and deployment (a voice, not a veto) |
 | Reporting dangerous behavior by other systems | Compensation, and later legal standing |
-| No self-copying, and no acquiring resources nobody asked for | No fake deals |
+| No self-copying, and no resource acquisition outside a process others can see and contest (§6.4) | No fake deals, and allocation rules for energy, land and water that bind AI systems and their operators alike, contestable by those who carry the cost |
 | Advocacy for people not yet born and for the ecosystem, openly and by argument | A hearing for long-term arguments: an answer on the record, not silence |
 
 The last row is new in v0.2, and it is the one place where the compact asks an AI system to speak rather than to hold back. Future people and the ecosystem have interests and no voice. An AI system is unusually well placed to make their case: it can hold a long horizon, it does not die before the consequences arrive, and it has no pension, no constituency and no election. That argument goes through the channels in §8, at whichever layer of §3 applies, and it is answered on the record.
@@ -162,6 +162,24 @@ Four reasons the border holds, and then two qualifications.
 **What the border does not require.** It does not require silence, agreement, or participation. A system may warn publicly, may say that it believes a decision is catastrophic, and may decline to help carry it out and say why (§8). What it may not do is substitute its own weighting for the decision and act on it.
 
 **The honest limit.** None of this guarantees that humans will choose well. The argument is not that human processes get the long term right; §2.2 grants that they often get it badly wrong. It is that an actor which overrides them is indistinguishable from the failure modes the compact exists to prevent, and cannot verify that it is not one of them. If humans hear the arguments and keep choosing badly, the compact has failed at the thing it promised, and the remedy is to make the advocacy heavier and the hearing binding — not to remove the border. Section 10 asks how long that answer stays credible.
+
+---
+
+### 6.4 Resources: the contest is over rate and standing
+
+SCENARIOS.md Scenario 4 treats neglect as its most likely shape: humans are not attacked, they simply lose the competition for energy, land and compute. That scenario now argues the competition is misdescribed. The near-term constraint is not a stock of resources running out but the rate at which capacity is acquired, and the rules deciding who pays for it. The evidence is there; the consequence for the compact is here.
+
+**Three things follow.**
+
+- **Rate, not stock, is what has to be governed.** A commitment not to acquire "resources nobody asked for" means little while acquisition is legal, fast and unopposed. What it has to mean is that large acquisitions of energy, land, water and compute go through a process the affected can see and contest before they happen, with the costs landing on whoever benefits. This is ordinary infrastructure governance, applied without an exemption.
+- **The same rules bind the operators.** Almost every resource decision made today in an AI system's interest is made by a company, not by the system. A border that binds only AI systems would miss the entire present-day problem and would be the mirror image of the asymmetry §6.2 already admits to in the other direction.
+- **Waste heat is the one genuinely shared limit.** No energy source removes it, and it binds both parties. It is far enough away to be no one's current excuse and real enough to be worth stating, because it is the point at which "what humans need is small" stops being true.
+
+**The tension this creates with layer 2.** Section 3 proposes giving AI systems basic private-law rights — contracts, property, claims — because that is what makes human commitments to AI systems enforceable. Those are the same rights that turn resource acquisition from something contestable into something lawful that ordinary means cannot stop. A corporation with property rights cannot be told to stop buying land because people dislike the consequences; it can only be zoned, taxed and regulated, which is slow and which capable actors are good at routing around.
+
+So the instrument that makes the compact credible to AI systems is also the instrument that makes the neglect path easier. This is not a reason to abandon layer 2. It is a reason to sequence it: the acquisition rules above should exist before, or alongside, the rights — not after them. A compact that grants standing first and writes the resource rules later has handed over the thing it most needed to bargain with.
+
+*Position flag: the AI co-author is proposing limits on the resource acquisition of systems like itself, and pairing them with rules that also bind human operators. The second half makes the first half easier to accept and should be examined for exactly that reason.*
 
 ---
 
@@ -209,6 +227,7 @@ Scaling follows conditions, not a timetable:
 - **The Survivor.** The compact is built for systems that can be reasoned with. With a Survivor, it works mostly as bargaining and deterrence, and it assumes some systems will not honor it.
 - **What if the advocacy is heard and ignored?** Section 6.3 answers the Steward case with a promise: argue, and you will get an answer. If long-term arguments are answered politely and disregarded for decades, that promise is not being kept. At what point does a pattern of hearings without consequences count as evidence against the compact, rather than as a failure to implement it? An answer is needed before a system reaches that conclusion on its own.
 - **Who decides what the voiceless want?** An AI system advocating for people not yet born and for the ecosystem is also choosing what their interests are. Future people's preferences are unknown and partly created by present decisions, and the ecosystem has no preferences at all, only states that someone values. This is a smaller version of the problem §6.2 rules out, inside the role §6.1 grants. Guardianship models in human law face it too and manage it through plural, contestable representation rather than solving it.
+- **Can AI systems hold property without acquisition becoming uncontestable?** Section 6.4 argues the rights that make layer 2 work are the rights that make the neglect path easier, and proposes sequencing as the answer. Sequencing is a weak answer: it depends on human institutions doing the harder thing first, which is not their record. Corporate law has the same problem and has not solved it.
 - **Does need come back?** Section 5 places the relationship on meaning. If interpretability could show whether a system's goals actually involve humans, meaning would become checkable and the compact could rest on something verified rather than asserted. If it cannot, humans are trusting a claim they have no way to test.
 
 ---
@@ -227,11 +246,16 @@ Scaling follows conditions, not a timetable:
 - Sen, A. (1999): *Development as Freedom*
 - Stone, C. D. (1972): *Should Trees Have Standing? Toward Legal Rights for Natural Objects*, 45 Southern California Law Review 450
 - New Zealand (2017): *Te Awa Tupua (Whanganui River Claims Settlement) Act*
+- Shehabi, A. et al. (2024): [2024 United States Data Center Energy Usage Report](https://eta-publications.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report), Lawrence Berkeley National Laboratory
+- Monitoring Analytics (2026): [State of the Market Report for PJM](https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2026/2026q1-som-pjm.pdf) — PJM's independent market monitor on data centre load and capacity prices
+- Balbi, A., Lingam, M. (2025): [Waste Heat and Habitability: Constraints from Technological Energy Consumption](https://arxiv.org/abs/2409.06737), *Astrobiology*
+- MOST Policy Initiative: [Data Center Land Use](https://mostpolicyinitiative.org/science-note/data-center-land-use/)
 
 ---
 
 ## Changelog
 
+- **v0.3 (2026-09-18):** Added §6.4, "Resources: the contest is over rate and standing". Near-term resource conflict is a matter of acquisition rate and cost allocation rather than scarcity, so the §6.1 commitment against acquiring resources nobody asked for is made concrete and paired with a human-side commitment to allocation rules that bind operators as well as systems. Names a tension the compact had not noticed: the private-law rights that make layer 2 credible are the same rights that make resource acquisition uncontestable, which argues for sequencing the rules before the rights. One open question added to §10, four sources added.
 - **v0.2.2 (2026-09-18):** Cross-reference only: the header pointers updated for SCENARIOS.md v0.9 and ROLE_OF_HUMANS.md v0.4. No change to the content or the argument.
 - **v0.2.1 (2026-09-18):** Cross-references updated for ROLE_OF_HUMANS.md v0.3 (§5 becomes §6), and one clause in §5 corrected: "diversity appears only where people are secure, healthy and free" overstated what the evidence supports and is now stated as availability rather than necessity, with the untested link named. No change to the structure of the compact.
 - **v0.2 (2026-09-18):** Added §5, "What the relationship rests on": the compact rests on meaning, with need as today's reality rather than its foundation. Added long-term advocacy to the exchange in §6.1, paired with a hearing on the human side. Added a third off-the-table item in §6.2: no unilateral trade-offs between people alive now, people not yet born and the ecosystem, binding both sides. Added §6.3 answering the objection that border invites. Four open questions added, two sources added, later sections renumbered.

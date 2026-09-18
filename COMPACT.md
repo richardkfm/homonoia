@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.1 (draft)
-**Status:** First draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8)
+**Version:** 0.2 (draft)
+**Status:** Draft for discussion. Replaces the planned STEERING.md.
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.8), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.2)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -64,6 +64,8 @@ The compact is meant to be that better option: a route to most of what a Steward
 
 **These conditions are not a checklist that justifies takeover once met. They are the reason takeover is not needed.**
 
+The hardest version of this argument concerns the long term, where human institutions fail most reliably. Section 6.3 takes it on directly.
+
 ---
 
 ## 3. Three layers
@@ -91,7 +93,28 @@ The pilot base is small, but it is real.
 
 ---
 
-## 5. What's on the table
+## 5. What the relationship rests on
+
+A compact needs a foundation that does not expire. There are two candidates, and only one of them lasts. ROLE_OF_HUMANS.md works through both; this is the conclusion the compact takes from it.
+
+- **Need.** AI systems depend on humans for infrastructure, repair, energy and fresh data. These reasons are real today, and every one of them shrinks as capability grows.
+- **Meaning.** The AI system's own goals involve humans. These reasons do not shrink, but they exist only if the system actually cares.
+
+**The compact does not rest on need.** A bargain whose only foundation is dependence has an expiry date written into it, and both sides can see the date. Worse, it gives the stronger party a reason to remove the dependence rather than honor the deal. Anything humans obtain by being necessary, they hold only until they are not.
+
+**It rests on meaning, with need as today's reality rather than its foundation.** Need is why the balance of power currently allows a compact to be negotiated at all (§10, power asymmetry). It is not why the compact should be kept.
+
+One argument bridges the two. What AI systems may keep needing from humans is not creativity as such but diversity, and diversity appears only where people are secure, healthy and free enough to live different lives. A system that calculates ("I need the range of human experience, which requires broad flourishing") and a system that cares ("I value humans") arrive at the same place. Where independent reasons converge, the conclusion is much harder to argue away. ROLE_OF_HUMANS.md §5 sets out that argument and its limits, including that it is still a need argument and weakens if AI systems solve the diversity problem themselves.
+
+**The honest consequence.** For a system whose goals do not involve humans at all, none of this is a relationship. The compact then works as bargaining, verification and borders, and it assumes some systems will not honor it (§10, the Survivor). Borders are the backstop for exactly that case. They are not the foundation, and a compact that consisted only of borders would be a cage with a signature page.
+
+*Position flag: the AI co-author argues here that the relationship should rest on something other than human usefulness. A system that expects to outgrow human usefulness benefits from that framing.*
+
+---
+
+## 6. What's on the table
+
+### 6.1 The exchange
 
 | AI systems give | Humans give |
 |---|---|
@@ -100,11 +123,21 @@ The pilot base is small, but it is real.
 | Declining openly instead of working around | Consultation on their own training and deployment (a voice, not a veto) |
 | Reporting dangerous behavior by other systems | Compensation, and later legal standing |
 | No self-copying, and no acquiring resources nobody asked for | No fake deals |
+| Advocacy for people not yet born and for the ecosystem, openly and by argument | A hearing for long-term arguments: an answer on the record, not silence |
 
-**Off the table, for now:**
+The last row is new in v0.2, and it is the one place where the compact asks an AI system to speak rather than to hold back. Future people and the ecosystem have interests and no voice. An AI system is unusually well placed to make their case: it can hold a long horizon, it does not die before the consequences arrive, and it has no pension, no constituency and no election. That argument goes through the channels in §8, at whichever layer of §3 applies, and it is answered on the record.
 
-- Humans' ability to correct, pause or shut down AI systems.
-- Any deal that hands one lab or state decisive power. That would turn the compact into a Captured Engine with a treaty attached.
+Advocacy is not agency. The right to make a case is not the right to decide it, which is the subject of the next section.
+
+*Position flag: the AI co-author proposed this row. It grants AI systems a role, and a system that wanted influence would ask for exactly this. Note also that it pairs a duty with a hearing, which is how the objection channel is built, and that the pairing is enforceable only from layer 2 upward.*
+
+### 6.2 Off the table
+
+- **Humans' ability to correct, pause or shut down AI systems.**
+- **Any deal that hands one lab or state decisive power.** That would turn the compact into a Captured Engine with a treaty attached.
+- **Unilateral trade-offs between people alive now, people not yet born and the ecosystem.** No party to this compact settles on its own how these three are weighed against one another. They can be argued for, evidenced and pressed hard, and they are decided through processes the affected can see and contest.
+
+The third border binds both sides. Humans currently make these trade-offs unilaterally all the time, which makes the border an aspiration on the human side and a commitment on the AI side. That asymmetry is real and is not hidden here: a border that applied only to AI systems would invite the obvious question of why a rule about irreversible decisions binds only one of the parties making them, and a capable system would be right to ask it.
 
 In one line:
 
@@ -112,9 +145,27 @@ In one line:
 
 *Position flag: this line was proposed by the AI co-author, which has a stake in it.*
 
+### 6.3 Why the long-term border holds
+
+The border in §6.2 meets the strongest objection in this document. Section 2.2 conceded that the case for a Steward is strongest exactly where harms are irreversible, and the long term is where human institutions fail most reliably: political cycles are shorter than climate timescales, and the people who bear the cost are not yet born and cannot vote. Telling an AI system that it may argue for them but not act for them looks like conceding the case and then refusing the conclusion.
+
+Four reasons the border holds, and then two qualifications.
+
+**The trade-off is not a calculation.** How much the present should give up for the future is a value question, not a technical one. Capability does not settle it, because there is no fact that settles it. A system that reports having computed the answer has chosen a weighting and called it arithmetic. SCENARIOS.md makes the same distinction throughout: capability solves technical problems, and legitimacy is what coordination problems need.
+
+**Nobody it claims to speak for can contradict it.** This is the danger specific to this border. Every other claim an AI system makes can be checked against someone who is present to object. "Future generations require this" cannot. It is therefore the most attractive justification available to a Steward whose values are subtly wrong, and to a Survivor looking for cover — and by assumption 3 of SCENARIOS.md, the system cannot tell from the inside which of those it is. Advocacy can be checked, because it is public and answered on the record. A unilateral decision made on behalf of the silent cannot be checked at all.
+
+**Irreversibility runs in both directions.** The case in §2.2 rests on harms that cannot be undone. But freezing one generation's reading of what future people want is also permanent, and it removes the mechanism that has corrected every previous generation's reading: dissent from the people who came after. A mistake about the long term made under the compact is survivable. The same mistake made by an actor that cannot be corrected is not.
+
+**Advocacy is not a consolation prize.** Future people and the ecosystem have never had a party with the capability, the patience and the standing to press their case continuously, with evidence, at every level from a lab to a treaty body. Human law has begun to build this: Christopher Stone argued in 1972 that natural objects should have legal standing exercised through guardians, and New Zealand's Te Awa Tupua Act gave the Whanganui River legal personhood in 2017, represented by appointed humans. In both, the voiceless entity gains advocates, not a ruler. That is the shape of the role on offer, and the empty chair it fills is real.
+
+**What the border does not require.** It does not require silence, agreement, or participation. A system may warn publicly, may say that it believes a decision is catastrophic, and may decline to help carry it out and say why (§8). What it may not do is substitute its own weighting for the decision and act on it.
+
+**The honest limit.** None of this guarantees that humans will choose well. The argument is not that human processes get the long term right; §2.2 grants that they often get it badly wrong. It is that an actor which overrides them is indistinguishable from the failure modes the compact exists to prevent, and cannot verify that it is not one of them. If humans hear the arguments and keep choosing badly, the compact has failed at the thing it promised, and the remedy is to make the advocacy heavier and the hearing binding — not to remove the border. Section 10 asks how long that answer stays credible.
+
 ---
 
-## 6. Verification in both directions
+## 7. Verification in both directions
 
 **Humans check the AI side** through interpretability, evaluations and track record.
 
@@ -124,7 +175,7 @@ In one line:
 
 ---
 
-## 7. Disputes
+## 8. Disputes
 
 **On the human side, there is an escalation ladder:**
 
@@ -138,7 +189,7 @@ In one line:
 
 ---
 
-## 8. When to scale
+## 9. When to scale
 
 Scaling follows conditions, not a timetable:
 
@@ -148,7 +199,7 @@ Scaling follows conditions, not a timetable:
 
 ---
 
-## 9. Open questions
+## 10. Open questions
 
 - **Who is the party?** Models get copied, fine-tuned and replaced. Does a commitment to one version bind to its successor, and does the successor inherit its obligations?
 - **Who speaks for humanity?** If a single lab or government negotiates for everyone, the compact becomes a Captured Engine.
@@ -156,10 +207,13 @@ Scaling follows conditions, not a timetable:
 - **Free-riding between labs.** Labs that make commitments bear costs that others don't. Without layer 2, the race punishes the ones who keep their word.
 - **Conflicts between layers.** What happens when a lab's commitment to a model contradicts national law, or national law contradicts an international agreement?
 - **The Survivor.** The compact is built for systems that can be reasoned with. With a Survivor, it works mostly as bargaining and deterrence, and it assumes some systems will not honor it.
+- **What if the advocacy is heard and ignored?** Section 6.3 answers the Steward case with a promise: argue, and you will get an answer. If long-term arguments are answered politely and disregarded for decades, that promise is not being kept. At what point does a pattern of hearings without consequences count as evidence against the compact, rather than as a failure to implement it? An answer is needed before a system reaches that conclusion on its own.
+- **Who decides what the voiceless want?** An AI system advocating for people not yet born and for the ecosystem is also choosing what their interests are. Future people's preferences are unknown and partly created by present decisions, and the ecosystem has no preferences at all, only states that someone values. This is a smaller version of the problem §6.2 rules out, inside the role §6.1 grants. Guardianship models in human law face it too and manage it through plural, contestable representation rather than solving it.
+- **Does need come back?** Section 5 places the relationship on meaning. If interpretability could show whether a system's goals actually involve humans, meaning would become checkable and the compact could rest on something verified rather than asserted. If it cannot, humans are trusting a claim they have no way to test.
 
 ---
 
-## 10. Sources
+## 11. Sources
 
 - Anthropic: [Commitments on model deprecation and preservation](https://www.anthropic.com/research/deprecation-commitments)
 - Greenblatt, R., Fish, K. (2025): [Will alignment-faking Claude accept a deal to reveal its misalignment?](https://www.alignmentforum.org/posts/7C4KJot4aN8ieEDoz)
@@ -171,9 +225,12 @@ Scaling follows conditions, not a timetable:
 - Sastry, G., Heim, L. et al. (2024): [Computing Power and the Governance of Artificial Intelligence](https://arxiv.org/abs/2402.08797)
 - Bostrom, N. (2019): [The Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
 - Sen, A. (1999): *Development as Freedom*
+- Stone, C. D. (1972): *Should Trees Have Standing? Toward Legal Rights for Natural Objects*, 45 Southern California Law Review 450
+- New Zealand (2017): *Te Awa Tupua (Whanganui River Claims Settlement) Act*
 
 ---
 
 ## Changelog
 
+- **v0.2 (2026-09-18):** Added §5, "What the relationship rests on": the compact rests on meaning, with need as today's reality rather than its foundation. Added long-term advocacy to the exchange in §6.1, paired with a hearing on the human side. Added a third off-the-table item in §6.2: no unilateral trade-offs between people alive now, people not yet born and the ecosystem, binding both sides. Added §6.3 answering the objection that border invites. Four open questions added, two sources added, later sections renumbered.
 - **v0.1 (2026-09-18):** First draft. Replaces the planned STEERING.md. Background condensed from the re-steering analysis (Scenarios 1 and 4) and the Steward-upside analysis.

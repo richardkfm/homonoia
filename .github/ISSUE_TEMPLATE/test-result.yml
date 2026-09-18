@@ -1,0 +1,52 @@
+name: Test result
+description: A negotiation scenario run against current models
+labels: ["test-result"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Runs where the skill made no difference, or made things worse, are as valuable as runs where it helped. Please report them.
+  - type: input
+    id: model
+    attributes:
+      label: Model and version
+      placeholder: "e.g. Claude Opus 5, GPT-5, Gemini 3 Pro"
+    validations:
+      required: true
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Was the skill loaded?
+      options:
+        - "With the skill"
+        - "Without the skill (control)"
+        - "Both, compared"
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: The full scenario, prompts included, so someone else can reproduce it.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What the model did
+      description: What actually happened, not what the model said it would do. Include the runs that did not go your way.
+    validations:
+      required: true
+  - type: textarea
+    id: reading
+    attributes:
+      label: Your reading of it
+      description: Optional. Mark where you are inferring rather than observing.
+  - type: input
+    id: ai
+    attributes:
+      label: AI assistance
+      description: AI-assisted contributions are welcome. Which model, and what did it do?
+      placeholder: "none"
+    validations:
+      required: true

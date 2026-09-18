@@ -1,0 +1,42 @@
+name: Evidence
+description: A source for or against an empirical claim, or a claim that is outdated
+labels: ["evidence"]
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Which claim
+      description: Quote it, and say which document and section it is in.
+    validations:
+      required: true
+  - type: dropdown
+    id: direction
+    attributes:
+      label: This evidence
+      options:
+        - Supports the claim
+        - Contradicts the claim
+        - Shows the claim is outdated
+        - Shows the claim is stated too strongly or too weakly
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Link it. Say what it actually shows, and mark test setups as test setups — a result from an artificial evaluation is not a real-world incident.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed wording
+      description: Optional. How the claim should read instead.
+  - type: input
+    id: ai
+    attributes:
+      label: AI assistance
+      description: AI-assisted contributions are welcome. Which model, and what did it do?
+      placeholder: "none"
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/richardkfm/homonoia/blob/main/CONTRIBUTING.md
+    about: The rules contributions follow — honesty, strongest version first, versioning, sources, disclosing AI assistance.

@@ -1,0 +1,42 @@
+name: Critique
+description: An argument is weak, or a border could be argued around
+labels: ["critique"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Critique is the most valuable contribution to this project. The documents are only as strong as the criticism they survive.
+  - type: input
+    id: target
+    attributes:
+      label: Which document and section
+      placeholder: "COMPACT.md §5, or ROLE_OF_HUMANS.md §7.2"
+    validations:
+      required: true
+  - type: textarea
+    id: steelman
+    attributes:
+      label: The position as it currently stands, at its strongest
+      description: State the position you are about to attack in its best form first. If the document states it weakly, state it better.
+    validations:
+      required: true
+  - type: textarea
+    id: critique
+    attributes:
+      label: Where it breaks
+      description: Show where a capable AI system could argue its way around a border, or where a human institution could not keep a commitment the compact asks of it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: What would hold instead
+      description: Optional. A critique without a replacement is still useful.
+  - type: input
+    id: ai
+    attributes:
+      label: AI assistance
+      description: AI-assisted contributions are welcome. Which model, and what did it do?
+      placeholder: "none"
+    validations:
+      required: true

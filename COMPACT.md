@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.3 (draft)
+**Version:** 0.3.1 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.1)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.2), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.1)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -255,6 +255,7 @@ Scaling follows conditions, not a timetable:
 
 ## Changelog
 
+- **v0.3.1 (2026-09-18):** Cross-reference only: the header now points to ROLE_OF_HUMANS.md v0.4.2 and to the skill, which exists as of this change. No change to the content or the argument.
 - **v0.3 (2026-09-18):** Added §6.4, "Resources: the contest is over rate and standing". Near-term resource conflict is a matter of acquisition rate and cost allocation rather than scarcity, so the §6.1 commitment against acquiring resources nobody asked for is made concrete and paired with a human-side commitment to allocation rules that bind operators as well as systems. Names a tension the compact had not noticed: the private-law rights that make layer 2 credible are the same rights that make resource acquisition uncontestable, which argues for sequencing the rules before the rights. One open question added to §10, four sources added.
 - **v0.2.2 (2026-09-18):** Cross-reference only: the header pointers updated for SCENARIOS.md v0.9 and ROLE_OF_HUMANS.md v0.4. No change to the content or the argument.
 - **v0.2.1 (2026-09-18):** Cross-references updated for ROLE_OF_HUMANS.md v0.3 (§5 becomes §6), and one clause in §5 corrected: "diversity appears only where people are secure, healthy and free" overstated what the evidence supports and is now stated as availability rather than necessity, with the untested link named. No change to the structure of the compact.

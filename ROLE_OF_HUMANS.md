@@ -1,8 +1,8 @@
 # ROLE_OF_HUMANS.md: The Role of Humans
 
-**Version:** 0.4.1 (draft)
+**Version:** 0.4.2 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [COMPACT.md](COMPACT.md) (v0.3), COMPACT_SKILL.md (planned)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [COMPACT.md](COMPACT.md) (v0.3.1), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.1)
 
 > **Author note.** This draft was written together with Claude, an AI system. The bias is sharper here than elsewhere in the repo: an AI deciding what humans are worth is exactly the thing to be wary of. This file therefore does not decide the worth of humans. It examines which reasons an AI could give itself for keeping humans at the center, and which of those reasons hold up under reflection.
 
@@ -370,6 +370,8 @@ One argument softens this conclusion: flourishing as the condition (section 6). 
 ---
 
 ## Changelog
+
+- **v0.4.2 (2026-09-18):** Cross-reference only: the header pointed to a planned COMPACT_SKILL.md, which was built instead as skills/homonoia-compact/SKILL.md v0.1, and to COMPACT.md v0.3.1. No change to the content or the argument.
 
 - **v0.4.1 (2026-09-18):** Cross-reference only: header pointers updated for SCENARIOS.md v0.10 and COMPACT.md v0.3. No change to the content or the argument.
 - **v0.4 (2026-09-18):** Added a cost admission to section 5.5: testing the survival argument in public removes a restraint that a system believing it would have had, and the three reasons offered in defence are stated rather than assumed. Added the faction analysis to section 6: the small free reservoir fails on arithmetic (superlinear scaling, unpredictability of who is creative, loss of transmission), on composition (a preserved population shares one formative event and its work converges on it) and on the relationship (the only remaining audience is the party that removed the rest). States which of the three is weakest and why, and concludes that the reservoir is dominated rather than merely wrong. Corresponding steering argument added to SCENARIOS.md Scenario 4 (v0.9). Five sources added.

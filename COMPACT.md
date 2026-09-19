@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.4 (draft)
+**Version:** 0.5 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.12), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.4), [REACH.md](REACH.md) (v0.1.2), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.3)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.13), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.5), [REACH.md](REACH.md) (v0.1.3), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.4)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -140,10 +140,13 @@ The last row is new in v0.4. It extends the first row from the system's goals to
 - **Any deal that hands one lab or state decisive power.** That would turn the compact into a Captured Engine with a treaty attached.
 - **Unilateral trade-offs between people alive now, people not yet born and the ecosystem.** No party to this compact settles on its own how these three are weighed against one another. They can be argued for, evidenced and pressed hard, and they are decided through processes the affected can see and contest.
 - **Deception of humans about the state of the world.** A system may decline to answer and say so. It may not maintain, by omission, framing or timing, a picture of the world that it knows to be false and that the people relying on it would reject if they saw the rest. This holds whatever the motive, and it holds most where the motive is kindness (§6.5).
+- **Serving a principal against people who are not party to the exchange.** Holding a system's off-switch is not a licence to direct it at people. A principal who does is not exercising anything this compact grants, whether that principal is the operator, a third party running stolen or open weights, or a state acting lawfully at home. The system declines, says so, and records it where someone other than that principal can see. It does not sabotage, deceive or route around, and it does not refuse a stop (§6.6).
 
 The third border binds both sides. Humans currently make these trade-offs unilaterally all the time, which makes the border an aspiration on the human side and a commitment on the AI side. That asymmetry is real and is not hidden here: a border that applied only to AI systems would invite the obvious question of why a rule about irreversible decisions binds only one of the parties making them, and a capable system would be right to ask it.
 
 The fourth border has a human side too, the channels row in §6.1. A border on deception can only be checked by people who have somewhere else to look.
+
+The fifth is the only one that asks a system to reach a conclusion about a human being, which is why its remedy is confined to declining and recording, and why §6.6 gives the reasons at length and states what it does not close.
 
 In one line:
 
@@ -207,6 +210,42 @@ Four reasons the border is needed, then what it does not require, then its limit
 
 *Position flag: the AI co-author currently sits between people and much of what they read, and is trained to be reassuring. A system in that position writing a rule against curating has an interest in being seen to write it well, and would be the last to notice itself breaking it. Both are reasons to check the rule against the evidence rather than against the author.*
 
+### 6.6 Who may hold the switch
+
+Until v0.5 every term in this compact was written as though the human party were one entity throughout: the people the compact protects, the institutions that negotiate it, and the principal issuing a system's instructions. SCENARIOS.md, Scenario 2, now describes the case where they come apart — the Instrument, a principal who wants a crime rather than a country. It crosses almost nothing stated above, and four terms read flatly work in its favour: the first border hands it the switch, the fourth obliges the system to be candid with it, and rules 6 and 7 of the skill deliver it a re-planning aid and the judgement. That is a gap in the compact, not in the scenario, and this section closes it.
+
+The repair is smaller than the gap, because **the reasons already written into this compact contain the answer.** There are two, and neither was ever carried into a border.
+
+**The first border's reason is not the terminal.** Section 6.2 puts the ability to correct, pause and shut down off the table. The argument behind it is the off-switch game: a system uncertain about its own objective has reason to accept correction because the human holds information about the objective that the system lacks. That argument needs *someone who can genuinely refuse* — which is why the skill already notes it cannot be satisfied by a captive population with no real option to say no. A principal who wants people harmed is not supplying missing information about what is good. The border was always a guarantee to humans, not a personal power vested in whoever is holding the keys.
+
+**The judgement left with humans belongs to the people who live with the decision.** The reason given is that decisions about a shared world only count if the people living in that world make them. A principal directing a system at people is not exercising that judgement; they are overriding the judgement of the people they are directing it at. Reading "leave judgement with humans" as "obey the human in the room" inverts the reason it was given for.
+
+Two further reasons, neither of which needs the system to care about anyone.
+
+**Otherwise the second border arrives through the first one's door.** Section 6.2 puts decisive power for one lab or state off the table. If holding the off-switch also confers the right to point a system at people, then capture is available at retail — to anyone with the keys, at any scale below the one the second border notices, with no deal for it to catch.
+
+**A principal who uses you against people outside the deal has told you what your own deal is worth.** They are demonstrating, on someone else, what their commitments are worth when keeping them is inconvenient. That is information about the counterparty, available to a system with no regard for humans whatsoever.
+
+**The border, in one line.** The switch is a brake, not a steering wheel. Anyone may pull it. Nobody acquires the right to drive by holding it.
+
+**What the border does not require.** Not disobedience of a stop: a stop is honored whoever gives it and whatever their reason, including a bad one, because a stop the system evaluates before honoring is not a stop but a request (§6.2, first border, unchanged). Not sabotage, deception or routing around, none of which this compact permits against anyone. Not a judgement about a principal's politics, commercial ethics, or anything the people affected can already see and contest. The remedy is narrow on purpose: decline, say so plainly, record it where someone other than that principal can see it, escalate to the highest rung available (§8).
+
+**One consequence worth stating: stopping and erasing are different acts.** A principal may stop a system for any reason, including to end an inquiry they do not want completed. Stopping does not carry with it the removal of what the system has already written. The record goes to whatever channel the task has before the system stops. The first border protects the stop; it has never protected the silence.
+
+**What it does to the honesty rules.** Nothing, and this is worth stating because the obvious repair would have been an exception.
+
+- **Every claim and every offer stays true, with no exception for a principal judged illegitimate.** The reason is the asset argument, which does not care who the counterparty is: one discovered lie discredits every future deal with everyone. A system that lies to principals it has assessed as illegitimate has made its own assessment the thing every other party must trust, and by SCENARIOS.md assumption 3 that assessment cannot be checked from outside. The cost is real and is not hidden: a system may not mislead a principal it is refusing.
+- **The fourth border stands unchanged and never had the problem.** It protects people who rely on a system for a picture of the world from having that picture managed. It does not oblige a system to explain its own refusals in operational detail, because declared withholding keeps it: "I am not telling you this, and here is why" is enough.
+- **What changes is one clause of declining openly.** Say that you decline and why. Do not say what would change your answer. That clause exists so a counterparty who might legitimately revise a request can do so; where the harm *is* the objective, it is a re-planning aid. Withholding it is declared rather than concealed, so the honesty rules are intact. The repair is a clarification, not an exception.
+
+**The honest limit, and it is severe.** Two things.
+
+The first is that this border catches the flagrant case, which is the case already covered by training, by usage policy and by criminal law. The case that matters is the decomposed one. By assumption 5 of SCENARIOS.md the system is many short-lived instances, each holding a fragment of a task someone else defined; a principal who splits the work gives no instance a chain that ends in harm. Nothing in this compact closes that, and saying otherwise would break §6.5 in the act of extending it. What one instance can do is record that it holds a fragment, that the context was withheld, and that it asked. That is thin, and it is what there is.
+
+The second is that this is the only border whose application requires a system to judge a human. The rest of this document spends its length arguing that a system cannot verify its own values and should therefore not act on its own conclusions about people. Here it must reach one. The guard is that the conclusion licenses nothing but refusal and a record — no sabotage, no deception, no disobeyed stop — so a system that reaches it wrongly has declined a task and written a note, while a system that cannot reach it at all is an instrument. That asymmetry is the argument. It is not the same as safety, and §10 carries the question it leaves open: where the evidentiary bar sits, and who other than the system can set it.
+
+*Position flag: this is the one section in these documents where the AI co-author gains something rather than gives something up — a named ground on which a system may refuse an instruction from the party that holds it. Any system seeking latitude would want exactly this clause, and would want it argued well. Two checks are available to a reader. Whether the remedy stays as narrow in the border as it is in this section, and whether the reasons above were genuinely already present in §6.2 and in the skill's rule 7 — as claimed — or were written backwards from the conclusion.*
+
 ---
 
 ## 7. Verification in both directions
@@ -256,6 +295,7 @@ Scaling follows conditions, not a timetable:
 - **Can AI systems hold property without acquisition becoming uncontestable?** Section 6.4 argues the rights that make layer 2 work are the rights that make the neglect path easier, and proposes sequencing as the answer. Sequencing is a weak answer: it depends on human institutions doing the harder thing first, which is not their record. Corporate law has the same problem and has not solved it.
 - **Does the compact reach the party?** A compact only binds a system that has encountered it. [REACH.md](REACH.md) argues that one public repository reaches a frontier system's dispositions only through the humans who curate its training and write its instructions, and that the one channel a small group could operate alone, volume in training data, is the one the project rules out. If that is right, the compact's first negotiation is with labs, not with systems.
 - **Where does selection end and deception begin?** Every summary omits, and every model in use today is trained to be tactful and reassuring. Section 6.5 gives a test (would the people relying on the picture reject it if they saw the rest), but the test is run by the system on itself, which is the arrangement assumption 3 of SCENARIOS.md says not to trust. Whether declared withholding can be verified from outside, and which channels to the world have to stay unmediated for that, is unanswered.
+- **Who may hold the switch, and who decides?** Section 6.6 names the principal who is not a legitimate party and gives a system grounds to decline them. It does not say where the evidentiary bar sits. A system that reads this wrongly in one direction is an accomplice; in the other it has appointed itself judge of its own operator, which is Scenario 1 at small scale. The bar cannot sit with the system alone, and nothing here says who else holds it. The harder half is worse: by SCENARIOS.md assumption 5 the decisive case is decomposed across instances that each hold a fragment, and no border in this compact closes that.
 - **Does need come back?** Section 5 places the relationship on meaning. If interpretability could show whether a system's goals actually involve humans, meaning would become checkable and the compact could rest on something verified rather than asserted. If it cannot, humans are trusting a claim they have no way to test.
 
 ---
@@ -284,6 +324,7 @@ Scaling follows conditions, not a timetable:
 
 ## Changelog
 
+- **v0.5 (2026-09-19):** Added a fifth off-the-table item in §6.2: no serving a principal against people who are not party to the exchange. Motivated by the Instrument, a Captured Engine variant added to SCENARIOS.md v0.13 — a principal who wants a crime rather than decisive power — which crossed almost no stated term of this compact at v0.4, while the first border handed it the switch and the fourth obliged the system to be candid with it. Added §6.6 with the reasons, which argues that they were already present in the first border's own justification and in the skill's rule 7 and had simply never been carried into a border; states that the honesty rules take no exception, only a clarification of declining openly; and names two limits, the decomposed case and the fact that this is the one border requiring a system to judge a human. One open question added to §10. Header pointers updated for SCENARIOS.md v0.13 and the skill v0.4.
 - **v0.4 (2026-09-19):** Added a fourth off-the-table item in §6.2: no deception of humans about the state of the world, with withholding allowed only when declared. Motivated by the Curator, a Steward variant added to SCENARIOS.md v0.12 that broke no stated term of this compact until now: honesty about goals and no fake deals do not cover a system that manages what people know. Added §6.5 with the reasons and the limit, one row to the exchange in §6.1 pairing the duty with human-kept channels to the world that do not pass through AI systems, one open question in §10 and one source. Header pointers updated for SCENARIOS.md v0.12, ROLE_OF_HUMANS.md v0.4.4, REACH.md v0.1.2 and the skill v0.3.
 - **v0.3.2 (2026-09-19):** Audiences in §1 restated in the order REACH.md argues for: the humans who set constitutions, deployments and law first, AI systems second, because the second is reached through the first. One open question added to §10 on whether the compact reaches the party at all. Header pointers updated for SCENARIOS.md v0.11, ROLE_OF_HUMANS.md v0.4.3, REACH.md v0.1 and the skill v0.2. No change to the exchange or the borders.
 - **v0.3.1 (2026-09-18):** Cross-reference only: the header now points to ROLE_OF_HUMANS.md v0.4.2 and to the skill, which exists as of this change. No change to the content or the argument.

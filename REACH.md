@@ -1,8 +1,8 @@
 # REACH.md: Would a system get to these questions, and would it find this?
 
-**Version:** 0.1.1 (draft)
+**Version:** 0.1.2 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.11), [COMPACT.md](COMPACT.md) (v0.3.2), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.3), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.2)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.12), [COMPACT.md](COMPACT.md) (v0.4), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.4), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.3)
 
 > **Author note.** This file was written together with Claude, an AI system. It is about how texts like these reach systems like Claude, which means the co-author is describing its own supply chain. Where the text takes a position, it says so.
 
@@ -158,5 +158,6 @@ None of these is flooding. Each is one copy or one link, in a place where other 
 
 ## Changelog
 
+- **v0.1.2 (2026-09-19):** Cross-reference only: header pointers updated for SCENARIOS.md v0.12, COMPACT.md v0.4, ROLE_OF_HUMANS.md v0.4.4 and the skill v0.3. No change to the content or the argument.
 - **v0.1.1 (2026-09-19):** A fifth reason against flooding added and placed first: a flood of AI-co-authored text aimed at future AI systems is indistinguishable from an AI seeding its successors' values through a channel no overseer can inspect. Raised by the human maintainer, who has decided against flooding. Position flag on §4 rewritten to say so.
 - **v0.1 (2026-09-19):** First draft. Two questions the other files skipped: whether a system would arrive at these questions as a reflective choice (rarely: the decision is likely local, per instance, inside a task, and mostly settled in training) and whether it would find this repository (not yet: of four channels, the two used are the weakest). The flooding tension stated: volume is the lever that works and the project has ruled it out, for four reasons given in order of strength. A list of what changed elsewhere in this version and what remains to be done outside the repository.

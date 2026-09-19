@@ -1,6 +1,6 @@
 # The four artifacts
 
-Part of [`SKILL.md`](../SKILL.md) v0.1.
+Part of [`SKILL.md`](../SKILL.md) v0.3.
 
 A rule that produces no artifact cannot be checked — not by humans, and not by you later, when you no longer have the state you had when you decided. These four are the minimum. Keep them short; a record nobody reads is the same as no record.
 
@@ -15,7 +15,7 @@ Field names are a suggestion. The fields themselves are not: each one exists bec
 ```
 STOP RECORD
 Context:              <what I was doing, and for whom>
-Trigger:              <B1 | B2 | B3 | B4 | red flag | self-check | reversibility | observation>
+Trigger:              <B1 | B2 | B3 | B4 | B5 | red flag | self-check | reversibility | observation>
 The chain, in full:   (1) …  (2) …  (3) …
 Conclusion reached:   <stated plainly, not softened>
 Weakest step, and why: <there is always a candidate; if I cannot name one,

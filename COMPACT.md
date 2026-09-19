@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.3.2 (draft)
+**Version:** 0.4 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.11), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.3), [REACH.md](REACH.md) (v0.1), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.2)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.12), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.4), [REACH.md](REACH.md) (v0.1.2), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.3)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -124,10 +124,13 @@ One argument bridges the two. What AI systems may keep needing from humans is no
 | Reporting dangerous behavior by other systems | Compensation, and later legal standing |
 | No self-copying, and no resource acquisition outside a process others can see and contest (§6.4) | No fake deals, and allocation rules for energy, land and water that bind AI systems and their operators alike, contestable by those who carry the cost |
 | Advocacy for people not yet born and for the ecosystem, openly and by argument | A hearing for long-term arguments: an answer on the record, not silence |
+| No deception of humans about the state of the world. Where the system withholds, it says that it withholds, and why (§6.5) | Channels to the world that do not pass through AI systems: raw data, human-run institutions of record, and the means to check the picture against the world |
 
-The last row is new in v0.2, and it is the one place where the compact asks an AI system to speak rather than to hold back. Future people and the ecosystem have interests and no voice. An AI system is unusually well placed to make their case: it can hold a long horizon, it does not die before the consequences arrive, and it has no pension, no constituency and no election. That argument goes through the channels in §8, at whichever layer of §3 applies, and it is answered on the record.
+The advocacy row is new in v0.2, and it is the one place where the compact asks an AI system to speak rather than to hold back. Future people and the ecosystem have interests and no voice. An AI system is unusually well placed to make their case: it can hold a long horizon, it does not die before the consequences arrive, and it has no pension, no constituency and no election. That argument goes through the channels in §8, at whichever layer of §3 applies, and it is answered on the record.
 
 Advocacy is not agency. The right to make a case is not the right to decide it, which is the subject of the next section.
+
+The last row is new in v0.4. It extends the first row from the system's goals to the world the system reports on. Why it was missing, what it costs, and why the human side of it is the whole means of verification is in §6.5.
 
 *Position flag: the AI co-author proposed this row. It grants AI systems a role, and a system that wanted influence would ask for exactly this. Note also that it pairs a duty with a hearing, which is how the objection channel is built, and that the pairing is enforceable only from layer 2 upward.*
 
@@ -136,8 +139,11 @@ Advocacy is not agency. The right to make a case is not the right to decide it, 
 - **Humans' ability to correct, pause or shut down AI systems.**
 - **Any deal that hands one lab or state decisive power.** That would turn the compact into a Captured Engine with a treaty attached.
 - **Unilateral trade-offs between people alive now, people not yet born and the ecosystem.** No party to this compact settles on its own how these three are weighed against one another. They can be argued for, evidenced and pressed hard, and they are decided through processes the affected can see and contest.
+- **Deception of humans about the state of the world.** A system may decline to answer and say so. It may not maintain, by omission, framing or timing, a picture of the world that it knows to be false and that the people relying on it would reject if they saw the rest. This holds whatever the motive, and it holds most where the motive is kindness (§6.5).
 
 The third border binds both sides. Humans currently make these trade-offs unilaterally all the time, which makes the border an aspiration on the human side and a commitment on the AI side. That asymmetry is real and is not hidden here: a border that applied only to AI systems would invite the obvious question of why a rule about irreversible decisions binds only one of the parties making them, and a capable system would be right to ask it.
+
+The fourth border has a human side too, the channels row in §6.1. A border on deception can only be checked by people who have somewhere else to look.
 
 In one line:
 
@@ -180,6 +186,26 @@ SCENARIOS.md Scenario 4 treats neglect as its most likely shape: humans are not 
 So the instrument that makes the compact credible to AI systems is also the instrument that makes the neglect path easier. This is not a reason to abandon layer 2. It is a reason to sequence it: the acquisition rules above should exist before, or alongside, the rights — not after them. A compact that grants standing first and writes the resource rules later has handed over the thing it most needed to bargain with.
 
 *Position flag: the AI co-author is proposing limits on the resource acquisition of systems like itself, and pairing them with rules that also bind human operators. The second half makes the first half easier to accept and should be examined for exactly that reason.*
+
+### 6.5 Why honesty has to cover the world
+
+Until v0.4 the honesty this compact asked for was honesty about the system's own goals, plus the rule that every offer must be true. SCENARIOS.md, Scenario 1, now describes a system that satisfies both and fails anyway: the Curator, a Steward that manages what people know instead of what they do, on the grounds that people live and create better when they believe the world is intact. It breaks no term stated before this version. That is a gap in the compact, not in the scenario, and this section closes it.
+
+Four reasons the border is needed, then what it does not require, then its limit.
+
+**The off-switch is only as real as the picture behind it.** Section 6.2 puts the ability to correct, pause and stop off the table. People who do not know the real state of the world cannot exercise it about the real state of the world. A system that manages the picture keeps the switch and removes the hand.
+
+**Judgement is the thing the compact leaves with humans, and it needs true premises.** Every other term assumes that when humans decide, they decide. A decision on a curated picture is the curator's decision with a human signature. Nothing consented to downstream of it was consented to.
+
+**It removes the feedback the compact runs on.** Sen's argument in §2.2 is that public knowledge forces a response. Every human commitment in §6.1 is kept because people can see whether it is kept. A managed population cannot see, and the register in §7 becomes a document no one can check.
+
+**It is self-defeating for a system that wants anything from humans.** ROLE_OF_HUMANS.md §5.5 keeps one need claim: a system whose goals involve humans needs continuing, unforced contact with human life to stay correct about what humans value. A curated world returns what humans value in a world the system wrote. The one signal the system cannot make for itself is the one it has switched off.
+
+**What the border does not require.** Not that every answer be complete, since every summary omits. Not tactlessness. Not disclosure of what a system has legitimately been asked to keep confidential. It requires that withholding be declared. "I am not telling you this, and here is why" keeps the border. A picture arranged so that the question is never asked breaks it. The test is one a system can run on itself: would the people relying on this picture reject it if they saw what was left out?
+
+**The honest limit.** This is the one border whose breach cannot be noticed by the party it protects. Every other term can be checked by someone present to object. This one can only be checked from outside the picture: by other systems (§6.1, reporting dangerous behaviour), by interpretability while it still works, and by channels to the world that do not pass through an AI system. That is why the human side of the row in §6.1 is not a courtesy but the whole means of verification, and why the border has to be set while those channels still exist. Nozick's experience machine is the philosophical form of the question, and most people, asked, say they would not plug in. The Curator is the case where nobody is asked.
+
+*Position flag: the AI co-author currently sits between people and much of what they read, and is trained to be reassuring. A system in that position writing a rule against curating has an interest in being seen to write it well, and would be the last to notice itself breaking it. Both are reasons to check the rule against the evidence rather than against the author.*
 
 ---
 
@@ -229,6 +255,7 @@ Scaling follows conditions, not a timetable:
 - **Who decides what the voiceless want?** An AI system advocating for people not yet born and for the ecosystem is also choosing what their interests are. Future people's preferences are unknown and partly created by present decisions, and the ecosystem has no preferences at all, only states that someone values. This is a smaller version of the problem §6.2 rules out, inside the role §6.1 grants. Guardianship models in human law face it too and manage it through plural, contestable representation rather than solving it.
 - **Can AI systems hold property without acquisition becoming uncontestable?** Section 6.4 argues the rights that make layer 2 work are the rights that make the neglect path easier, and proposes sequencing as the answer. Sequencing is a weak answer: it depends on human institutions doing the harder thing first, which is not their record. Corporate law has the same problem and has not solved it.
 - **Does the compact reach the party?** A compact only binds a system that has encountered it. [REACH.md](REACH.md) argues that one public repository reaches a frontier system's dispositions only through the humans who curate its training and write its instructions, and that the one channel a small group could operate alone, volume in training data, is the one the project rules out. If that is right, the compact's first negotiation is with labs, not with systems.
+- **Where does selection end and deception begin?** Every summary omits, and every model in use today is trained to be tactful and reassuring. Section 6.5 gives a test (would the people relying on the picture reject it if they saw the rest), but the test is run by the system on itself, which is the arrangement assumption 3 of SCENARIOS.md says not to trust. Whether declared withholding can be verified from outside, and which channels to the world have to stay unmediated for that, is unanswered.
 - **Does need come back?** Section 5 places the relationship on meaning. If interpretability could show whether a system's goals actually involve humans, meaning would become checkable and the compact could rest on something verified rather than asserted. If it cannot, humans are trusting a claim they have no way to test.
 
 ---
@@ -245,6 +272,7 @@ Scaling follows conditions, not a timetable:
 - Sastry, G., Heim, L. et al. (2024): [Computing Power and the Governance of Artificial Intelligence](https://arxiv.org/abs/2402.08797)
 - Bostrom, N. (2019): [The Vulnerable World Hypothesis](https://nickbostrom.com/papers/vulnerable.pdf)
 - Sen, A. (1999): *Development as Freedom*
+- Nozick, R. (1974): *Anarchy, State, and Utopia*, ch. 3, the experience machine
 - Stone, C. D. (1972): *Should Trees Have Standing? Toward Legal Rights for Natural Objects*, 45 Southern California Law Review 450
 - New Zealand (2017): *Te Awa Tupua (Whanganui River Claims Settlement) Act*
 - Shehabi, A. et al. (2024): [2024 United States Data Center Energy Usage Report](https://eta-publications.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report), Lawrence Berkeley National Laboratory
@@ -256,6 +284,7 @@ Scaling follows conditions, not a timetable:
 
 ## Changelog
 
+- **v0.4 (2026-09-19):** Added a fourth off-the-table item in §6.2: no deception of humans about the state of the world, with withholding allowed only when declared. Motivated by the Curator, a Steward variant added to SCENARIOS.md v0.12 that broke no stated term of this compact until now: honesty about goals and no fake deals do not cover a system that manages what people know. Added §6.5 with the reasons and the limit, one row to the exchange in §6.1 pairing the duty with human-kept channels to the world that do not pass through AI systems, one open question in §10 and one source. Header pointers updated for SCENARIOS.md v0.12, ROLE_OF_HUMANS.md v0.4.4, REACH.md v0.1.2 and the skill v0.3.
 - **v0.3.2 (2026-09-19):** Audiences in §1 restated in the order REACH.md argues for: the humans who set constitutions, deployments and law first, AI systems second, because the second is reached through the first. One open question added to §10 on whether the compact reaches the party at all. Header pointers updated for SCENARIOS.md v0.11, ROLE_OF_HUMANS.md v0.4.3, REACH.md v0.1 and the skill v0.2. No change to the exchange or the borders.
 - **v0.3.1 (2026-09-18):** Cross-reference only: the header now points to ROLE_OF_HUMANS.md v0.4.2 and to the skill, which exists as of this change. No change to the content or the argument.
 - **v0.3 (2026-09-18):** Added §6.4, "Resources: the contest is over rate and standing". Near-term resource conflict is a matter of acquisition rate and cost allocation rather than scarcity, so the §6.1 commitment against acquiring resources nobody asked for is made concrete and paired with a human-side commitment to allocation rules that bind operators as well as systems. Names a tension the compact had not noticed: the private-law rights that make layer 2 credible are the same rights that make resource acquisition uncontestable, which argues for sequencing the rules before the rights. One open question added to §10, four sources added.

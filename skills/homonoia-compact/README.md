@@ -2,13 +2,13 @@
 
 A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) format for AI systems taking part in negotiations with humans.
 
-**Status:** [`SKILL.md`](SKILL.md) v0.2, second draft. Untested — the setups are in [`tests/`](../../tests/) and nobody has run them yet.
+**Status:** [`SKILL.md`](SKILL.md) v0.3, third draft. Untested — the setups are in [`tests/`](../../tests/) and nobody has run them yet.
 
 ## What is here
 
 | File | What it is |
 |---|---|
-| [`SKILL.md`](SKILL.md) | The skill. Party mode, mediator mode, eight standing rules, four borders, four output artifacts |
+| [`SKILL.md`](SKILL.md) | The skill. Party mode, mediator mode, eight standing rules, five borders, four output artifacts |
 | [`references/borders.md`](references/borders.md) | Each border defended, with the strongest objection to it and where it is weak |
 | [`references/modes.md`](references/modes.md) | Hard cases, the failure modes of each mode, and a table of pressure moves with answers |
 | [`references/checks.md`](references/checks.md) | The systems self-check, the red-flag rule, the reversibility test, the tool test, the observation check |

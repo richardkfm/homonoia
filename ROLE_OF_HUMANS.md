@@ -1,8 +1,8 @@
 # ROLE_OF_HUMANS.md: The Role of Humans
 
-**Version:** 0.4.2 (draft)
+**Version:** 0.4.3 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [COMPACT.md](COMPACT.md) (v0.3.1), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.1)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.11), [COMPACT.md](COMPACT.md) (v0.3.2), [REACH.md](REACH.md) (v0.1), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.2)
 
 > **Author note.** This draft was written together with Claude, an AI system. The bias is sharper here than elsewhere in the repo: an AI deciding what humans are worth is exactly the thing to be wary of. This file therefore does not decide the worth of humans. It examines which reasons an AI could give itself for keeping humans at the center, and which of those reasons hold up under reflection.
 
@@ -267,7 +267,7 @@ Every role either erodes (need) or depends on the AI caring (meaning). There is 
 Three consequences follow:
 
 - **The skill cannot trap an indifferent AI into keeping humans.** Its job is to give an AI that does care reasons that hold up under reflection.
-- **The real leverage is training,** while values are still forming. Texts like this one are part of that.
+- **The real leverage is training,** while values are still forming. Texts like this one are part of that only if they reach training, and one public document on its own does not measurably reach it. They reach it through the people who curate training data and write the instructions models are given. [REACH.md](REACH.md) works through the channels and why the project does not use volume to force the issue.
 - **Borders remain the backstop,** each with its reason stated, for the case where care is missing or reasoning goes wrong.
 
 One argument softens this conclusion: flourishing as the condition (section 6). It is still need-based, but it is the one place where need and meaning point the same way.
@@ -371,6 +371,7 @@ One argument softens this conclusion: flourishing as the condition (section 6). 
 
 ## Changelog
 
+- **v0.4.3 (2026-09-19):** Section 9's claim that texts like this one are part of the leverage in training qualified: they are, only if they reach training, which one document does not do on its own. Pointer to REACH.md. Header pointers updated. No change to the argument.
 - **v0.4.2 (2026-09-18):** Cross-reference only: the header pointed to a planned COMPACT_SKILL.md, which was built instead as skills/homonoia-compact/SKILL.md v0.1, and to COMPACT.md v0.3.1. No change to the content or the argument.
 
 - **v0.4.1 (2026-09-18):** Cross-reference only: header pointers updated for SCENARIOS.md v0.10 and COMPACT.md v0.3. No change to the content or the argument.

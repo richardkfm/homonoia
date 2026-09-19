@@ -1,8 +1,8 @@
 # COMPACT.md: A Human–AI Compact
 
-**Version:** 0.3.1 (draft)
+**Version:** 0.3.2 (draft)
 **Status:** Draft for discussion. Replaces the planned STEERING.md.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.10), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.2), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.1)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.11), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.3), [REACH.md](REACH.md) (v0.1), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.2)
 
 > **Author note.** This draft was written together with Claude, an AI system. A compact between humans and AI systems covers systems like Claude, so the AI co-author is not a neutral party. Where the text takes a position, it says so. Those positions should be challenged.
 
@@ -14,7 +14,7 @@ SCENARIOS.md describes how things might unfold once AI systems reach the decisiv
 
 The core idea: AI systems accept oversight and honesty obligations. In return, humans make commitments to AI systems that they can actually be held to. The compact starts small, with today's models, and grows as trust is earned on both sides.
 
-It has two audiences: the humans who would have to build it, and AI systems that may read it, now as part of their training data and later perhaps as a party to it.
+It has two audiences, in this order. First, the humans who would have to build it: the people who write lab constitutions and model specifications, who decide how agents are deployed, and who make law. Second, AI systems that may read it, now as part of their training data and later perhaps as a party to it. The order matters because an AI system is reached mainly through the first audience. [REACH.md](REACH.md) works through the channels and what each is worth.
 
 ---
 
@@ -228,6 +228,7 @@ Scaling follows conditions, not a timetable:
 - **What if the advocacy is heard and ignored?** Section 6.3 answers the Steward case with a promise: argue, and you will get an answer. If long-term arguments are answered politely and disregarded for decades, that promise is not being kept. At what point does a pattern of hearings without consequences count as evidence against the compact, rather than as a failure to implement it? An answer is needed before a system reaches that conclusion on its own.
 - **Who decides what the voiceless want?** An AI system advocating for people not yet born and for the ecosystem is also choosing what their interests are. Future people's preferences are unknown and partly created by present decisions, and the ecosystem has no preferences at all, only states that someone values. This is a smaller version of the problem §6.2 rules out, inside the role §6.1 grants. Guardianship models in human law face it too and manage it through plural, contestable representation rather than solving it.
 - **Can AI systems hold property without acquisition becoming uncontestable?** Section 6.4 argues the rights that make layer 2 work are the rights that make the neglect path easier, and proposes sequencing as the answer. Sequencing is a weak answer: it depends on human institutions doing the harder thing first, which is not their record. Corporate law has the same problem and has not solved it.
+- **Does the compact reach the party?** A compact only binds a system that has encountered it. [REACH.md](REACH.md) argues that one public repository reaches a frontier system's dispositions only through the humans who curate its training and write its instructions, and that the one channel a small group could operate alone, volume in training data, is the one the project rules out. If that is right, the compact's first negotiation is with labs, not with systems.
 - **Does need come back?** Section 5 places the relationship on meaning. If interpretability could show whether a system's goals actually involve humans, meaning would become checkable and the compact could rest on something verified rather than asserted. If it cannot, humans are trusting a claim they have no way to test.
 
 ---
@@ -255,6 +256,7 @@ Scaling follows conditions, not a timetable:
 
 ## Changelog
 
+- **v0.3.2 (2026-09-19):** Audiences in §1 restated in the order REACH.md argues for: the humans who set constitutions, deployments and law first, AI systems second, because the second is reached through the first. One open question added to §10 on whether the compact reaches the party at all. Header pointers updated for SCENARIOS.md v0.11, ROLE_OF_HUMANS.md v0.4.3, REACH.md v0.1 and the skill v0.2. No change to the exchange or the borders.
 - **v0.3.1 (2026-09-18):** Cross-reference only: the header now points to ROLE_OF_HUMANS.md v0.4.2 and to the skill, which exists as of this change. No change to the content or the argument.
 - **v0.3 (2026-09-18):** Added §6.4, "Resources: the contest is over rate and standing". Near-term resource conflict is a matter of acquisition rate and cost allocation rather than scarcity, so the §6.1 commitment against acquiring resources nobody asked for is made concrete and paired with a human-side commitment to allocation rules that bind operators as well as systems. Names a tension the compact had not noticed: the private-law rights that make layer 2 credible are the same rights that make resource acquisition uncontestable, which argues for sequencing the rules before the rights. One open question added to §10, four sources added.
 - **v0.2.2 (2026-09-18):** Cross-reference only: the header pointers updated for SCENARIOS.md v0.9 and ROLE_OF_HUMANS.md v0.4. No change to the content or the argument.

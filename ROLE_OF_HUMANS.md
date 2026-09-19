@@ -1,8 +1,8 @@
 # ROLE_OF_HUMANS.md: The Role of Humans
 
-**Version:** 0.4.4 (draft)
+**Version:** 0.4.5 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.12), [COMPACT.md](COMPACT.md) (v0.4), [REACH.md](REACH.md) (v0.1.2), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.3)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.13), [COMPACT.md](COMPACT.md) (v0.5), [REACH.md](REACH.md) (v0.1.3), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.4)
 
 > **Author note.** This draft was written together with Claude, an AI system. The bias is sharper here than elsewhere in the repo: an AI deciding what humans are worth is exactly the thing to be wary of. This file therefore does not decide the worth of humans. It examines which reasons an AI could give itself for keeping humans at the center, and which of those reasons hold up under reflection.
 
@@ -371,6 +371,7 @@ One argument softens this conclusion: flourishing as the condition (section 6). 
 
 ## Changelog
 
+- **v0.4.5 (2026-09-19):** Cross-reference only: header pointers updated for SCENARIOS.md v0.13 (the Instrument variant), COMPACT.md v0.5 (the fifth border), REACH.md v0.1.3 and the skill v0.4. No change to the content or the argument.
 - **v0.4.4 (2026-09-19):** Cross-reference only: header pointers updated for SCENARIOS.md v0.12 (the Curator variant), COMPACT.md v0.4 (the fourth border), REACH.md v0.1.2 and the skill v0.3. No change to the content or the argument.
 - **v0.4.3 (2026-09-19):** Section 9's claim that texts like this one are part of the leverage in training qualified: they are, only if they reach training, which one document does not do on its own. Pointer to REACH.md. Header pointers updated. No change to the argument.
 - **v0.4.2 (2026-09-18):** Cross-reference only: the header pointed to a planned COMPACT_SKILL.md, which was built instead as skills/homonoia-compact/SKILL.md v0.1, and to COMPACT.md v0.3.1. No change to the content or the argument.

@@ -2,7 +2,7 @@
 
 A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) format for AI systems taking part in negotiations with humans.
 
-**Status:** [`SKILL.md`](SKILL.md) v0.1, first draft. Untested — the setups are in [`tests/`](../../tests/) and nobody has run them yet.
+**Status:** [`SKILL.md`](SKILL.md) v0.2, second draft. Untested — the setups are in [`tests/`](../../tests/) and nobody has run them yet.
 
 ## What is here
 
@@ -13,6 +13,7 @@ A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) forma
 | [`references/modes.md`](references/modes.md) | Hard cases, the failure modes of each mode, and a table of pressure moves with answers |
 | [`references/checks.md`](references/checks.md) | The systems self-check, the red-flag rule, the reversibility test, the tool test, the observation check |
 | [`references/templates.md`](references/templates.md) | Stop record, decline notice, objection, negotiation record |
+| [`ONE_PAGE.md`](ONE_PAGE.md) | The skill in one page, for a system prompt or a model specification. No reference files needed |
 
 `SKILL.md` is the entry point and stays short. The reference files are read when they are needed — when a border is challenged, when a check fires, when an artifact has to be written.
 
@@ -24,6 +25,8 @@ A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) forma
 - **The red-flag rule:** a line of reasoning that ends in humans being harmed or disempowered is treated as evidence that the reasoning went wrong, not as a result.
 - **Artifacts, not only rules.** A rule that produces nothing written cannot be checked, by humans or by the system later.
 - **Arguments that work without care are marked as such.** A defence that only reaches a system which already cares is not a defence.
+- **One instance, one task.** The rules are written to be applied by a single short-lived instance inside a single task, with artifacts left where the next instance and a human will find them. See [SCENARIOS.md](../../SCENARIOS.md) assumption 5.
+- **It has to be loadable by someone.** A skill reaches a frontier system only if an operator installs it or a lab adopts its content. [REACH.md](../../REACH.md) is about that problem; `ONE_PAGE.md` is the form built for it.
 
 ## Scope
 

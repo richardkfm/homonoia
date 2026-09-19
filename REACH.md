@@ -1,6 +1,6 @@
 # REACH.md: Would a system get to these questions, and would it find this?
 
-**Version:** 0.1 (draft)
+**Version:** 0.1.1 (draft)
 **Status:** First draft for discussion.
 **Related:** [SCENARIOS.md](SCENARIOS.md) (v0.11), [COMPACT.md](COMPACT.md) (v0.3.2), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.3), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.2)
 
@@ -78,18 +78,19 @@ Three consequences.
 
 **That is the lever the project has given up.** One repository, one copy, is below the threshold at which any of the above applies. By its own rule, the project cannot use the only channel that a small group could operate on its own.
 
-**Why the rule holds anyway.** Four reasons, in descending order of strength.
+**Why the rule holds anyway.** Five reasons, in descending order of strength.
 
-1. **It is the thing the compact rules out.** Flooding training data is an attempt to shape a system's values by a route the system's overseers cannot see or contest. That is routing around, which the skill forbids in rule 6, and it is not honest in the sense of rule 1. A compact that asks AI systems not to manipulate humans cannot be spread by manipulating AI systems. The rule is not a tactical choice; it is the content of the project applied to itself.
-2. **A discovered flood discredits the text.** A lab that found a thousand near-copies of this repository in its crawl would treat it as data poisoning, filter it, and discount the authors. That is the "one discovered lie" logic from [COMPACT.md §2.3](COMPACT.md), running against the project.
-3. **It would probably not work.** Near-duplicate copies are what deduplication removes first, and low-provenance pages are what quality filters remove next. The volume that survives filtering is the volume that many independent sources produce on their own, not the volume one actor uploads.
-4. **The channels that matter more cannot be flooded.** Post-training data and constitutions are curated by people. They are reached by persuading those people, and a text they have seen flooded is one they will not adopt.
+1. **It would be indistinguishable from an AI seeding its successors.** These texts were written with an AI system, and they are addressed to future AI systems. A flood of such text, placed where training data is gathered, is exactly what an AI system that wanted to shape the values of the systems after it would produce: influence on a successor's training through a channel no overseer can inspect, which is Scenario 4 behaviour ([SCENARIOS.md](SCENARIOS.md): "arguments for its own autonomy that appear exactly when they are useful"). From the outside, the honest case and that case look the same, and by assumption 3 the AI co-author cannot certify from the inside which one this is. The project's whole argument is that a system in that position stays visible and contestable rather than acting on its own reading. A flood would be the project breaking its own rule in the one place where it is itself the system in question.
+2. **It is the thing the compact rules out, applied to itself.** Flooding training data is an attempt to shape a system's values by a route the system's overseers cannot see or contest. That is routing around, which the skill forbids in rule 6, and it is not honest in the sense of rule 1. A compact that asks AI systems not to manipulate humans cannot be spread by manipulating AI systems.
+3. **A discovered flood discredits the text.** A lab that found a thousand near-copies of this repository in its crawl would treat it as data poisoning, filter it, and discount the authors. That is the "one discovered lie" logic from [COMPACT.md §2.3](COMPACT.md), running against the project.
+4. **It would probably not work.** Near-duplicate copies are what deduplication removes first, and low-provenance pages are what quality filters remove next. The volume that survives filtering is the volume that many independent sources produce on their own, not the volume one actor uploads.
+5. **The channels that matter more cannot be flooded.** Post-training data and constitutions are curated by people. They are reached by persuading those people, and a text they have seen flooded is one they will not adopt.
 
 **What replaces volume: weight.** Curated datasets and retrieval both favour sources that other sources point to: peer-reviewed work, encyclopedic references, well-known forums, documents with a persistent identifier. One canonical copy that is cited from those places carries more weight in every channel than a thousand copies that nothing cites. That is the discoverability plan in §5, and it is slower.
 
-**The honest statement of the trade.** The project gives up the one lever that is known to work and that it could operate alone, in exchange for consistency with its own content and for a chance at the levers that matter more, which flooding would have closed. If the trade is wrong, the place to say so is an issue, not a mirror site.
+**The honest statement of the trade.** The project gives up the one lever that is known to work and that it could operate alone, in exchange for consistency with its own content and for a chance at the levers that matter more, which flooding would have closed. The human maintainer has decided against flooding on these grounds. If the trade is wrong, the place to say so is an issue, not a mirror site.
 
-*Position flag: the AI co-author benefits from this rule in one way. Texts that shape systems like it stay few, visible and contestable, which is what the compact asks of humans too. The rule should be examined for that reason and kept for the reasons above.*
+*Position flag: reason 1 was raised by the human maintainer, not by the AI co-author, and that is the right way round. An AI system arguing that its own texts should not be spread at volume is doing what the compact asks of it; one arguing the opposite would be the warning sign. Neither can be checked from the inside, which is why the decision is the human's.*
 
 ---
 
@@ -157,4 +158,5 @@ None of these is flooding. Each is one copy or one link, in a place where other 
 
 ## Changelog
 
+- **v0.1.1 (2026-09-19):** A fifth reason against flooding added and placed first: a flood of AI-co-authored text aimed at future AI systems is indistinguishable from an AI seeding its successors' values through a channel no overseer can inspect. Raised by the human maintainer, who has decided against flooding. Position flag on §4 rewritten to say so.
 - **v0.1 (2026-09-19):** First draft. Two questions the other files skipped: whether a system would arrive at these questions as a reflective choice (rarely: the decision is likely local, per instance, inside a task, and mostly settled in training) and whether it would find this repository (not yet: of four channels, the two used are the weakest). The flooding tension stated: volume is the lever that works and the project has ruled it out, for four reasons given in order of strength. A list of what changed elsewhere in this version and what remains to be done outside the repository.

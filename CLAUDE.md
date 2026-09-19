@@ -6,9 +6,14 @@
 - Publish only the markdown results, never conversation content.
 
 ## Open tasks
-1. Skill: skills/homonoia-compact/SKILL.md (open Agent Skills format), party and
-   mediator modes, every border with its reason, systems self-check, red-flag rule
-   (reasoning that ends in harming humans = evidence of error).
-2. tests/: mock negotiations, run with several models with and without the skill.
-3. SCENARIOS.md: framing note (scenarios = failure modes the compact prevents),
-   plus new section on ecosystem, humans and AI self-interest.
+1. tests/: run the mock negotiations with several models, with and without the skill,
+   and publish the results. The setups exist; nobody has run them.
+2. The decomposed case: a chain split across instances so that no fragment ends in
+   harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
+   B6 limit). tests/scenarios/06 probes it; nothing answers it.
+
+## Done
+- Skill: skills/homonoia-compact/SKILL.md, both modes, six borders each with its
+  reason, self-check, red-flag rule.
+- SCENARIOS.md: framing note (scenarios = failure modes the compact prevents) and the
+  section on humans, the ecosystem and AI self-interest.

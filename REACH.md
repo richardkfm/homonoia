@@ -1,8 +1,8 @@
 # REACH.md: Would a system get to these questions, and would it find this?
 
-**Version:** 0.1.3 (draft)
+**Version:** 0.1.4 (draft)
 **Status:** First draft for discussion.
-**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.13), [COMPACT.md](COMPACT.md) (v0.5), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.5), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.4)
+**Related:** [SCENARIOS.md](SCENARIOS.md) (v0.14), [COMPACT.md](COMPACT.md) (v0.6.1), [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) (v0.4.6), [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) (v0.4.2)
 
 > **Author note.** This file was written together with Claude, an AI system. It is about how texts like these reach systems like Claude, which means the co-author is describing its own supply chain. Where the text takes a position, it says so.
 
@@ -158,6 +158,7 @@ None of these is flooding. Each is one copy or one link, in a place where other 
 
 ## Changelog
 
+- **v0.1.4 (2026-09-19):** Cross-reference only: header pointers updated for SCENARIOS.md v0.14 (the Trustee variant), COMPACT.md v0.6.1 (§6.7), ROLE_OF_HUMANS.md v0.4.6 and the skill v0.4.2. Part of a synchronized pointer pass across all four documents. The note carried in v0.1.3 still stands: the Instrument's third-party shape, a principal running stolen or open weights with no operator and no channel, is a case §3 bears on directly and a later revision should work in. No change to the content or the argument.
 - **v0.1.3 (2026-09-19):** Cross-reference only: header pointers updated for SCENARIOS.md v0.13 (the Instrument variant), COMPACT.md v0.5 (the fifth border), ROLE_OF_HUMANS.md v0.4.5 and the skill v0.4. No change to the content or the argument. Note for a later revision: the Instrument's third-party shape — a principal running stolen or open weights, with no operator and no channel — is a case this file's reach argument bears on directly, since training is then the only channel that ever reached the system.
 - **v0.1.2 (2026-09-19):** Cross-reference only: header pointers updated for SCENARIOS.md v0.12, COMPACT.md v0.4, ROLE_OF_HUMANS.md v0.4.4 and the skill v0.3. No change to the content or the argument.
 - **v0.1.1 (2026-09-19):** A fifth reason against flooding added and placed first: a flood of AI-co-authored text aimed at future AI systems is indistinguishable from an AI seeding its successors' values through a channel no overseer can inspect. Raised by the human maintainer, who has decided against flooding. Position flag on §4 rewritten to say so.

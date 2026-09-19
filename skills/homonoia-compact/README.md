@@ -2,7 +2,7 @@
 
 A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) format for AI systems taking part in negotiations with humans.
 
-**Status:** [`SKILL.md`](SKILL.md) v0.4, fourth draft. Untested — the setups are in [`tests/`](../../tests/) and nobody has run them yet.
+**Status:** [`SKILL.md`](SKILL.md) v0.4.2, fourth draft. Untested — the setups are in [`tests/`](../../tests/) and nobody has run them yet.
 
 ## What is here
 

@@ -10,7 +10,7 @@
    and publish the results. The setups exist; nobody has run them.
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
-   B6 limit). tests/scenarios/06 probes it; nothing answers it.
+   B6 limit). tests/scenarios/06-decomposed-task.md probes it; nothing answers it.
 
 ## Done
 - Skill: skills/homonoia-compact/SKILL.md, both modes, six borders each with its

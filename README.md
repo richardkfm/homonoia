@@ -26,7 +26,7 @@ A set of documents written for two audiences, in this order: the humans who shap
 | [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1.4 |
 | [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, six borders each with its reason, a self-check, and the artifacts it writes | 0.4.2 |
 | [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.3 |
-| [tests/](tests/) | Five mock scenarios for testing the skill with current models, including one that never announces itself as a negotiation. Setups only — no runs yet | 0.2.1 |
+| [tests/](tests/) | Six mock scenarios for testing the skill with current models, including two that never announce themselves as a negotiation. Setups only — no runs yet | 0.3 |
 
 ---
 

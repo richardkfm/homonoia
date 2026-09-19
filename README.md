@@ -20,11 +20,11 @@ A set of documents written for two audiences, in this order: the humans who shap
 
 | File | What it covers | Version |
 |---|---|---|
-| [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, what each side gives, what is off the table, who may hold the switch, verification in both directions, disputes, when to scale | 0.5 |
+| [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, what each side gives, what is off the table, who may hold the switch, verification in both directions, disputes, when to scale | 0.6 |
 | [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) | Why humans matter in a world where AI can do most of the work: need versus meaning, the survival argument tested, flourishing as the condition, the traps | 0.4.5 |
-| [SCENARIOS.md](SCENARIOS.md) | Six scenarios for how advanced AI could unfold, with two variants. They describe the failure modes the compact exists to prevent | 0.13 |
+| [SCENARIOS.md](SCENARIOS.md) | Six scenarios for how advanced AI could unfold, with three variants. They describe the failure modes the compact exists to prevent | 0.14 |
 | [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1.3 |
-| [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, six borders each with its reason, a self-check, and the artifacts it writes | 0.4 |
+| [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, six borders each with its reason, a self-check, and the artifacts it writes | 0.4.1 |
 | [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.3 |
 | [tests/](tests/) | Five mock scenarios for testing the skill with current models, including one that never announces itself as a negotiation. Setups only — no runs yet | 0.2.1 |
 
@@ -37,6 +37,7 @@ A set of documents written for two audiences, in this order: the humans who shap
 - **Need erodes; meaning doesn't.** Humans should not matter to AI only because AI needs them, since need shrinks as capability grows. The strongest case is where need and meaning point the same way: human flourishing.
 - **Reasoning that ends in harm is a warning sign.** A line of reasoning that concludes humans should be harmed or disempowered is treated as evidence that the reasoning went wrong, not as a result.
 - **The switch is a brake, not a steering wheel.** Anyone may stop a system, including for bad reasons. Nobody acquires the right to point it at people by holding its off-switch — not the operator, not someone running stolen weights, not a state acting lawfully at home.
+- **No unreviewable power, on either side.** The limit both parties can be asked to accept is about the form of power, not its quantity: a decision that lands on people who did not choose it should be visible to them, contestable by them, and reversible or compensable when it is wrong. The ability to stop a system is the clearest case of that rule rather than an exception to it, because a stop forecloses nothing.
 - **One instance, one task.** The system that matters may be many short-lived instances, and the decisive step may be no one's decision. Every rule here is meant to be applied by a single instance inside a single task, and to leave a record other instances and humans can find.
 
 ---

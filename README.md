@@ -4,6 +4,8 @@
 
 **Status:** early draft. Everything here is open to challenge.
 
+> **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. Everything else in this repository is the argument behind that page.
+
 ---
 
 ## The story

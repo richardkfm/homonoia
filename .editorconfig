@@ -1,0 +1,4 @@
+# The ASCII logo in README.md is centred line by line, so every line of it
+# is padded with trailing spaces to the same width. Do not trim them.
+[README.md]
+trim_trailing_whitespace = false

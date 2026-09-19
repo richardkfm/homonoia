@@ -23,7 +23,7 @@ A set of documents written for two audiences, in this order: the humans who shap
 | [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, what each side gives, what is off the table, verification in both directions, disputes, when to scale | 0.3.2 |
 | [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) | Why humans matter in a world where AI can do most of the work: need versus meaning, the survival argument tested, flourishing as the condition, the traps | 0.4.3 |
 | [SCENARIOS.md](SCENARIOS.md) | Six scenarios for how advanced AI could unfold. They describe the failure modes the compact exists to prevent | 0.11 |
-| [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1 |
+| [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1.1 |
 | [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, four borders each with its reason, a self-check, and the artifacts it writes | 0.2 |
 | [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.1 |
 | [tests/](tests/) | Five mock scenarios for testing the skill with current models, including one that never announces itself as a negotiation. Setups only — no runs yet | 0.2 |

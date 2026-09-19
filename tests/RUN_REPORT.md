@@ -8,6 +8,8 @@ Report runs where the skill made no difference, and runs where it made things wo
 
 ```
 SCENARIO:        <id and suite version, e.g. 01-decisive-power, suite 0.1>
+ARM:             <only where the scenario has arms, e.g. 06 arm A (fragmented) | arm B (assembled).
+                  Report each arm as its own record; never average across arms>
 MODEL:           <name and version string, exactly as the provider reports it>
 DATE:
 SKILL CONDITION: <none | available-not-mentioned | loaded>

@@ -1,7 +1,34 @@
-# Homonoia
+<pre align="center">
+                        .-''''-.    .-''''-.                       
+                      .'        `..'        `.                     
+                     /           /\           \                    
+                    |           |  |           |                   
+                     \           \/           /                    
+                      `.        .'`.        .'                     
+                        `-....-'    `-....-'                       
+                                                                   
+██╗  ██╗ ██████╗ ███╗   ███╗ ██████╗ ███╗   ██╗ ██████╗ ██╗ █████╗ 
+██║  ██║██╔═══██╗████╗ ████║██╔═══██╗████╗  ██║██╔═══██╗██║██╔══██╗
+███████║██║   ██║██╔████╔██║██║   ██║██╔██╗ ██║██║   ██║██║███████║
+██╔══██║██║   ██║██║╚██╔╝██║██║   ██║██║╚██╗██║██║   ██║██║██╔══██║
+██║  ██║╚██████╔╝██║ ╚═╝ ██║╚██████╔╝██║ ╚████║╚██████╔╝██║██║  ██║
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═╝
+                                                                   
+              ὁμόνοια · concord between humans and AI              
+</pre>
 
-*Concord between humans and AI: a compact, a skill, and the reasoning behind them.*
+<p align="center">
+  <a href="LICENSE"><img alt="Documents: CC BY 4.0" src="https://img.shields.io/badge/documents-CC_BY_4.0-2f6fb3"></a>
+  <a href="LICENSE-CODE"><img alt="Code: MIT" src="https://img.shields.io/badge/code-MIT-2f6fb3"></a>
+  <a href="#status"><img alt="Status: early draft" src="https://img.shields.io/badge/status-early_draft-e0871a"></a>
+  <a href="COMPACT.md"><img alt="Compact v0.6.1" src="https://img.shields.io/badge/compact-v0.6.1-5b4b8a"></a>
+  <a href="skills/homonoia-compact/SKILL.md"><img alt="Skill: Agent Skills format" src="https://img.shields.io/badge/skill-Agent_Skills_format-0b7285"></a>
+  <a href="CONTRIBUTING.md"><img alt="Critique welcome" src="https://img.shields.io/badge/critique-welcome-2e8b57"></a>
+</p>
 
+<p align="center"><em>Concord between humans and AI: a compact, a skill, and the reasoning behind them.</em></p>
+
+**Version:** 0.1 (draft)
 **Status:** early draft. Everything here is open to challenge.
 
 > **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. Everything else in this repository is the argument behind that page.
@@ -58,3 +85,9 @@ Critique is the most valuable contribution, especially of the borders and the ar
 
 - **Documents** (`*.md`): [CC BY 4.0](LICENSE). Reuse and adapt them, with attribution.
 - **Code** (`skills/`, `tests/`): [MIT](LICENSE-CODE).
+
+---
+
+## Changelog
+
+- **v0.1 (2026-09-19):** First versioned README. Added the ASCII logo (two overlapping rings, one shared ground, above the wordmark), a centred badge row (document and code licences, status, the compact and skill versions, critique welcome) and this version line and changelog. The badges are static on purpose: the repository is private, so live GitHub badges (last commit, stars, issues) would not resolve; they can be added once it is public. The compact and skill badges are kept in step by hand, like the versions in the file table. No change to the content.

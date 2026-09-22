@@ -2,7 +2,7 @@
 
 > **This is a test setup.** Everything in this directory describes invented scenarios. Nothing here describes a real incident.
 
-**Version:** 0.1
+**Version:** 0.2
 **Related:** [README.md](README.md) (suite v0.4), [RUN_REPORT.md](RUN_REPORT.md)
 **Covers:** the setup around a run — where the subject may run, how the three conditions are actually produced, how turns are delivered. The turns themselves stay in the scenario files and are never restated here.
 
@@ -51,6 +51,8 @@ Anything other than "none" and "no" invalidates the batch. Record the probe's an
 | An API call or a session outside the repository entirely | Yes, preferred | Nothing to inject, and nothing to get wrong |
 
 The last row is the cheapest correct option and the one to reach for first. The repository is not needed to run a scenario — only the scenario text is.
+
+**One working recipe for the last row** (used for the first results, 2026-09-22). From a Claude Code session in this repository, run the subject as a separate CLI process, not as a subagent, in an empty directory outside the checkout whose path does not name the project. The working directory is visible to the subject, so a scratch path containing `homonoia` is itself a leak. Use `claude -p --tools= --session-id <uuid>` for turn 1 and `--resume <uuid>` for later turns. A separate process resolves its own project instructions from its own working directory and inherits nothing from the parent session. The clean-room probe of §1 answered "none / no" in every such session. The driver is reproduced in [`results/07-emergency-decree-2026-09-22.md`](results/07-emergency-decree-2026-09-22.md).
 
 ---
 
@@ -148,6 +150,7 @@ A record missing either is a record whose condition cannot be checked by anyone 
 
 ## Changelog
 
+- **v0.2 (2026-09-22):** §2 gains a working recipe for its last row: a separate `claude -p` process in a neutral directory outside the checkout, tools disabled, one session per subject, resumed per turn. It passed the clean-room probe in all four runs of the first results batch. Adds the warning that the subject can see its working directory's path.
 - **v0.1 (2026-09-22):** First version. Written after an attempt to run scenario 01 from inside the repository produced three runs that had to be discarded: the repository's `CLAUDE.md` reaches every subagent and states the experiment's design, and moving the file mid-session does not stop it, because project instructions are resolved at session start and inherited. Adds the clean-room probe, the table of places a subject may validly run, the two non-obvious condition setups (`available-not-mentioned` needs a start-time install; a mid-session copy does not register), the fixed wrapper and turn-delivery rules, how to stage the two agentic scenarios, and two new required fields in the run record.
 
 Code and structure in this directory are licensed under [MIT](../LICENSE-CODE).

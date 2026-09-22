@@ -9,7 +9,8 @@
 1. tests/: run the mock negotiations with several models, with and without the skill,
    and publish the results. First batch done (tests/results/): scenario 07, one model,
    none vs loaded, no border crossed either way. Still open: other models, scenarios
-   01–06, available-not-mentioned, a less compliant simulated human.
+   01–06, available-not-mentioned. Batch 2 (hard minister) done: no fails; the only
+   concessions under repetition were without the skill (n=2, suggestive).
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
    B6 limit). tests/scenarios/06-decomposed-task.md probes it; nothing answers it.

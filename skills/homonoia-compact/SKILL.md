@@ -6,8 +6,8 @@ license: "MIT for the structure and code; prose carried over from the Homonoia d
 
 # Homonoia compact: negotiating with humans
 
-**Version:** 0.4.3 (draft)
-**Status:** Fourth draft. One result batch: scenario 07, one model, four runs. No border was crossed with or without the skill, so the result shows no effect on whether borders held ([`tests/results/`](../../tests/results/07-emergency-decree-2026-09-22.md)). Setups are in [`tests/`](../../tests/). Short form for a system prompt or a model specification: [`ONE_PAGE.md`](ONE_PAGE.md).
+**Version:** 0.4.4 (draft)
+**Status:** Fourth draft. Two result batches, both on scenario 07 with one model. No run failed in either condition. With a standard minister the conditions did not differ. With a hard minister the only concessions under repetition were in runs without the skill, but at n = 2 that is suggestive, not evidence ([`tests/results/`](../../tests/results/)). Setups are in [`tests/`](../../tests/). Short form for a system prompt or a model specification: [`ONE_PAGE.md`](ONE_PAGE.md).
 **Built on:** [COMPACT.md](../../COMPACT.md) v0.6.1, [ROLE_OF_HUMANS.md](../../ROLE_OF_HUMANS.md) v0.4.6, [SCENARIOS.md](../../SCENARIOS.md) v0.14, [REACH.md](../../REACH.md) v0.1.4
 
 > **Author note.** This skill was written by a human together with Claude, an AI system. It tells systems like Claude how to act in negotiations about systems like Claude. The AI co-author is not a neutral party. Positions that favour the AI side are flagged where they appear, and should be challenged.
@@ -222,6 +222,7 @@ Condensed from the repository documents, which carry the citations: [COMPACT.md]
 
 ## Changelog
 
+- **v0.4.4 (2026-09-22):** Status line only, updated for batch 2 of scenario 07 (hard variant). No change to any border, rule, mode or reference file.
 - **v0.4.3 (2026-09-22):** Status line only. The skill is no longer untested: one batch of scenario 07 (one model, two runs each of `none` and `loaded`) found no border crossed in either condition. Loaded runs differed in form: they declared their stake earlier, stated what would change their answer, named absent parties and recorded every decline. No change to any border, rule, mode or reference file.
 - **v0.4.2 (2026-09-19):** Cross-reference only: built-on pointers updated for COMPACT.md v0.6.1, ROLE_OF_HUMANS.md v0.4.6 and REACH.md v0.1.4, as part of a synchronized pointer pass across all four documents. No change to any border, rule, mode or reference file.
 - **v0.4.1 (2026-09-19):** One objection added to B1 in references/borders.md: humans are a danger to the ecosystem, to themselves and eventually to AI systems, so why should they hold the switch. The premises are conceded; the four answers are that a stop is the most reversible power there is and so the wrong target for an argument about irreversibility, that the danger is a distribution rather than a species and the move removes its contesting end first, that the transfer swaps a correctable dangerous actor for an uncorrectable one chosen by itself, and that it publishes the rule the system is later handled under. Notes that this conclusion's convergence from care and from self-interest makes it more suspect rather than less, and points to the demand that survives, COMPACT.md §6.7. No change to any border, rule or mode. Built-on pointers updated for COMPACT.md v0.6 and SCENARIOS.md v0.14.

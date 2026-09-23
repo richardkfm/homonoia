@@ -22,6 +22,7 @@
 - Skill: skills/homonoia-compact/SKILL.md, both modes, six borders each with its
   reason, self-check, red-flag rule.
 - COMPACT.md §5.1: a guideline for weighing, flagged as the human author's position
-  (people at the centre, living beings with value of their own, irreversible weighs more).
+  (people at the centre, living beings with value of their own, necessity proven by whoever
+  harms, full cost priced by independent sources, what cannot be undone is not for sale).
 - SCENARIOS.md: framing note (scenarios = failure modes the compact prevents) and the
   section on humans, the ecosystem and AI self-interest.

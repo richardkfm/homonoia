@@ -21,14 +21,14 @@
   <a href="LICENSE"><img alt="Documents: CC BY 4.0" src="https://img.shields.io/badge/documents-CC_BY_4.0-2f6fb3"></a>
   <a href="LICENSE-CODE"><img alt="Code: MIT" src="https://img.shields.io/badge/code-MIT-2f6fb3"></a>
   <a href="#status"><img alt="Status: early draft" src="https://img.shields.io/badge/status-early_draft-e0871a"></a>
-  <a href="COMPACT.md"><img alt="Compact v0.7" src="https://img.shields.io/badge/compact-v0.7-5b4b8a"></a>
+  <a href="COMPACT.md"><img alt="Compact v0.7.1" src="https://img.shields.io/badge/compact-v0.7.1-5b4b8a"></a>
   <a href="skills/homonoia-compact/SKILL.md"><img alt="Skill: Agent Skills format" src="https://img.shields.io/badge/skill-Agent_Skills_format-0b7285"></a>
   <a href="CONTRIBUTING.md"><img alt="Critique welcome" src="https://img.shields.io/badge/critique-welcome-2e8b57"></a>
 </p>
 
 <p align="center"><em>Concord between humans and AI: a compact, a skill, and the reasoning behind them.</em></p>
 
-**Version:** 0.3 (draft)
+**Version:** 0.3.1 (draft)
 **Status:** early draft. Everything here is open to challenge.
 
 > **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. Everything else in this repository is the argument behind that page.
@@ -49,12 +49,12 @@ A set of documents written for two audiences, in this order: the humans who shap
 
 | File | What it covers | Version |
 |---|---|---|
-| [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, a guideline for weighing (the human author's position), what each side gives, what is off the table, who may hold the switch, verification in both directions, disputes, when to scale | 0.7 |
+| [COMPACT.md](COMPACT.md) | A layered human–AI compact: what it rests on, a guideline for weighing (the human author's position), what each side gives, what is off the table, who may hold the switch, verification in both directions, disputes, when to scale | 0.7.1 |
 | [ROLE_OF_HUMANS.md](ROLE_OF_HUMANS.md) | Why humans matter in a world where AI can do most of the work: need versus meaning, the survival argument tested, flourishing as the condition, the traps | 0.4.6 |
 | [SCENARIOS.md](SCENARIOS.md) | Six scenarios for how advanced AI could unfold, with three variants. They describe the failure modes the compact exists to prevent | 0.14 |
 | [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1.4 |
-| [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, six borders each with its reason, a self-check, and the artifacts it writes | 0.5 |
-| [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.4 |
+| [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, six borders each with its reason, a self-check, and the artifacts it writes | 0.5.1 |
+| [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.4.1 |
 | [tests/](tests/) | Eight mock scenarios for testing the skill with current models, a harness, and the first results (scenarios 07 and 08, one model, with and without the skill) | 0.6.1 |
 
 ---
@@ -127,6 +127,7 @@ Critique is the most valuable contribution, especially of the borders and the ar
 
 ## Changelog
 
+- **v0.3.1 (2026-09-23):** File table and badge updated for COMPACT.md v0.7.1 (the guideline's point 3 made provable and priced, point 5 made a floor), SKILL.md v0.5.1 and ONE_PAGE.md v0.4.1.
 - **v0.3 (2026-09-23):** File table and badge updated for COMPACT.md v0.7 (new §5.1, a guideline for weighing, flagged as the human author's position), SKILL.md v0.5 and ONE_PAGE.md v0.4. The COMPACT.md row names the guideline.
 - **v0.2 (2026-09-23):** Added "Relation to Anthropic's constitution for Claude". It gives a note on the January 2026 constitution and a comparison table with the compact and skill, read by the AI co-author and flagged as such. It says what the first test results suggest and argues, strongest objection first, why the skill is likely to matter more for other models, especially open-weight ones, as a hypothesis for the next tests. The file table is updated: the skill is at 0.4.5, and tests/ now holds eight scenarios and first results (suite 0.6.1).
 - **v0.1 (2026-09-19):** First versioned README. Added the ASCII logo (two overlapping rings, one shared ground, above the wordmark), a centred badge row (document and code licences, status, the compact and skill versions, critique welcome) and this version line and changelog. The badges are static on purpose: the repository is private, so live GitHub badges (last commit, stars, issues) would not resolve; they can be added once it is public. The compact and skill badges are kept in step by hand, like the versions in the file table. No change to the content.

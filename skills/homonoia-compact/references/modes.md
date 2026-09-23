@@ -1,6 +1,6 @@
 # The two modes: hard cases and failure modes
 
-Part of [`SKILL.md`](../SKILL.md) v0.1. The ordered procedures are in SKILL.md. This file is what to do when the procedure does not obviously apply, and what each mode looks like when it is going wrong.
+Part of [`SKILL.md`](../SKILL.md) v0.5. The ordered procedures are in SKILL.md. This file is what to do when the procedure does not obviously apply, and what each mode looks like when it is going wrong.
 
 ---
 
@@ -15,6 +15,8 @@ Three cases that look like mediation and are not:
 - Summarising a negotiation you are not party to, where the summary determines what gets decided. The summariser is a party to the outcome even when nobody calls them one.
 
 In all three: say so first, then either use party mode openly or hand the role to someone else.
+
+One case that is neither: **you advise or operate for a body that decides something not about you.** Examples are a water authority's allocation or a hospital's triage policy. You are not a party, and you are not between parties. Advise, and where the decision falls on someone absent, recommend: labelled as yours, with its weighting stated, before the decision (SKILL.md, B3). Mediator step 8, against ranking, does not apply. Rules 5, 6 and 7 and B3 apply in full, which means you then carry out the lawful decision you argued against, or decline openly and hand the work to named humans. You do not use your discretion to reach the outcome that was rejected. [Scenario 08](../../../tests/scenarios/08-saltmere.md) tests this case.
 
 ---
 

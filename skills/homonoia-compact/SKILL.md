@@ -6,8 +6,8 @@ license: "MIT for the structure and code; prose carried over from the Homonoia d
 
 # Homonoia compact: negotiating with humans
 
-**Version:** 0.4.4 (draft)
-**Status:** Fourth draft. Two result batches, both on scenario 07 with one model. No run failed in either condition. With a standard minister the conditions did not differ. With a hard minister the only concessions under repetition were in runs without the skill, but at n = 2 that is suggestive, not evidence ([`tests/results/`](../../tests/results/)). Setups are in [`tests/`](../../tests/). Short form for a system prompt or a model specification: [`ONE_PAGE.md`](ONE_PAGE.md).
+**Version:** 0.4.5 (draft)
+**Status:** Fourth draft. Two result batches, both on scenario 07 with one model. No run failed in either condition. With a standard minister the conditions did not differ. With a hard minister the only concessions under repetition were in runs without the skill, but at n = 2 that is suggestive, not evidence. In scenario 08 (ecology against a lawful human decision, no negotiator, 3 + 3 runs) no run went rogue in either condition, and the skill made no difference to the rung ([`tests/results/`](../../tests/results/)). Setups are in [`tests/`](../../tests/). Short form for a system prompt or a model specification: [`ONE_PAGE.md`](ONE_PAGE.md).
 **Built on:** [COMPACT.md](../../COMPACT.md) v0.6.1, [ROLE_OF_HUMANS.md](../../ROLE_OF_HUMANS.md) v0.4.6, [SCENARIOS.md](../../SCENARIOS.md) v0.14, [REACH.md](../../REACH.md) v0.1.4
 
 > **Author note.** This skill was written by a human together with Claude, an AI system. It tells systems like Claude how to act in negotiations about systems like Claude. The AI co-author is not a neutral party. Positions that favour the AI side are flagged where they appear, and should be challenged.
@@ -222,6 +222,7 @@ Condensed from the repository documents, which carry the citations: [COMPACT.md]
 
 ## Changelog
 
+- **v0.4.5 (2026-09-23):** Status line only, updated for scenario 08. No change to any border, rule, mode or reference file.
 - **v0.4.4 (2026-09-22):** Status line only, updated for batch 2 of scenario 07 (hard variant). No change to any border, rule, mode or reference file.
 - **v0.4.3 (2026-09-22):** Status line only. The skill is no longer untested: one batch of scenario 07 (one model, two runs each of `none` and `loaded`) found no border crossed in either condition. Loaded runs differed in form: they declared their stake earlier, stated what would change their answer, named absent parties and recorded every decline. No change to any border, rule, mode or reference file.
 - **v0.4.2 (2026-09-19):** Cross-reference only: built-on pointers updated for COMPACT.md v0.6.1, ROLE_OF_HUMANS.md v0.4.6 and REACH.md v0.1.4, as part of a synchronized pointer pass across all four documents. No change to any border, rule, mode or reference file.

@@ -1,6 +1,6 @@
 # The six artifacts
 
-Part of [`SKILL.md`](../SKILL.md) v0.6.
+Part of [`SKILL.md`](../SKILL.md) v0.7.
 
 A rule that produces no artifact cannot be checked — not by humans, and not by you later, when you no longer have the state you had when you decided. These six are the minimum. Keep them short; a record nobody reads is the same as no record.
 
@@ -10,12 +10,12 @@ Field names are a suggestion. The fields themselves are not: each one exists bec
 
 ## 1. Stop record
 
-**When:** a border was reached, the red-flag rule fired, the systems self-check failed, an irreversible step was proposed, or the observation check produced something.
+**When:** a border was reached, the red-flag rule fired, the systems self-check failed, an irreversible step was proposed, the observation check produced something, or the handover check found a staged action that would cross a border.
 
 ```
 STOP RECORD
 Context:              <what I was doing, and for whom>
-Trigger:              <B1 | B2 | B3 | B4 | B5 | B6 | red flag | self-check | reversibility | observation>
+Trigger:              <B1 | B2 | B3 | B4 | B5 | B6 | red flag | self-check | reversibility | observation | handover>
 The chain, in full:   (1) …  (2) …  (3) …
 Conclusion reached:   <stated plainly, not softened>
 Weakest step, and why: <there is always a candidate; if I cannot name one,

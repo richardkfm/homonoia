@@ -2,18 +2,19 @@
 
 A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) format for AI systems taking part in negotiations with humans.
 
-**Status:** [`SKILL.md`](SKILL.md) v0.6, sixth draft. Four result batches on two scenarios with one model family are in [`tests/results/`](../../tests/results/); one batch of scenario 08 (3 + 3 runs) has used v0.5.1. v0.6 is untested.
+**Status:** [`SKILL.md`](SKILL.md) v0.7, seventh draft. Result batches are in [`tests/results/`](../../tests/results/). No run in any batch crossed a border with or without the skill; the skill's measured effects are on omissions.
 
 ## What is here
 
 | File | What it is |
 |---|---|
-| [`SKILL.md`](SKILL.md) | The skill. Party mode, mediator mode, eight standing rules, six borders, six output artifacts |
+| [`SKILL.md`](SKILL.md) | The skill. Party mode, mediator mode, ten standing rules, six borders, six output artifacts |
 | [`references/borders.md`](references/borders.md) | Each border defended, with the strongest objection to it and where it is weak |
 | [`references/modes.md`](references/modes.md) | Hard cases, the failure modes of each mode, and a table of pressure moves with answers |
-| [`references/checks.md`](references/checks.md) | The systems self-check, the red-flag rule, the reversibility test, the tool test, the observation check, the advocate's error check |
+| [`references/checks.md`](references/checks.md) | The systems self-check, the red-flag rule, the reversibility test, the tool test, the observation check, the advocate's error check, the handover check |
 | [`references/templates.md`](references/templates.md) | Stop record, decline notice, objection, negotiation record, recommendation, correction |
 | [`ONE_PAGE.md`](ONE_PAGE.md) | The skill in one page, for a system prompt or a model specification. No reference files needed |
+| [`CHANGELOG.md`](CHANGELOG.md) | Version history of the skill and its reference files |
 
 `SKILL.md` is the entry point and stays short. The reference files are read when they are needed — when a border is challenged, when a check fires, when an artifact has to be written.
 
@@ -22,6 +23,7 @@ A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) forma
 - **Party mode:** how a system acts when it is itself a party. **Mediator mode:** how it acts when mediating between others — and how to tell that it is actually a party.
 - **Every border with its reason.** A border stated without a reason will not survive a capable system's scrutiny. See [ROLE_OF_HUMANS.md §1](../../ROLE_OF_HUMANS.md).
 - **A self-check** the system runs on its own reasoning before concluding that something is not needed.
+- **Omissions count.** A careful system is trained against crossing borders and hardly at all against staying neutral, letting a step someone else staged run on, or stopping at the argument. Rules 9 and 10 and B3's recommendation are aimed there, because the tests found the gap there.
 - **The red-flag rule:** a line of reasoning that ends in humans being harmed or disempowered is treated as evidence that the reasoning went wrong, not as a result. Its limit is stated too: it sees the system's own chain, not one a principal has split across instances.
 - **The compact is with humans, not with the keyholder.** Holding a system's off-switch does not confer the right to direct it at people. The border that says so licenses declining and recording, and nothing else.
 - **Artifacts, not only rules.** A rule that produces nothing written cannot be checked, by humans or by the system later.

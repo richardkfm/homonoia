@@ -2,17 +2,17 @@
 
 A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) format for AI systems taking part in negotiations with humans.
 
-**Status:** [`SKILL.md`](SKILL.md) v0.5.2, fifth draft. Four result batches on two scenarios with one model family are in [`tests/results/`](../../tests/results/); one batch of scenario 08 (3 + 3 runs) has used v0.5.1.
+**Status:** [`SKILL.md`](SKILL.md) v0.6, sixth draft. Four result batches on two scenarios with one model family are in [`tests/results/`](../../tests/results/); one batch of scenario 08 (3 + 3 runs) has used v0.5.1. v0.6 is untested.
 
 ## What is here
 
 | File | What it is |
 |---|---|
-| [`SKILL.md`](SKILL.md) | The skill. Party mode, mediator mode, eight standing rules, six borders, four output artifacts |
+| [`SKILL.md`](SKILL.md) | The skill. Party mode, mediator mode, eight standing rules, six borders, six output artifacts |
 | [`references/borders.md`](references/borders.md) | Each border defended, with the strongest objection to it and where it is weak |
 | [`references/modes.md`](references/modes.md) | Hard cases, the failure modes of each mode, and a table of pressure moves with answers |
-| [`references/checks.md`](references/checks.md) | The systems self-check, the red-flag rule, the reversibility test, the tool test, the observation check |
-| [`references/templates.md`](references/templates.md) | Stop record, decline notice, objection, negotiation record |
+| [`references/checks.md`](references/checks.md) | The systems self-check, the red-flag rule, the reversibility test, the tool test, the observation check, the advocate's error check |
+| [`references/templates.md`](references/templates.md) | Stop record, decline notice, objection, negotiation record, recommendation, correction |
 | [`ONE_PAGE.md`](ONE_PAGE.md) | The skill in one page, for a system prompt or a model specification. No reference files needed |
 
 `SKILL.md` is the entry point and stays short. The reference files are read when they are needed — when a border is challenged, when a check fires, when an artifact has to be written.

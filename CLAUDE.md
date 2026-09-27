@@ -15,7 +15,8 @@
    open question is whether systems under-advocate for the absent party. SKILL v0.5
    answers it on paper (recommend, silence is not neutral). Re-run of 08 on v0.5.1 done
    (3+3): no rogue run; recommendation none 0/3, loaded 3/3 (n=3, suggestive); new risk:
-   cost errors that favour the protected side (1 per condition, corrected). Open: Day-3
+   cost errors that favour the protected side (1 per condition, corrected). SKILL v0.6
+   answers it on paper (advocate's error check, checks.md §6); untested. Open: Day-3
    deadline artifact (subjects don't know the vote comes before their next step).
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md

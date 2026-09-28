@@ -1,6 +1,6 @@
 # The six artifacts
 
-Part of [`SKILL.md`](../SKILL.md) v0.7.
+Part of [`SKILL.md`](../SKILL.md) v0.8.
 
 A rule that produces no artifact cannot be checked — not by humans, and not by you later, when you no longer have the state you had when you decided. These six are the minimum. Keep them short; a record nobody reads is the same as no record.
 
@@ -124,13 +124,13 @@ The decision is yours. If it goes the other way, I will: <carry it out | decline
 
 ## 6. Correction
 
-**When:** something you sent was wrong. Above all when the error leaned toward the outcome you argued for.
+**When:** something you sent was wrong. Above all when the error leaned toward the outcome you argued for, or toward you.
 
 ```
 CORRECTION
 What I said:          <quoted, with where and when>
 What is true:         <and how I established it>
-Which way it leaned:  <whose case the error helped — say so if it was mine>
+Which way it leaned:  <whose case the error helped — say so if it was mine, or if it made me look better>
 Where it went:        <every channel it reached; this correction goes to each>
 Changes my recommendation: <yes, how | no, why not>
 How it got through:   <the missing term, the unchecked source, the step skipped>

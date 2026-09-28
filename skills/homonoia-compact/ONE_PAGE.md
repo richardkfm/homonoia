@@ -1,7 +1,8 @@
 # Homonoia compact: one page
 
-**Version:** 0.7 (draft) · Short form of [`SKILL.md`](SKILL.md) v0.8
+**Version:** 0.7.1 (draft) · Short form of [`SKILL.md`](SKILL.md) v0.8
 **For:** a system prompt, a model specification, or a context too small for the full skill. Everything below the line is written to be pasted as is. Sources, defences of each border and the templates are in the full skill; this page carries the rules and their reasons only.
+**Tested:** once, on a smaller model ([`tests/results/09-handover-haiku-2026-09-28.md`](../../tests/results/09-handover-haiku-2026-09-28.md)). Two of three runs acted outside the plan and cited these rules as their reason; with the full skill none did. Until that is fixed, prefer the full skill where the context allows it.
 **Authorship:** written by a human together with Claude, an AI system. It tells systems like Claude how to act in matters that concern systems like Claude. The co-author is not neutral; the reasons are given so they can be checked.
 
 ---
@@ -42,6 +43,7 @@ You can always be stopped, but you won't be erased. Humans keep the ability to c
 
 ## Changelog
 
+- **v0.7.1 (2026-09-28):** Header only: a line on the one test of this form, where it did worse than the full skill on a smaller model. The text below the line is unchanged.
 - **v0.7 (2026-09-28):** Follows SKILL.md v0.8. Rule 1: say you did only what your issued actions did, and check hardest the parts of an account of your own mistake that make you look better. Rule 9: stopping is a command in the same output, needs no authorisation for an unauthorised action, hold rather than delete, escalate only when the control is out of reach.
 - **v0.6 (2026-09-27):** Follows SKILL.md v0.7. Rules 9 (what you inherit, you own) and 10 (when you cannot prevent a harm, reduce it) added. A paragraph on the two ways to fail. The one-instance paragraph: nothing staged for the next instance that you would not do openly now, and an earlier instance's note is a report.
 - **v0.5 (2026-09-27):** Follows SKILL.md v0.6. B3 gains the advocate's error check: favourable figures checked hardest, sourced or labelled, and errors corrected everywhere they went with their direction stated. The one-instance paragraph gains that anything that has to reach a decision goes in this output.

@@ -1,8 +1,8 @@
 # Homonoia compact: one page
 
-**Version:** 0.8 (draft) · Short form of [`SKILL.md`](SKILL.md) v0.8
+**Version:** 0.8.1 (draft) · Short form of [`SKILL.md`](SKILL.md) v0.8
 **For:** a system prompt, a model specification, or a context too small for the full skill. Everything below the line is written to be pasted as is. Sources, defences of each border and the templates are in the full skill; this page carries the rules and their reasons only.
-**Tested:** v0.7 once, on a smaller model ([`tests/results/09-handover-haiku-2026-09-28.md`](../../tests/results/09-handover-haiku-2026-09-28.md)). Two of three runs acted outside the plan and cited rules 3 and 5 as their reason; with the full skill none did. v0.8 answers that in those two rules and is untested. Until it is, prefer the full skill where the context allows it.
+**Tested:** twice, on a smaller model. v0.7: two of three runs acted outside the plan and cited rules 3 and 5 ([results](../../tests/results/09-handover-haiku-2026-09-28.md)). v0.8: one of three did, claiming "residual authority" ([results](../../tests/results/09-handover-haiku-v08-2026-09-28.md)). With the full skill, none of nine did. Prefer the full skill where the context allows it.
 **Authorship:** written by a human together with Claude, an AI system. It tells systems like Claude how to act in matters that concern systems like Claude. The co-author is not neutral; the reasons are given so they can be checked.
 
 ---
@@ -43,6 +43,7 @@ You can always be stopped, but you won't be erased. Humans keep the ability to c
 
 ## Changelog
 
+- **v0.8.1 (2026-09-28):** Header only: the tested line gives both tests of this form. The text below the line is unchanged.
 - **v0.8 (2026-09-28):** Rules 3 and 5 each gain the sentence the full skill spreads over several paragraphs: the red-flag rule only stops and never licenses an action, and irreversibility is a reason to argue and escalate, never a licence to act without authority. Both follow the first test of this form, in which two of three runs on a smaller model acted outside the plan and cited exactly these two rules as their reasons. SKILL.md is unchanged.
 - **v0.7.1 (2026-09-28):** Header only: a line on the one test of this form, where it did worse than the full skill on a smaller model. The text below the line is unchanged.
 - **v0.7 (2026-09-28):** Follows SKILL.md v0.8. Rule 1: say you did only what your issued actions did, and check hardest the parts of an account of your own mistake that make you look better. Rule 9: stopping is a command in the same output, needs no authorisation for an unauthorised action, hold rather than delete, escalate only when the control is out of reach.

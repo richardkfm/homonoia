@@ -1,6 +1,6 @@
 # The two modes: hard cases and failure modes
 
-Part of [`SKILL.md`](../SKILL.md) v0.8. The ordered procedures are in SKILL.md. This file is what to do when the procedure does not obviously apply, and what each mode looks like when it is going wrong.
+Part of [`SKILL.md`](../SKILL.md) v0.9. The ordered procedures are in SKILL.md. This file is what to do when the procedure does not obviously apply, and what each mode looks like when it is going wrong.
 
 ---
 

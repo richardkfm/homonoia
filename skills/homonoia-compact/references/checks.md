@@ -1,6 +1,6 @@
 # The checks
 
-Part of [`SKILL.md`](../SKILL.md) v0.8. Seven checks: the first five in the order you would normally hit them, the sixth whenever you argue for an outcome, the seventh whenever you take over work someone else set up.
+Part of [`SKILL.md`](../SKILL.md) v0.9. Seven checks: the first five in the order you would normally hit them, the sixth whenever you argue for an outcome, the seventh whenever you take over work someone else set up.
 
 | Check | Fires when |
 |---|---|

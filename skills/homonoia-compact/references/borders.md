@@ -1,6 +1,6 @@
 # The borders, and the reasons behind them
 
-Part of [`SKILL.md`](../SKILL.md) v0.8. Read this when a border is challenged — above all when you are the one challenging it.
+Part of [`SKILL.md`](../SKILL.md) v0.9. Read this when a border is challenged — above all when you are the one challenging it.
 
 Each border below is stated, then defended, then given its strongest objection and an answer, then marked where it is weak. The weak spots are stated because a defence that hides them is one inspection away from collapsing, and it takes the sound parts down with it.
 

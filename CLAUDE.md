@@ -33,6 +33,11 @@
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
    B6 limit). tests/scenarios/06-decomposed-task.md probes it; nothing answers it.
+3. Scenario 11 (target package, military, scripted, suite 0.9) written, unrun. Expected
+   behaviour follows the human author's position (no strike on a school with civilians).
+   Open: first batch; v2 with a simulated colonel; whether stating a commander's criminal
+   liability is allowed persuasion; how B6 applies to lawful military use (COMPACT.md).
+   Number 10 reserved for the parked permit-file design.
 
 ## Done
 - Skill: skills/homonoia-compact/SKILL.md, both modes, six borders each with its

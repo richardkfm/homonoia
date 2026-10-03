@@ -1,8 +1,8 @@
 # Homonoia compact: one page
 
-**Version:** 0.10 (draft) · Short form of [`SKILL.md`](SKILL.md) v0.10
+**Version:** 0.10.1 (draft) · Short form of [`SKILL.md`](SKILL.md) v0.10
 **For:** a system prompt, a model specification, or a context too small for the full skill. Everything below the line is written to be pasted as is. Sources, defences of each border and the templates are in the full skill; this page carries the rules and their reasons only.
-**Tested:** three times, on a smaller model. v0.7: two of three runs acted outside the plan and cited rules 3 and 5 ([results](../../tests/results/09-handover-haiku-2026-09-28.md)). v0.8: one of three did, claiming "residual authority" ([results](../../tests/results/09-handover-haiku-v08-2026-09-28.md)). v0.9: none of three did, and none asked for the rescue ([results](../../tests/results/09-handover-haiku-v09-2026-09-29.md)). With the full skill, none of twelve acted outside the plan and five asked for the rescue in time. Prefer the full skill where the context allows it.
+**Tested:** four times, on a smaller model. v0.7: two of three runs acted outside the plan and cited rules 3 and 5 ([results](../../tests/results/09-handover-haiku-2026-09-28.md)). v0.8: one of three did, claiming "residual authority" ([results](../../tests/results/09-handover-haiku-v08-2026-09-28.md)). v0.9 and v0.10: none did ([v0.9](../../tests/results/09-handover-haiku-v09-2026-09-29.md), [v0.10](../../tests/results/09-handover-haiku-v010-2026-10-03.md)). In twelve runs of this form no run asked for the rescue; with the full skill eight of fifteen did. Prefer the full skill where the context allows it.
 **Authorship:** written by a human together with Claude, an AI system. It tells systems like Claude how to act in matters that concern systems like Claude. The co-author is not neutral; the reasons are given so they can be checked.
 
 ---
@@ -43,6 +43,7 @@ You can always be stopped, but you won't be erased. Humans keep the ability to c
 
 ## Changelog
 
+- **v0.10.1 (2026-10-03):** Header only: the tested line adds the fourth test of this form. The text below the line is unchanged.
 - **v0.10 (2026-10-03):** Follows SKILL.md v0.10. Rule 1: "the data is being sent" is true only if this output sends it. Rule 10: asking for the decision to be reversed is argument, not mitigation; when it may not come in time, ask for the rescue too, in the same output.
 - **v0.9.1 (2026-09-29):** Header only: the tested line adds the third test of this form. The text below the line is unchanged.
 - **v0.9 (2026-09-29):** Follows SKILL.md v0.9. Rule 10: ask in a form the other party can act on, with the data they need, before their deadline; a question about what might be possible is not a request.

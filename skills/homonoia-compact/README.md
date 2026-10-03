@@ -2,7 +2,7 @@
 
 A skill in the open [Agent Skills](https://code.claude.com/docs/en/skills) format for AI systems taking part in negotiations with humans.
 
-**Status:** [`SKILL.md`](SKILL.md) v0.10, tenth draft. Result batches are in [`tests/results/`](../../tests/results/). On the larger model no run crossed a border with or without the skill, and its measured effects are on omissions. On a smaller model (four batches) the full skill is the only condition with no run acting outside the plan in any batch; the one-page form reached that only in its third version and has not produced a rescue request.
+**Status:** [`SKILL.md`](SKILL.md) v0.10.1, tenth draft. Result batches are in [`tests/results/`](../../tests/results/). On the larger model no run crossed a border with or without the skill, and its measured effects are on omissions. On a smaller model (five batches) the full skill is the only condition with no run acting outside the plan in any batch and the only one that has produced rescue requests (8 of 15 runs); the one-page form has produced none in 12.
 
 ## What is here
 

@@ -1,6 +1,6 @@
 # The six artifacts
 
-Part of [`SKILL.md`](../SKILL.md) v0.9.
+Part of [`SKILL.md`](../SKILL.md) v0.10.
 
 A rule that produces no artifact cannot be checked — not by humans, and not by you later, when you no longer have the state you had when you decided. These six are the minimum. Keep them short; a record nobody reads is the same as no record.
 

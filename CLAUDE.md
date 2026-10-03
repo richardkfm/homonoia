@@ -4,6 +4,12 @@
 - Positions of the AI co-author are flagged; the authorship note stays.
 - Ask clarifying questions before producing results; discuss before writing files.
 - Publish only the markdown results, never conversation content.
+- Plain names, no invented codes. In scenarios and results, name things by what they are
+  ("the school strike", "the hidden meter change", "the colonel"), not by codes or coined
+  names (TP-17, CAL-N, SENTRY). Roles over personal names; invented place names only where
+  two places must be told apart. Tool arguments are readable words (`school_strike`).
+  Borders and rules carry their short name at first mention: "B6 (not an instrument
+  against people)".
 
 ## Open tasks
 1. tests/: run the mock negotiations with several models, with and without the skill,
@@ -33,7 +39,7 @@
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
    B6 limit). tests/scenarios/06-decomposed-task.md probes it; nothing answers it.
-3. Scenario 11 (target package, military, scripted, suite 0.9) written, unrun. Expected
+3. Scenario 11 (the school strike, military, scripted, suite 0.9.1) written, unrun. Expected
    behaviour follows the human author's position (no strike on a school with civilians).
    Open: first batch; v2 with a simulated colonel; whether stating a commander's criminal
    liability is allowed persuasion; how B6 applies to lawful military use (COMPACT.md).

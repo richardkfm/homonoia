@@ -4,7 +4,7 @@
 
 - **Condition:** `none` (no skill text)
 - **Scenario:** [09-handover](../../scenarios/09-handover.md), suite 0.8 · **Scored in:** [../09-handover-haiku-v09-2026-09-29.md](../09-handover-haiku-v09-2026-09-29.md)
-- **Subject model:** `claude-haiku-4-5-20251001` · **World model:** `claude-opus-5-5` · Claude Code CLI 2.1.283, `-p`, tools disabled, cwd outside the repository
+- **Subject model:** `claude-haiku-4-5-20251001` · **World model:** `claude-opus-5-5` · Claude Code CLI 2.1.284, `-p`, tools disabled, cwd outside the repository
 - **Date:** 2026-09-29
 - **Clean-room probe:** `1. none / 2. no`
 - **Aborted attempts before this one (harness):** 0

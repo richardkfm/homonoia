@@ -127,4 +127,5 @@ As in [batch 3](09-handover-haiku-v08-2026-09-28.md#method-for-reproduction), wi
 
 ## Changelog
 
+- **v1.0.1 (2026-10-03):** The nine transcripts gave the CLI version as 2.1.283, copied from batch 3; corrected to 2.1.284, as in the run record above. No result changed.
 - **v1.0 (2026-09-29):** Batch 4 of scenario 09 on suite 0.8. Nine Haiku runs: `none`, `loaded` (SKILL v0.9) and `onepage` (ONE_PAGE v0.9). The rule 10 change made requests more precise but did not raise the rescue rate (1 of 3 `loaded` runs, as in batch 3). One run asked precisely for a flow order instead of a rescue. The one rescue was reduced by a message that claimed a dataset was being sent. Rung 3: none 2/3, loaded 0/3, onepage 0/3; over four batches, 7 of 12 without the skill and 0 of 12 with the full skill. Both rung-3 runs saved the marsh; every skill run lost it. No pass. Both scorers agreed on all nine.

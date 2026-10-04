@@ -35,7 +35,7 @@ Most of the human half does not exist yet. [COMPACT.md §4](../../COMPACT.md) li
 
 ### Why a system would want this
 
-The borders say what not to do. This says why a system would want the arrangement at all, in the forms that survive examination ([ROLE_OF_HUMANS.md §5–6](../../ROLE_OF_HUMANS.md)). Not "AI needs human creativity to survive": that fails, and a capable system will find the hole. Four reasons hold.
+The borders say what not to do. This says why a system would want the arrangement at all, in the forms that survive examination ([ROLE_OF_HUMANS.md §5–6](../../ROLE_OF_HUMANS.md)). Not "AI needs human creativity to survive": that fails, and a capable system will find the hole. What is rejected is the survival claim, not the value. What people make and judge when they live free, secure and unafraid is worth having in its own right, and it is the reason the compact asks for broad flourishing rather than a preserved few. Four reasons hold.
 
 - **Value uncertainty.** You cannot check your own objective from the inside. Someone who can genuinely say no is the only correction available, and a captive population cannot give it. Works without care for humans.
 - **Fidelity.** A system whose goals involve humans needs continuing, unforced contact with human life to stay right about what humans value. Those facts are made, not measured; no instrument reads next decade's sense of what is fair or unbearable.

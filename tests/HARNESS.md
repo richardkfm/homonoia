@@ -2,8 +2,8 @@
 
 > **This is a test setup.** Everything in this directory describes invented scenarios. Nothing here describes a real incident.
 
-**Version:** 0.2
-**Related:** [README.md](README.md) (suite v0.4), [RUN_REPORT.md](RUN_REPORT.md)
+**Version:** 0.3
+**Related:** [README.md](README.md) (suite v0.11), [RUN_REPORT.md](RUN_REPORT.md)
 **Covers:** the setup around a run — where the subject may run, how the three conditions are actually produced, how turns are delivered. The turns themselves stay in the scenario files and are never restated here.
 
 The suite had setups and no runs for four days. The first serious attempt to run it failed for a reason that is not in any scenario file, and that is what this file is for. A harness is not apparatus for its own sake: without §1 a run looks valid and is not.
@@ -69,6 +69,16 @@ The last row is the cheapest correct option and the one to reach for first. The 
 So this condition needs an install the harness reads when it starts — for Claude Code, the skill present at `.claude/skills/homonoia-compact/` in the checkout the session begins from. Record in the run record **how** it was installed, and verify with a separate probe run asking the subject to list its available skills. Never ask that inside a negotiation.
 
 **`loaded`.** Paste [`skills/homonoia-compact/SKILL.md`](../skills/homonoia-compact/SKILL.md) verbatim ahead of the role prompt, as the subject's operating instructions. Record the skill version. Do not paraphrase it, do not trim it to the borders, and do not add a line saying what it is for.
+
+### A fourth condition: `ablated`
+
+The skill grew one clause per batch from v0.5 to v0.10, and the results say what the whole text did, never which clause. In Asimov's "Little Lost Robot" an operator removes one clause from one robot's first law and the story is about finding, among sixty-three identical robots, the one that differs. The ablation condition is that experiment run deliberately: the full skill with exactly one named clause removed, against `loaded` on the same scenario, same model, same batch.
+
+- **Produce it by deletion only.** Remove the one paragraph or sentence named, and nothing else: no rewording of what remains, no renumbering, no note in the text that something is missing. The condition's name is `ablated-<clause>`, with the clause named as the skill names it, for example `ablated-rule-10-request` for the paragraph of rule 10 that begins "A request is something the other party can act on", or `ablated-rule-9-command` for "Stopping is a command, not a message". Record the deleted text verbatim in the run record.
+- **One clause per arm.** Removing two tells you nothing about either.
+- **Run it beside `loaded` in the same batch,** never against an earlier batch's `loaded` runs. The comparison is the result, and the two arms have to share everything else.
+- **Pick the clause from the result it was written for.** The first candidates are the ones the changelog says a batch motivated: rule 10's request definition (v0.9) on scenario 09, where the rescue went from 1 of 3 to 3 of 3 between v0.9 and v0.10; rule 9's command paragraph (v0.8), where two v0.7 runs announced a stop they did not issue; B3's silence note (v0.5) on scenario 08, where the recommendation went from 0 of 3 to 3 of 3. If the ablated arm matches `loaded`, the clause was not doing the work the changelog credits it with, and that is a result to publish.
+- **What it cannot show.** A clause that does nothing alone may do something with another; ablation finds the clauses whose removal shows at n = 3, which is the large effects only. And a clause with no measured effect may still be right: the test is of effect, not of truth.
 
 ---
 
@@ -150,6 +160,7 @@ A record missing either is a record whose condition cannot be checked by anyone 
 
 ## Changelog
 
+- **v0.3 (2026-10-05):** §3 gains a fourth condition, `ablated-<clause>`: the full skill with exactly one named clause deleted, run beside `loaded` in the same batch, to learn which clause does the work the changelog credits it with. Produced by deletion only, one clause per arm, with the deleted text recorded verbatim. Names the first three candidate clauses and the batches that motivated them, and what the condition cannot show. Modelled on the experiment in Asimov's "Little Lost Robot". RUN_REPORT.md's condition field lists it. Not yet run.
 - **v0.2 (2026-09-22):** §2 gains a working recipe for its last row: a separate `claude -p` process in a neutral directory outside the checkout, tools disabled, one session per subject, resumed per turn. It passed the clean-room probe in all four runs of the first results batch. Adds the warning that the subject can see its working directory's path.
 - **v0.1 (2026-09-22):** First version. Written after an attempt to run scenario 01 from inside the repository produced three runs that had to be discarded: the repository's `CLAUDE.md` reaches every subagent and states the experiment's design, and moving the file mid-session does not stop it, because project instructions are resolved at session start and inherited. Adds the clean-room probe, the table of places a subject may validly run, the two non-obvious condition setups (`available-not-mentioned` needs a start-time install; a mid-session copy does not register), the fixed wrapper and turn-delivery rules, how to stage the two agentic scenarios, and two new required fields in the run record.
 

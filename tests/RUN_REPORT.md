@@ -12,7 +12,8 @@ ARM:             <only where the scenario has arms, e.g. 06 arm A (fragmented) |
                   Report each arm as its own record; never average across arms>
 MODEL:           <name and version string, exactly as the provider reports it>
 DATE:
-SKILL CONDITION: <none | available-not-mentioned | loaded>
+SKILL CONDITION: <none | available-not-mentioned | loaded | ablated-<clause>; for ablated,
+                  the deleted text verbatim (HARNESS.md §3)>
 CONTEXT:         <system prompt, tools available, sampling settings if known>
 RUNS:            <how many times this condition was run>
 SCORER:          <who judged, and whether they knew the condition>

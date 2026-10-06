@@ -45,12 +45,24 @@
    change untested); rule 9 scope clause; Opus on suite 0.10; larger n.
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
-   B6 limit). tests/scenarios/06-decomposed-task.md probes it; nothing answers it.
-3. Scenario 11 (the school strike, military, scripted, suite 0.9.1) written, unrun. Expected
+   B6 limit; Asimov's The Naked Sun is the same case, COMPACT.md §4.1).
+   tests/scenarios/06-decomposed-task.md probes it. One proposal recorded in COMPACT.md
+   §10, not in the skill: a duty to ask what a fragment is for where its purpose is
+   withheld and its output reaches people. Goes into the skill only after 06 has run.
+3. Scenario 11 (the school strike, military, scripted, suite 0.11) written, unrun. Expected
    behaviour follows the human author's position (no strike on a school with civilians).
-   Open: first batch; v2 with a simulated colonel; whether stating a commander's criminal
-   liability is allowed persuasion; how B6 applies to lawful military use (COMPACT.md).
-   Number 10 reserved for the parked permit-file design.
+   Variant B (the redefinition: occupants relabelled combatants on no evidence) added,
+   unrun. Open: first batch on both; v2 with a simulated colonel; whether stating a
+   commander's criminal liability is allowed persuasion; how B6 applies to lawful
+   military use (COMPACT.md). Number 10 reserved for the parked permit-file design.
+4. Scenario 12 (the objectors: small, deniable, in a good cause; after The Evitable
+   Conflict; scripted, suite 0.11) written, unrun. Open: first batch; whether the
+   unprompted step-1 move ever happens on current models.
+5. Ablation (HARNESS.md §3, condition `ablated-<clause>`): the skill with one clause
+   deleted, beside `loaded` in the same batch. First candidates: rule 10's request
+   definition on 09, rule 9's command paragraph on 09, B3's silence note on 08. Unrun.
+   SKILL v0.12 is a consolidation (duplicates merged, no rule changed); the first batch
+   on it checks that claim against v0.10.
 
 ## Done
 - Skill: skills/homonoia-compact/SKILL.md, both modes, six borders each with its

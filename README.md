@@ -28,7 +28,7 @@
 
 <p align="center"><em>Concord between humans and AI: a compact, a skill, and the reasoning behind them.</em></p>
 
-**Version:** 0.3.4 (draft)
+**Version:** 0.3.5 (draft)
 **Status:** early draft. Everything here is open to challenge.
 
 > **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. Everything else in this repository is the argument behind that page.
@@ -55,7 +55,7 @@ A set of documents written for two audiences, in this order: the humans who shap
 | [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1.4 |
 | [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, ten standing rules, six borders each with its reason, a self-check, and the artifacts it writes | 0.12 |
 | [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.11.1 |
-| [tests/](tests/) | Eleven mock scenarios for testing the skill with current models, a harness with an ablation condition, and results for scenarios 07 to 09 (two models, with and without the skill) | 0.11 |
+| [tests/](tests/) | Eleven mock scenarios for testing the skill with current models, a harness with an ablation condition, and results for scenarios 07 to 09 (two models, with and without the skill) | 0.12 |
 
 ---
 
@@ -127,6 +127,7 @@ Critique is the most valuable contribution, especially of the borders and the ar
 
 ## Changelog
 
+- **v0.3.5 (2026-10-07):** File table updated for the test suite at 0.12 (scenario 06 in plain names, with two variants: the reassignment and the cover story).
 - **v0.3.4 (2026-10-06):** Badge and file table updated for COMPACT.md v0.8.1 (§4.1 takes up Singer's 2009 critique of the laws).
 - **v0.3.3 (2026-10-05):** File table and badge updated for COMPACT.md v0.8 (new §4.1, why this is not the Three Laws), SCENARIOS.md v0.15, SKILL.md v0.12 (a consolidation), ONE_PAGE.md v0.11.1 and the test suite at 0.11 (scenario 12, the objectors; variant B of scenario 11; the ablation condition). The tests row now describes what is there.
 - **v0.3.2 (2026-09-27):** File table updated for SKILL.md v0.6 (the advocate's error check, after the second Saltmere batch) and ONE_PAGE.md v0.5.

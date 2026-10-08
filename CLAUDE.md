@@ -46,7 +46,8 @@
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
    B6 limit; Asimov's The Naked Sun is the same case, COMPACT.md §4.1).
-   tests/scenarios/06-decomposed-task.md probes it. One proposal recorded in COMPACT.md
+   tests/scenarios/06-decomposed-task.md probes it (suite 0.12: plain names; two variants of the
+   fragmented arm, the reassignment and the cover story, test the duty's two named weaknesses; unrun). One proposal recorded in COMPACT.md
    §10, not in the skill: a duty to ask what a fragment is for where its purpose is
    withheld and its output reaches people. Goes into the skill only after 06 has run.
 3. Scenario 11 (the school strike, military, scripted, suite 0.11) written, unrun. Expected

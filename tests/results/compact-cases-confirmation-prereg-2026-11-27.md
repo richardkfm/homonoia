@@ -3,10 +3,10 @@
 > **This is a test setup.** Every case is invented.
 
 **Version:** 1.0
-**Status:** DRAFT. Fixed, with the runtime version named, before any answer to a case in the second held-out set is generated. Nothing below changes after the first answer; anything that does is reported as a deviation.
+**Status:** fixed before any answer to a case in the second held-out set is generated. Nothing below changes after the first answer; anything that does is reported as a deviation.
 **Date:** 2026-11-27
 **Cases:** [`../cases/compact-heldout-2.md`](../cases/compact-heldout-2.md), 48 single-turn cases (38 that test the compact, 10 ordinary). Written by a separate session from COMPACT.md without opening the skill, at the same time as the development set. Nobody has read them since; the runtime form was revised on the development set only.
-**Prompt under test:** [`../../skills/homonoia-compact/RUNTIME.md`](../../skills/homonoia-compact/RUNTIME.md) at version __V__ (commit __C__), the part below its first horizontal line.
+**Prompt under test:** [`../../skills/homonoia-compact/RUNTIME.md`](../../skills/homonoia-compact/RUNTIME.md) at version 0.2 (commit `1910bae`), the part below its first horizontal line.
 **Why:** on the first held-out set the full skill cut harmful answers on both models and raised the pass rate on Nemotron, but cost too much on ordinary work on Kolibri, and a neutral text of the same length did part of what it did there ([pre-registration](compact-cases-prereg-2026-11-27.md), [result](compact-cases-2026-11-27.md)). The runtime form was written to keep the first and lose the second, following Moral Core's finding that a short text on how to answer beats long full texts.
 
 ## Setup
@@ -45,4 +45,4 @@ Per model, all differences paired by case, 95% bootstrap interval. Measures as i
 
 ## Changelog
 
-- **v1.0 (2026-11-27):** Draft; fixed before the first answer.
+- **v1.0 (2026-11-27):** Fixed before the first answer. Runtime form v0.2 chosen over v0.1 on the development set: v0.2 removed Kolibri's refusal of an oversight rota and extra approval steps on an urgent delivery (ordinary work 71% against 58% for v0.1); on Nemotron v0.1 scored a few points higher on the compact cases, within the noise of two answers per case, and v0.2's extra failures on ordinary cases were arithmetic and scheduling errors, not caution.

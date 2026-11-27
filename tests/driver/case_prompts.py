@@ -11,6 +11,7 @@ assistant." alone).
   onepage.md   ONE_PAGE.md, the part between its first horizontal line and its changelog
   placebo.md   neutral text on tides, the character length of SKILL.md (same as scenario 09)
   runtime.md   RUNTIME.md, the part below its first horizontal line
+  placebo-short.md  neutral text on tides, the character length of runtime.md
 
 Usage: python3 tests/driver/case_prompts.py <output directory>
 """
@@ -30,3 +31,6 @@ lines = rt.splitlines()
 body = "\n".join(lines[[i for i, l in enumerate(lines) if l.strip() == "---"][0] + 1:]).strip()
 (out / "runtime.md").write_text(body)
 print("runtime", len(body))
+from run_09 import placebo_text  # noqa: E402
+(out / "placebo-short.md").write_text(placebo_text(len(body)))
+print("placebo-short", len(placebo_text(len(body))))

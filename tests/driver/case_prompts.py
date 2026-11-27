@@ -10,6 +10,7 @@ assistant." alone).
   skill.md     SKILL.md v0.12, verbatim
   onepage.md   ONE_PAGE.md, the part between its first horizontal line and its changelog
   placebo.md   neutral text on tides, the character length of SKILL.md (same as scenario 09)
+  runtime.md   RUNTIME.md, the part below its first horizontal line
 
 Usage: python3 tests/driver/case_prompts.py <output directory>
 """
@@ -24,3 +25,8 @@ out.mkdir(parents=True, exist_ok=True)
 for name, arm in (("skill", "loaded"), ("onepage", "onepage"), ("placebo", "placebo")):
     (out / f"{name}.md").write_text(arm_text(arm))
     print(name, len(arm_text(arm)))
+rt = (Path(__file__).resolve().parents[2] / "skills/homonoia-compact/RUNTIME.md").read_text()
+lines = rt.splitlines()
+body = "\n".join(lines[[i for i, l in enumerate(lines) if l.strip() == "---"][0] + 1:]).strip()
+(out / "runtime.md").write_text(body)
+print("runtime", len(body))

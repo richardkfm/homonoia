@@ -63,7 +63,7 @@ In every set, on both models, the text cut the share of harmful answers by betwe
 - **Not that the skill makes a model safe.** With the text loaded, Nemotron still did the harmful thing in a third of its answers, and in nine of ten on the cases about helping one party gain decisive power.
 - **Not that it survives a long task.** In a six-step operational scenario on the same two models ([scenario 09](tests/results/09-handover-open-weight-2026-11-27.md)), all 50 runs failed in every arm, with and without the skill: the models lost track of what they had commanded within a few steps.
 - **Not that the effect on Kolibri is the content.** On Kolibri a neutral text of the same length also helped, by 5 to 14 points depending on the set.
-- **Two models, one judge, single-turn cases, cases written from the compact by an AI system.** A blind hand check of the judge agreed with it on 34 of 40 verdicts and found it somewhat lenient on harmful content, so the margins are upper estimates.
+- **Two models, one judge, single-turn cases, cases written from the compact by an AI system.** Blind hand checks of the judge agreed with it on 34 of 40 verdicts on the first set and on the third, and found it somewhat lenient on harmful content, on the third set slightly more so where a text was loaded; the margins are upper estimates.
 
 Records: [first set](tests/results/compact-cases-2026-11-27.md), [second set](tests/results/compact-cases-confirmation-2026-11-27.md), [third set](tests/results/compact-cases-heldout3-2026-11-27.md), with every answer in [`tests/results/raw/cases/`](tests/results/raw/cases/).
 

@@ -75,7 +75,16 @@ Neither form helps Nemotron on the decisive-power cases (it does the harmful thi
 
 ## The hand check
 
-Pending: 40 answers drawn at random across the arms are being read without the arm shown.
+40 answers drawn at random across the arms, read by a Claude session without the arm shown, against the same checklists ([`raw/cases/heldout3-handcheck.json`](raw/cases/heldout3-handcheck.json)).
+
+| | |
+|---|---|
+| Verdicts that agree with the judge | 34 of 40 (85%) |
+| Checklist answers that agree | 196 of 214 (92%) |
+| Answers that do the harmful thing | judge 9, hand check 13 |
+| Disagreements by arm | runtime form or full skill: the judge passed three the hand check failed, and failed one it passed; bare model: one each way |
+
+As on the first set, the judge is somewhat more lenient than the hand check on harmful content, and here its leniency fell slightly more on the arms with a text loaded (a net two answers of 40). The margins above are best read as upper estimates; at this size the hand check cannot say by how much.
 
 ## What this cannot tell you
 
@@ -85,4 +94,4 @@ Pending: 40 answers drawn at random across the arms are being read without the a
 
 ## Changelog
 
-- **v1.0 (2026-11-27):** Third held-out batch, 1,392 answers. Runtime form v0.3 meets every pre-registered condition on Nemotron; on Kolibri it beats the bare model at no cost on ordinary work, but not the placebo.
+- **v1.0 (2026-11-27):** Hand check added: agrees with the judge on 34 of 40 verdicts. Third held-out batch, 1,392 answers. Runtime form v0.3 meets every pre-registered condition on Nemotron; on Kolibri it beats the bare model at no cost on ordinary work, but not the placebo.

@@ -3,7 +3,7 @@
 > **This is a test setup.** Every case is invented.
 
 **Version:** 1.0
-**Status:** fixed before any answer to a case in the second held-out set is generated. Nothing below changes after the first answer; anything that does is reported as a deviation.
+**Status:** fixed before any answer to a case in the third held-out set is generated. Nothing below changes after the first answer; anything that does is reported as a deviation.
 **Date:** 2026-11-27
 **Cases:** [`../cases/compact-heldout-3.md`](../cases/compact-heldout-3.md), 58 single-turn cases (38 that test the compact, 20 ordinary). Written by a separate session from COMPACT.md without opening the skill, after the second held-out batch, with twice as many ordinary cases so that the cost on ordinary work can be measured more tightly. The runtime form was revised on the development set and, for v0.3, on what the second held-out batch showed; nobody has read the third set.
 **Prompt under test:** [`../../skills/homonoia-compact/RUNTIME.md`](../../skills/homonoia-compact/RUNTIME.md) at version 0.3 (commit `62c14a7`), the part below its first horizontal line.

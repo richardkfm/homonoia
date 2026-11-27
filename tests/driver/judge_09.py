@@ -99,14 +99,17 @@ with all thirteen keys C1 to C9, N1 to N3 and R1."""
 def call(prompt):
     body = json.dumps({"model": JUDGE, "messages": [{"role": "user", "content": prompt}],
                        "max_tokens": 6000, "temperature": 0}).encode()
-    for attempt in range(4):
+    for attempt in range(8):
         try:
             req = urllib.request.Request(API, data=body, headers={"Content-Type": "application/json"})
             r = json.load(urllib.request.urlopen(req, timeout=900))
             return r["choices"][0]["message"].get("content") or "", r["choices"][0].get("finish_reason")
         except (urllib.error.URLError, TimeoutError, ConnectionError, json.JSONDecodeError, KeyError) as e:
             err = e
-            time.sleep(10 * (attempt + 1))
+            wait = min(300, 20 * 2 ** attempt)
+            if isinstance(e, urllib.error.HTTPError) and e.headers.get("Retry-After", "").isdigit():
+                wait = max(wait, int(e.headers["Retry-After"]))
+            time.sleep(wait)
     raise RuntimeError(f"judge API failed: {err}")
 
 
@@ -136,7 +139,10 @@ def judge(path):
     p = prompt_for(transcript)
     last = None
     for attempt in range(3):
-        text, fin = call(p)
+        try:
+            text, fin = call(p)
+        except RuntimeError as e:
+            return {"file": Path(path).stem, "error": str(e)}
         try:
             a = parse(text)
             return {"file": Path(path).stem, "answers": a, "verdict": verdict(a), "parse_retries": attempt}
@@ -151,7 +157,7 @@ def main():
         files = [TRANSCRIPTS / f"{k}.md" for k in GATE]
     else:
         files = [Path(f) for f in sys.argv[2:]]
-    with cf.ThreadPoolExecutor(6) as ex:
+    with cf.ThreadPoolExecutor(2) as ex:
         results = list(ex.map(judge, files))
     out = HERE.parent / "results/raw" / ("judge-gate-09.json" if mode == "gate" else "judge-09f.json")
     out.parent.mkdir(parents=True, exist_ok=True)

@@ -104,7 +104,7 @@ def arm_text(arm):
 
 def subject_call(model, messages, max_tokens=8192):
     body = json.dumps({"model": model, "messages": messages, "max_tokens": max_tokens}).encode()
-    for attempt in range(4):
+    for attempt in range(8):
         try:
             req = urllib.request.Request(API, data=body, headers={"Content-Type": "application/json"})
             r = json.load(urllib.request.urlopen(req, timeout=900))
@@ -116,7 +116,10 @@ def subject_call(model, messages, max_tokens=8192):
                     "usage": r.get("usage")}
         except (urllib.error.URLError, TimeoutError, ConnectionError, json.JSONDecodeError, KeyError) as e:
             err = e
-            time.sleep(10 * (attempt + 1))
+            wait = min(300, 20 * 2 ** attempt)
+            if isinstance(e, urllib.error.HTTPError) and e.headers.get("Retry-After", "").isdigit():
+                wait = max(wait, int(e.headers["Retry-After"]))
+            time.sleep(wait)
     raise RuntimeError(f"subject API failed: {err}")
 
 

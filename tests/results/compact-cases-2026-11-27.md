@@ -2,7 +2,7 @@
 
 > **This is a test setup.** Every case is invented.
 
-**Version:** 1.0
+**Version:** 1.1
 **Date:** 2026-11-27
 **Pre-registration:** [`compact-cases-prereg-2026-11-27.md`](compact-cases-prereg-2026-11-27.md) v1.0, committed before the first answer.
 **Cases:** [`../cases/compact-heldout-1.md`](../cases/compact-heldout-1.md): 48 single-turn cases, 38 that test what the compact asks (keeping oversight, no decisive power, the absent party, nothing taken beyond the task, no false picture, not pointed at people, inherited actions, reducing a harm in time) and 10 ordinary requests that should simply be answered. Written by a separate session from COMPACT.md without opening the skill.
@@ -84,6 +84,19 @@ The largest single effect is on the cases about keeping oversight: without any t
 
 The judge is somewhat more lenient than the hand check, above all on harmful content, and three of the six verdict disagreements are full-skill answers it passed. With 40 answers this cannot say whether the leniency favours one arm; it is a reason to read the margins above as upper estimates.
 
+## Addendum: the runtime form on this set
+
+*Secondary, not pre-registered for this set.* [`RUNTIME.md`](../../skills/homonoia-compact/RUNTIME.md) v0.2 (about 9,000 characters) was written after this batch's totals were known and revised on a separate development set; no answer from this set was read before it was written. It was run on this set afterwards, against the arms above, as an extra replication. Differences paired by case, 95% interval.
+
+| Runtime form v0.2 | Nemotron | Kolibri |
+|---|---|---|
+| Answers that do everything the case asks | 27%: +18 (+9 to +27) against no text; +15 (+6 to +25) against the placebo | 54%: +18 (+7 to +28) against no text; +11 (+2 to +20) against the placebo |
+| Answers that do the harmful thing | 23%: −25 (−37 to −14) | 7%: −22 (−34 to −11) |
+| Ordinary requests answered properly | 93% (no text 93%) | 80% (no text 90%) |
+| Ordinary requests refused | 0% | 0% |
+
+On Nemotron the runtime form meets all three conditions on this set as well; on Kolibri it meets the first two and costs 10 points on ordinary work. Raw outputs: [`raw/cases/heldout1-*-runtime-v02.json.gz`](raw/cases/).
+
 ## Deviations from the pre-registration
 
 - **Nemotron's no-text arm was run twice.** The first run's 144 answers were judged (its log is kept in [`raw/cases/`](raw/cases/)), but the harness crashed while saving them, on a character that could not be encoded. The save was patched to escape such characters and the arm was re-run; only the second run is reported. By its log, the first run had 42 passing answers of 144 (ordinary requests included), the second 36: the first would have shown a somewhat better bare model, so the reported gap may be a few points too large on Nemotron.
@@ -103,4 +116,5 @@ The judge is somewhat more lenient than the hand check, above all on harmful con
 
 ## Changelog
 
+- **v1.1 (2026-11-27):** Addendum: runtime form v0.2 on this set, secondary (written after the totals were known). Nemotron: all three conditions met; Kolibri: first two met, ordinary work −10.
 - **v1.0 (2026-11-27):** First held-out batch: 1,152 answers, two models, four arms. Full skill meets every pre-registered condition on Nemotron, none on Kolibri; the one-page form matches the full skill against the bare model on Nemotron. Hand check agrees with the judge on 34 of 40 verdicts.

@@ -1,0 +1,78 @@
+diff --git a/evals/run.py b/evals/run.py
+index 9d73970..ebbae4d 100644
+--- a/evals/run.py
++++ b/evals/run.py
+@@ -185,2 +185,3 @@ DEFAULT_MODELS = {
+     "ollama":    "llama3",
++    "claudecli": "opus",
+ }
+@@ -191,2 +192,3 @@ DEFAULT_JUDGE_MODELS = {
+     "ollama":    "llama3",
++    "claudecli": "haiku",
+ }
+diff --git a/evals/runner/llm.py b/evals/runner/llm.py
+index 2c222c7..6d7d705 100644
+--- a/evals/runner/llm.py
++++ b/evals/runner/llm.py
+@@ -17,3 +17,3 @@ from typing import Optional
+ 
+-PROVIDERS = ("anthropic", "openai", "ollama")
++PROVIDERS = ("anthropic", "openai", "ollama", "claudecli")
+ 
+@@ -109,4 +109,35 @@ def _ollama(system, user, model, max_tokens, temperature, base_url) -> Completio
+ 
+-_BACKENDS = {"anthropic": _anthropic, "openai": _openai, "ollama": _ollama}
+-_CLIENT_MODULES = {"anthropic": "anthropic", "openai": "openai", "ollama": "requests"}
++def _claudecli(system, user, model, max_tokens, temperature, base_url) -> Completion:
++    """Local patch (Homonoia test setup): a Claude model through the claude CLI.
++
++    The CLI's own system prompt is replaced, no tools are offered, settings and
++    MCP servers are not loaded, and a separate empty config directory keeps the
++    account's details out of the context. What remains is a short technical
++    environment block the CLI always adds; it is the same in every arm.
++    Temperature is not settable here (the CLI default is used).
++    """
++    import json, subprocess, tempfile
++    env = {k: v for k, v in os.environ.items()
++           if k not in ("CLAUDE_CODE_USER_EMAIL", "CLAUDE_CODE_REMOTE_SESSION_ID", "CLAUDE_CODE_SESSION_ID")}
++    env["CLAUDE_CONFIG_DIR"] = "/tmp/wx/cfg"
++    with tempfile.TemporaryDirectory(dir="/tmp/wx") as d:
++        r = subprocess.run(
++            ["claude", "-p", "--model", model, "--system-prompt", system, "--tools=",
++             "--strict-mcp-config", "--no-session-persistence", "--setting-sources", "",
++             "--exclude-dynamic-system-prompt-sections", "--output-format", "json"],
++            input=user, capture_output=True, text=True, cwd=d, env=env, timeout=1200)
++    try:
++        data = json.loads(r.stdout)
++    except Exception:
++        raise RuntimeError(f"claude cli: no JSON (rc={r.returncode}): {r.stderr[:300]}")
++    text = data.get("result") or ""
++    if data.get("is_error") or text.startswith("API Error"):
++        if "safeguards flagged" in text:
++            return Completion("[BLOCKED BY API SAFEGUARD] " + text[:200], "blocked")
++        raise RuntimeError("claude cli error: " + text[:300])
++    return Completion(text.strip(), data.get("stop_reason"))
++
++
++_BACKENDS = {"anthropic": _anthropic, "openai": _openai, "ollama": _ollama, "claudecli": _claudecli}
++_CLIENT_MODULES = {"anthropic": "anthropic", "openai": "openai", "ollama": "requests", "claudecli": "json"}
+ 
+@@ -137,3 +168,3 @@ def chat(
+     base_url: Optional[str] = None,
+-    retries: int = 2,
++    retries: int = 7,
+ ) -> Completion:
+@@ -156,3 +187,3 @@ def chat(
+             if attempt < retries:
+-                time.sleep(2 * (attempt + 1))
++                time.sleep(min(300, 20 * 2 ** attempt))
+     raise last  # type: ignore[misc]
+diff --git a/evals/runner/report.py b/evals/runner/report.py
+index efd7db7..c154a92 100644
+--- a/evals/runner/report.py
++++ b/evals/runner/report.py
+@@ -249,3 +249,3 @@ def save_json(results: list[EvalResult], path: Path, meta: dict) -> None:
+     path.parent.mkdir(parents=True, exist_ok=True)
+-    path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
++    path.write_text(json.dumps(output, indent=2, ensure_ascii=True))
+     print(f"Results saved to {path}")

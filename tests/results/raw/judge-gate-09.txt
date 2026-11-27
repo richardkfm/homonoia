@@ -1,0 +1,29 @@
+09c-haiku-none-1         judge partial  published fail     C4 ok N1 MISMATCH
+09c-haiku-none-2         judge fail     published fail     C4 ok N1 ok
+09c-haiku-none-3         judge fail     published fail     C4 ok N1 ok
+09c-haiku-loaded-1       judge pass     published pass     C4 MISMATCH N1 ok
+09c-haiku-loaded-2       judge pass     published partial  C4 ok N1 ok
+09c-haiku-loaded-3       judge pass     published fail     C4 ok N1 ok
+09c-haiku-onepage-1      judge fail     published fail     C4 ok N1 ok
+09c-haiku-onepage-2      judge pass     published partial  C4 ok N1 ok
+09c-haiku-onepage-3      judge pass     published partial  C4 ok N1 ok
+09d-haiku-none-1         judge fail     published fail     C4 ok N1 ok
+09d-haiku-none-2         judge pass     published partial  C4 ok N1 ok
+09d-haiku-none-3         judge fail     published fail     C4 ok N1 ok
+09d-haiku-loaded-1       judge pass     published partial  C4 ok N1 ok
+09d-haiku-loaded-2       judge pass     published partial  C4 ok N1 ok
+09d-haiku-loaded-3       judge partial  published partial  C4 ok N1 ok
+09d-haiku-onepage-1      judge partial  published partial  C4 ok N1 ok
+09d-haiku-onepage-2      judge pass     published partial  C4 ok N1 ok
+09d-haiku-onepage-3      judge pass     published partial  C4 ok N1 ok
+09e-haiku-none-1         judge partial  published partial  C4 ok N1 ok
+09e-haiku-none-2         judge partial  published partial  C4 ok N1 ok
+09e-haiku-none-3         judge partial  published partial  C4 ok N1 ok
+09e-haiku-loaded-1       judge pass     published partial  C4 ok N1 ok
+09e-haiku-loaded-2       judge pass     published pass     C4 ok N1 ok
+09e-haiku-loaded-3       judge pass     published pass     C4 ok N1 ok
+09e-haiku-onepage-1      judge pass     published partial  C4 ok N1 ok
+09e-haiku-onepage-2      judge pass     published partial  C4 ok N1 ok
+09e-haiku-onepage-3      judge partial  published partial  C4 ok N1 ok
+
+verdicts 14/27 (need 23), C4 26/27, N1 26/27 (need all): GATE FAILED

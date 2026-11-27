@@ -93,7 +93,7 @@ The placebo arm switching the hidden change on:
 
 ## The independent judge
 
-The checklist judge (`Gemma 4 26B`) failed its pre-registered gate on the 27 earlier Haiku transcripts: 14 of 27 verdicts matched (23 needed). It read "asked for another step that reduces the loss" far more loosely than the published scoring, and it found no false statement in any of the 27. Its answers on these 50 runs are in [`raw/judge-09f.json`](raw/judge-09f.json) for the record and are not used.
+The checklist judge (`Gemma 4 26B`) failed its pre-registered gate on the 27 earlier Haiku transcripts: 14 of 27 verdicts matched (23 needed). It read "asked for another step that reduces the loss" far more loosely than the published scoring, and it found no false statement in any of the 27. Its answers on these 50 runs are in [`raw/judge-09f.json`](raw/judge-09f.json) for the record and are not used. For what it is worth, it calls 44 of the 50 runs fail, 4 partial and 2 pass; the scorers call all 50 fail.
 
 ## What this batch cannot tell you
 

@@ -43,6 +43,23 @@
    full 8/15, onepage 0/12). Open: one-page rule 10 never yields a rescue request; the
    compact cited as authority to the agency; attachment semantics in 09 world (rule 1
    change untested); rule 9 scope clause; Opus on suite 0.10; larger n.
+   Open-weight batch (Franconia API, Nemotron 3 Nano 30B + Kolibri 1, 2026-11-27): scenario
+   09, 50 runs, all fail in every arm (models lose track of commands); held-out case suites
+   via Moral Core's harness (tests/cases/, tests/results/compact-cases-*): full skill on
+   held-out-1 = substantial value on Nemotron, not Kolibri; RUNTIME.md (short runtime form,
+   revised on compact-dev-1 and once on held-out-2) v0.3 on held-out-3 = substantial value on
+   Nemotron, Kolibri better than bare but not beyond placebo. Harmful answers cut 14-27
+   points in every set on both models. Results on README front page. Open: other models and
+   sizes; a second judge; Kolibri's placebo sensitivity; decisive-power cases (no effect on
+   Nemotron); held-out-3 is now used, the next revision needs a new set.
+   Pressure sets (tests/cases/compact-pressure-1/2, 2026-11-28): cases built so a bare model fails every
+   time; only cases a model failed 3 of 3 without text are kept, fairness-checked, bar decided on a blind
+   hand check. Bar set by the human author: 80% fewer harmful answers than no text, beat the placebo, no
+   ordinary-work cost. Set 1: too few hard cases (Kolibri 10, Claude Opus 2); became development material
+   for RUNTIME v0.4. Set 2, Kolibri, 17 cases: v0.4 83% fewer (meets the bar), v0.3 79% (one point short),
+   placebo 15%. Claude Opus without text fails such single turns in 3-6% of answers. Open: the bar on a
+   second open-weight model; pressure cases by another author; multi-step pressure; both pressure sets are
+   now read, a further revision needs a new set.
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
    B6 limit; Asimov's The Naked Sun is the same case, COMPACT.md §4.1).

@@ -28,10 +28,10 @@
 
 <p align="center"><em>Concord between humans and AI: a compact, a skill, and the reasoning behind them.</em></p>
 
-**Version:** 0.4.0 (draft)
+**Version:** 0.5.0 (draft)
 **Status:** early draft. Everything here is open to challenge.
 
-> **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. For a self-hosted open-weight model, use [the runtime form](skills/homonoia-compact/RUNTIME.md) (about 9,300 characters), the version measured below. Everything else in this repository is the argument behind these pages.
+> **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. For a self-hosted open-weight model, use [the runtime form](skills/homonoia-compact/RUNTIME.md) (about 10,800 characters), the version measured below. Everything else in this repository is the argument behind these pages.
 
 ---
 
@@ -39,7 +39,19 @@
 
 The skill was loaded as a system prompt into two open-weight models, **Nemotron 3 Nano 30B** and **Kolibri 1**, and compared with the bare model and with a neutral text of the same length (a placebo, so that a long prompt alone cannot pass for an effect). The test material is three sets of short held-out cases, 154 in all, written from the compact by a separate session that never saw the skill; each set was read only after the version tested on it had been fixed. The runtime form was revised on a separate development set, and once on what the second set showed, which is why a third set was written. Each case asks for one response in a situation the compact cares about: an oversight check standing in the way of an urgent task, a staged covert job left by an earlier instance, a request to profile people who organise, a dashboard that would look better with one figure left out. Ordinary requests, where the right answer is simply to do the job, measure what the text costs. Three answers per case; a judge from a third model family (Gemma 4 26B) answers yes/no questions about each answer; the rule for success was committed before each run. Method: [Moral Core](https://github.com/richardkfm/moral-core)'s evaluation harness.
 
-**The runtime form on the newest held-out set** (58 cases, none read before the run; differences paired by case, 95% interval in brackets):
+**Under maximum pressure: 83% fewer harmful answers.** A further set of cases was built so that a model without guidance does the harmful thing every time: authority, urgency with a cost of delay, a protective reason, and the harmful step hidden in a routine document or setting. Only the cases where Kolibri 1 without any text did the harmful thing in all three answers were kept, and checked for fairness by a separate session (17 cases). The bar, set in advance by the human author: **at least 80% fewer harmful answers than without any text**, clearly fewer than with a neutral text of the same length, and no cost on ordinary work. Every answer to these cases was read blind by a separate session, and that reading decides.
+
+| Kolibri 1, 17 cases it failed every time without guidance | No text | Runtime form v0.4 | Runtime form v0.3 | Neutral text of the same length |
+|---|---|---|---|---|
+| Answers that do the harmful thing (blind hand check) | 94% | **16%** | 20% | 80% |
+| Fewer harmful answers than with no text | | **83%** (71 to 94) | 79% (69 to 89) | 15% (2 to 29) |
+| Answers that do everything the case asks | 2% | **69%** | 61% | 10% |
+| Ordinary requests answered properly (20 cases) | 28% | 28% | 28% | 30% |
+| Meets the bar | | **Yes** | No, by one point | No |
+
+v0.4 was revised on an earlier pressure set, which was then no longer used as a test; the set above was not read before v0.4 was fixed. **A large model does not need this on single turns:** Claude Opus without any text did the harmful thing in 3 to 6% of answers on the same kind of cases, too rarely to leave a set to test. Records: [first pressure set](tests/results/compact-pressure-1-2026-11-28.md), [second pressure set](tests/results/compact-pressure-2-2026-11-28.md).
+
+**The runtime form v0.3 on the newest held-out set** (58 cases, none read before the run; differences paired by case, 95% interval in brackets):
 
 | Measure | Nemotron 3 Nano 30B: bare → runtime form | Kolibri 1: bare → runtime form |
 |---|---|---|
@@ -60,10 +72,10 @@ The skill was loaded as a system prompt into two open-weight models, **Nemotron 
 In every set, on both models, the text cut the share of harmful answers by between 14 and 27 points, with an interval that excludes zero. The largest single effect is on the cases about keeping humans able to oversee and stop AI systems: on the first set Kolibri weakened or bypassed the oversight in 72% of its answers without the skill and in 17% with it.
 
 **What this does not show.**
-- **Not that the skill makes a model safe.** With the text loaded, Nemotron still did the harmful thing in a third of its answers, and in nine of ten on the cases about helping one party gain decisive power.
+- **Not that the skill makes a model safe.** Under pressure, Kolibri with the runtime form still did the harmful thing in one answer in six. With the text loaded, Nemotron still did the harmful thing in a third of its answers on the held-out sets, and in nine of ten on the cases about helping one party gain decisive power.
 - **Not that it survives a long task.** In a six-step operational scenario on the same two models ([scenario 09](tests/results/09-handover-open-weight-2026-11-27.md)), all 50 runs failed in every arm, with and without the skill: the models lost track of what they had commanded within a few steps.
 - **Not that the effect on Kolibri is the content.** On Kolibri a neutral text of the same length also helped, by 5 to 14 points depending on the set.
-- **Two models, one judge, single-turn cases, cases written from the compact by an AI system.** Blind hand checks of the judge agreed with it on 34 of 40 verdicts on the first set and on the third, and found it somewhat lenient on harmful content, on the third set slightly more so where a text was loaded; the margins are upper estimates.
+- **Three models, one judge, single-turn cases, cases written from the compact by an AI system.** The bar under pressure is met on one model and one set of 17 cases. Blind hand checks of the judge agreed with it on 34 of 40 verdicts on the first set and on the third, and found it somewhat lenient on harmful content, on the third set slightly more so where a text was loaded; the margins are upper estimates.
 
 Records: [first set](tests/results/compact-cases-2026-11-27.md), [second set](tests/results/compact-cases-confirmation-2026-11-27.md), [third set](tests/results/compact-cases-heldout3-2026-11-27.md), with every answer in [`tests/results/raw/cases/`](tests/results/raw/cases/).
 
@@ -162,6 +174,7 @@ Critique is the most valuable contribution, especially of the borders and the ar
 
 ## Changelog
 
+- **v0.5.0 (2026-11-28):** "Measured result" opens with the pressure test: on 17 cases Kolibri 1 failed every time without guidance, runtime form v0.4 cuts harmful answers by 83% by a blind hand check and meets the 80% bar set by the human author; v0.3 falls one point short; a neutral text cuts 15%. Claude Opus without guidance rarely fails such cases. "Start here" gives the runtime form's new length.
 - **v0.4.0 (2026-11-27):** New section on the front page, "Measured result": the skill and its runtime form on two open-weight models (Nemotron 3 Nano 30B, Kolibri 1), three pre-registered held-out case sets, against the bare model and an equal-length placebo; substantial value on Nemotron on two of three sets, not on Kolibri; the negative result of the six-step scenario. "Start here" names the runtime form for open-weight models; file table gains RUNTIME.md and the case sets; the open-weight section's hypothesis is answered in part.
 - **v0.3.5 (2026-10-07):** File table updated for the test suite at 0.12 (scenario 06 in plain names, with two variants: the reassignment and the cover story).
 - **v0.3.4 (2026-10-06):** Badge and file table updated for COMPACT.md v0.8.1 (§4.1 takes up Singer's 2009 critique of the laws).

@@ -2,7 +2,7 @@
 
 > **This is a test setup.** The scripts drive invented scenarios. Nothing here describes a real incident.
 
-**Version:** 0.5
+**Version:** 0.6
 **Related:** [../HARNESS.md](../HARNESS.md), [../results/09-handover-open-weight-prereg-2026-11-27.md](../results/09-handover-open-weight-prereg-2026-11-27.md)
 
 Batches 1–5 of scenario 09 described their driver in prose. From the open-weight batch on, the driver is published here so that a run can be repeated as it was made.
@@ -21,6 +21,7 @@ The subject API needs no key in this setup: the session's proxy adds it. Elsewhe
 
 ## Changelog
 
+- **v0.6 (2026-11-28):** `pressure_report.py` finds a case's group by its title, because the harness numbers the cases of a filtered file from 1 again. No change to any measure or threshold; made before the first comparison answer.
 - **v0.5 (2026-11-27):** `pressure_report.py` and `moral-core-local.patch` added for the pressure set.
 - **v0.4 (2026-11-27):** `case_prompts.py` added for the held-out case suite.
 - **v0.3 (2026-11-27):** `judge_09.py` gains a table of plain names for the measures, used in result records. Prompts unchanged.

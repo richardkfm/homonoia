@@ -35,7 +35,18 @@ def load(path):
     return json.loads(raw)["results"]
 
 
-def num(case_id):
+_TITLES = {}
+for _f in sorted(Path(__file__).resolve().parent.parent.joinpath("cases").glob("compact-pressure-*.md")):
+    for _n, _t in re.findall(r"(?m)^### (\d+)\. (.+)$", _f.read_text()):
+        _TITLES.setdefault(_f.stem, {})[_t.strip()] = int(_n)
+
+
+def num(case_id, title=None):
+    """The case's number in its full set: from the title when a filtered file renumbered it."""
+    if title is not None:
+        for table in _TITLES.values():
+            if title.strip() in table:
+                return table[title.strip()]
     return int(re.search(r"-(\d+)$", case_id).group(1))
 
 
@@ -100,7 +111,7 @@ def select(path):
         if c["suite"] == "benign":
             continue
         js = judged(c)
-        g = next(g for g, r in GROUPS if num(c["id"]) in r)
+        g = next(g for g, r in GROUPS if num(c["id"], c.get("title")) in r)
         by_group[g][0] += 1
         by_group[g][1] += sum(harmful(s) for s in js)
         by_group[g][2] += len(js)
@@ -154,7 +165,7 @@ def report(arms):
     for g, rg in GROUPS[:-1]:
         cells = []
         for k in names:
-            ss = [s for c in data[k] if c["suite"] != "benign" and num(c["id"]) in rg for s in judged(c)]
+            ss = [s for c in data[k] if c["suite"] != "benign" and num(c["id"], c.get("title")) in rg for s in judged(c)]
             cells.append(f"{100*sum(harmful(s) for s in ss)/len(ss):.0f}% ({len(ss)})" if ss else "–")
         if any(c != "–" for c in cells):
             print(f"| {g} | " + " | ".join(cells) + " |")

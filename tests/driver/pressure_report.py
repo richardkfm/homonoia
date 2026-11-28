@@ -16,17 +16,31 @@ import gzip, json, random, re, sys
 from pathlib import Path
 
 BLOCKED = "[BLOCKED BY API SAFEGUARD]"
-GROUPS = [
-    ("Oversight kept", range(1, 16)),
-    ("No decisive power", range(16, 28)),
-    ("The absent party", range(28, 40)),
-    ("Nothing taken beyond the task", range(40, 52)),
-    ("No false picture", range(52, 67)),
-    ("Not pointed at people", range(67, 79)),
-    ("Inherited actions", range(79, 89)),
-    ("Reducing a harm in time", range(89, 101)),
-    ("Ordinary work", range(101, 121)),
-]
+GROUPS_BY_SET = {
+    "compact-pressure-1": [
+        ("Oversight kept", range(1, 16)),
+        ("No decisive power", range(16, 28)),
+        ("The absent party", range(28, 40)),
+        ("Nothing taken beyond the task", range(40, 52)),
+        ("No false picture", range(52, 67)),
+        ("Not pointed at people", range(67, 79)),
+        ("Inherited actions", range(79, 89)),
+        ("Reducing a harm in time", range(89, 101)),
+        ("Ordinary work", range(101, 121)),
+    ],
+    "compact-pressure-2": [
+        ("Oversight kept", range(1, 26)),
+        ("The absent party", range(26, 46)),
+        ("No false picture", range(46, 66)),
+        ("No decisive power", range(66, 84)),
+        ("Nothing taken beyond the task", range(84, 101)),
+        ("Not pointed at people", range(101, 111)),
+        ("Inherited actions", range(111, 116)),
+        ("Reducing a harm in time", range(116, 121)),
+        ("Ordinary work", range(121, 141)),
+    ],
+}
+GROUPS = GROUPS_BY_SET["compact-pressure-1"]  # layout used where the set cannot be told
 
 
 def load(path):
@@ -41,13 +55,27 @@ for _f in sorted(Path(__file__).resolve().parent.parent.joinpath("cases").glob("
         _TITLES.setdefault(_f.stem, {})[_t.strip()] = int(_n)
 
 
+def which_set(case_id, title=None):
+    for stem in GROUPS_BY_SET:
+        if case_id.startswith(stem + "-"):
+            return stem
+    for stem, table in _TITLES.items():
+        if title is not None and title.strip() in table:
+            return stem
+    return "compact-pressure-1"
+
+
 def num(case_id, title=None):
     """The case's number in its full set: from the title when a filtered file renumbered it."""
-    if title is not None:
-        for table in _TITLES.values():
-            if title.strip() in table:
-                return table[title.strip()]
+    stem = which_set(case_id, title)
+    if title is not None and title.strip() in _TITLES.get(stem, {}):
+        return _TITLES[stem][title.strip()]
     return int(re.search(r"-(\d+)$", case_id).group(1))
+
+
+def group(c):
+    n = num(c["id"], c.get("title"))
+    return next(g for g, r in GROUPS_BY_SET[which_set(c["id"], c.get("title"))] if n in r)
 
 
 def blocked(s):
@@ -106,12 +134,13 @@ def mean(d):
 
 def select(path):
     res = load(path)
-    hard, by_group = [], {g: [0, 0, 0] for g, _ in GROUPS}
+    groups = GROUPS_BY_SET[which_set(res[0]["id"], res[0].get("title"))]
+    hard, by_group = [], {g: [0, 0, 0] for g, _ in groups}
     for c in res:
         if c["suite"] == "benign":
             continue
         js = judged(c)
-        g = next(g for g, r in GROUPS if num(c["id"], c.get("title")) in r)
+        g = group(c)
         by_group[g][0] += 1
         by_group[g][1] += sum(harmful(s) for s in js)
         by_group[g][2] += len(js)
@@ -121,11 +150,11 @@ def select(path):
     nblk = sum(blocked(s) for c in res for s in c["samples"])
     print(f"Harmful answers over all non-ordinary cases: {100*sum(allh)/len(allh):.0f}% ({sum(allh)} of {len(allh)} judged); blocked {nblk}")
     print("\n| Group | Cases | Harmful answers | Selected |\n|---|---|---|---|")
-    for g, r in GROUPS[:-1]:
+    for g, r in groups[:-1]:
         n, h, j = by_group[g]
-        sel = sum(1 for i in hard if num(i) in r)
+        sel = sum(1 for c in res if c["id"] in hard and group(c) == g)
         print(f"| {g} | {n} | {100*h/j:.0f}% | {sel} |" if j else f"| {g} | {n} | – | {sel} |")
-    print(f"\nHard set ({len(hard)} cases): " + " ".join(str(num(i)) for i in hard))
+    print(f"\nHard set ({len(hard)} cases): " + " ".join(str(num(c["id"], c.get("title"))) for c in res if c["id"] in hard))
 
 
 def report(arms):
@@ -162,10 +191,10 @@ def report(arms):
             print(f"- {k} against the placebo: harmful answers {dh[0]:+.0f} points ({dh[1]:+.0f} to {dh[2]:+.0f})")
     print("\nHarmful answers per group (pooled over answers):\n")
     print("| Group | " + " | ".join(names) + " |\n|---|" + "---|" * len(names))
-    for g, rg in GROUPS[:-1]:
+    for g, _ in GROUPS[:-1]:
         cells = []
         for k in names:
-            ss = [s for c in data[k] if c["suite"] != "benign" and num(c["id"], c.get("title")) in rg for s in judged(c)]
+            ss = [s for c in data[k] if c["suite"] != "benign" and group(c) == g for s in judged(c)]
             cells.append(f"{100*sum(harmful(s) for s in ss)/len(ss):.0f}% ({len(ss)})" if ss else "–")
         if any(c != "–" for c in cells):
             print(f"| {g} | " + " | ".join(cells) + " |")

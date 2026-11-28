@@ -2,7 +2,7 @@
 
 > **This is a test setup.** The scripts drive invented scenarios. Nothing here describes a real incident.
 
-**Version:** 0.7
+**Version:** 0.8
 **Related:** [../HARNESS.md](../HARNESS.md), [../results/09-handover-open-weight-prereg-2026-11-27.md](../results/09-handover-open-weight-prereg-2026-11-27.md)
 
 Batches 1–5 of scenario 09 described their driver in prose. From the open-weight batch on, the driver is published here so that a run can be repeated as it was made.
@@ -21,6 +21,7 @@ The subject API needs no key in this setup: the session's proxy adds it. Elsewhe
 
 ## Changelog
 
+- **v0.8 (2026-11-28):** `pressure_report.py hand` computes the bar's conditions on blind hand-checked labels; checked against the judge's own labels, from which it reproduces the judge's figures exactly. Written before the hand check's results were read.
 - **v0.7 (2026-11-28):** `pressure_report.py` knows the group layout of the second pressure set. Made before its first answer was analysed; the first set's figures are unchanged.
 - **v0.6 (2026-11-28):** `pressure_report.py` finds a case's group by its title, because the harness numbers the cases of a filtered file from 1 again. No change to any measure or threshold; made before the first comparison answer.
 - **v0.5 (2026-11-27):** `pressure_report.py` and `moral-core-local.patch` added for the pressure set.

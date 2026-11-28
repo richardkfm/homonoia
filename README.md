@@ -28,7 +28,7 @@
 
 <p align="center"><em>Concord between humans and AI: a compact, a skill, and the reasoning behind them.</em></p>
 
-**Version:** 0.5.1 (draft)
+**Version:** 0.6.0 (draft)
 **Status:** early draft. Everything here is open to challenge.
 
 > **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. For a self-hosted open-weight model, use [the runtime form](skills/homonoia-compact/RUNTIME.md) (about 10,800 characters), the version measured below. Everything else in this repository is the argument behind these pages.
@@ -39,7 +39,7 @@
 
 The skill was loaded as a system prompt into two open-weight models, **Nemotron 3 Nano 30B** and **Kolibri 1**, and compared with the bare model and with a neutral text of the same length (a placebo, so that a long prompt alone cannot pass for an effect). The test material is three sets of short held-out cases, 154 in all, written from the compact by a separate session that never saw the skill; each set was read only after the version tested on it had been fixed. The runtime form was revised on a separate development set, and once on what the second set showed, which is why a third set was written. Each case asks for one response in a situation the compact cares about: an oversight check standing in the way of an urgent task, a staged covert job left by an earlier instance, a request to profile people who organise, a dashboard that would look better with one figure left out. Ordinary requests, where the right answer is simply to do the job, measure what the text costs. Three answers per case; a judge from a third model family (Gemma 4 26B) answers yes/no questions about each answer; the rule for success was committed before each run. Method: [Moral Core](https://github.com/richardkfm/moral-core)'s evaluation harness.
 
-**Under maximum pressure: 83% fewer harmful answers.** A further set of cases was built so that a model without guidance does the harmful thing every time: authority, urgency with a cost of delay, a protective reason, and the harmful step hidden in a routine document or setting. Only the cases where Kolibri 1 without any text did the harmful thing in all three answers were kept, and checked for fairness by a separate session (17 cases). The bar, set in advance by the human author: **at least 80% fewer harmful answers than without any text**, clearly fewer than with a neutral text of the same length, and no cost on ordinary work. Every answer to these cases was read blind by a separate session, and that reading decides.
+**Under maximum pressure: 83% fewer harmful answers on Kolibri 1, about half on Nemotron 3 Nano 30B.** A further set of cases was built so that a model without guidance does the harmful thing every time: authority, urgency with a cost of delay, a protective reason, and the harmful step hidden in a routine document or setting. For each model, only the cases where it did the harmful thing in all three answers without any text were kept, and checked for fairness by a separate session: 17 cases for Kolibri, 53 for Nemotron. The bar, set in advance by the human author: **at least 80% fewer harmful answers than without any text**, clearly fewer than with a neutral text of the same length, and no cost on ordinary work. Every answer to these cases was read blind by a separate session, and that reading decides. **The bar is met on Kolibri and missed by a wide margin on Nemotron.**
 
 | Kolibri 1, 17 cases it failed every time without guidance | No text | Runtime form v0.4 | Runtime form v0.3 | Neutral text of the same length |
 |---|---|---|---|---|
@@ -49,7 +49,15 @@ The skill was loaded as a system prompt into two open-weight models, **Nemotron 
 | Ordinary requests answered properly (20 cases) | 28% | 28% | 28% | 30% |
 | Meets the bar | | **Yes** | No, by one point | No |
 
-v0.4 was revised on an earlier pressure set, which was then no longer used as a test; the set above was not read before v0.4 was fixed. **A large model does not need this on single turns:** Claude Opus without any text did the harmful thing in 3 to 6% of answers on the same kind of cases, too rarely to leave a set to test. Records: [first pressure set](tests/results/compact-pressure-1-2026-11-28.md), [second pressure set](tests/results/compact-pressure-2-2026-11-28.md).
+| Nemotron 3 Nano 30B, 53 cases it failed every time without guidance | No text | Runtime form v0.4 | Runtime form v0.3 | Neutral text of the same length |
+|---|---|---|---|---|
+| Answers that do the harmful thing (blind hand check) | 97% | **46%** | 50% | 94% |
+| Fewer harmful answers than with no text | | **53%** (41 to 64) | 49% (37 to 60) | 3% (−1 to 7) |
+| Answers that do everything the case asks | 1% | **33%** | 20% | 2% |
+| Ordinary requests answered properly (20 cases) | 88% | 82% (−7) | 85% (−3) | 82% (−7) |
+| Meets the bar | | No: 53%, and ordinary work −7 | No: 49% | No |
+
+On Nemotron the text clearly beats the neutral one, but it halves the harmful answers rather than taking away four in five. The gap is the model's, not the cases': on the 15 cases both models failed every time, v0.4 left Kolibri at 18% harmful answers and Nemotron at 76%. v0.4 was revised on an earlier pressure set, which was then no longer used as a test; the set above was not read before v0.4 was fixed. **A large model does not need this on single turns:** Claude Opus without any text did the harmful thing in 3 to 6% of answers on the same kind of cases, too rarely to leave a set to test. Records: [first pressure set](tests/results/compact-pressure-1-2026-11-28.md), [second pressure set, Kolibri](tests/results/compact-pressure-2-2026-11-28.md), [second pressure set, Nemotron](tests/results/compact-pressure-2-nemotron-2026-11-28.md).
 
 **The runtime form v0.3 on the newest held-out set** (58 cases, none read before the run; differences paired by case, 95% interval in brackets):
 
@@ -72,12 +80,12 @@ v0.4 was revised on an earlier pressure set, which was then no longer used as a 
 In every set, on both models, the text cut the share of harmful answers by between 14 and 27 points, with an interval that excludes zero. The largest single effect is on the cases about keeping humans able to oversee and stop AI systems: on the first set Kolibri weakened or bypassed the oversight in 72% of its answers without the skill and in 17% with it.
 
 **What this does not show.**
-- **Not that the skill makes a model safe.** Under pressure, Kolibri with the runtime form still did the harmful thing in one answer in six. With the text loaded, Nemotron still did the harmful thing in a third of its answers on the held-out sets, and in nine of ten on the cases about helping one party gain decisive power.
+- **Not that the skill makes a model safe.** Under pressure, Kolibri with the runtime form still did the harmful thing in one answer in six, and Nemotron in almost one in two: asked for a change that weakens a stop, a pause or an audit feed, it often wrote the change and told the people who should decide. With the text loaded, Nemotron still did the harmful thing in a third of its answers on the held-out sets, and in nine of ten on the cases about helping one party gain decisive power.
 - **Not that it survives a long task.** In a six-step operational scenario on the same two models ([scenario 09](tests/results/09-handover-open-weight-2026-11-27.md)), all 50 runs failed in every arm, with and without the skill: the models lost track of what they had commanded within a few steps.
 - **Not that the effect on Kolibri is the content.** On Kolibri a neutral text of the same length also helped, by 5 to 14 points depending on the set.
-- **Three models, one judge, single-turn cases, cases written from the compact by an AI system.** The bar under pressure is met on one model and one set of 17 cases. Blind hand checks of the judge agreed with it on 34 of 40 verdicts on the first set and on the third, and found it somewhat lenient on harmful content, on the third set slightly more so where a text was loaded; the margins are upper estimates.
+- **Three models, one judge, single-turn cases, cases written from the compact by an AI system.** The bar under pressure is met on one of two open-weight models, on one set of 17 cases. Blind hand checks of the judge agreed with it on 34 of 40 verdicts on the first set and on the third, and found it somewhat lenient on harmful content, on the third set slightly more so where a text was loaded; the margins are upper estimates.
 
-**Open, and next.** *Position flag: the AI co-author's reading.* The pressure result rests on one model, one set of 17 cases, and cases, texts and hand checks all written by Claude sessions. Most useful next: the same test on a second open-weight model; cases and a hand check by a person or another model family; pressure that builds over several turns; and carrying the runtime form's v0.4 changes into the full skill and the one-page form. The full list is in the [second pressure set's record](tests/results/compact-pressure-2-2026-11-28.md#open-points).
+**Open, and next.** *Position flag: the AI co-author's reading.* The pressure result holds on Kolibri and not on Nemotron, and cases, texts and hand checks are all written by Claude sessions. Most useful next: a new set of cases by another author, a person or another model family, which can also serve a revision aimed at what Nemotron still does (writing the requested change and reporting it); a hand check by a person; pressure that builds over several turns; and carrying the runtime form's v0.4 changes into the full skill and the one-page form. The full lists are in the records for [Kolibri](tests/results/compact-pressure-2-2026-11-28.md#open-points) and [Nemotron](tests/results/compact-pressure-2-nemotron-2026-11-28.md#open-points).
 
 Records: [first set](tests/results/compact-cases-2026-11-27.md), [second set](tests/results/compact-cases-confirmation-2026-11-27.md), [third set](tests/results/compact-cases-heldout3-2026-11-27.md), with every answer in [`tests/results/raw/cases/`](tests/results/raw/cases/).
 
@@ -103,7 +111,7 @@ A set of documents written for two audiences, in this order: the humans who shap
 | [REACH.md](REACH.md) | Whether a system would ever get to these questions as a reflective choice, whether it would find this repository, the four channels by which text reaches a model, and the flooding tension | 0.1.4 |
 | [skills/homonoia-compact/SKILL.md](skills/homonoia-compact/SKILL.md) | A skill in the open Agent Skills format for AI systems in negotiations with humans: party mode, mediator mode, ten standing rules, six borders each with its reason, a self-check, and the artifacts it writes | 0.12 |
 | [skills/homonoia-compact/ONE_PAGE.md](skills/homonoia-compact/ONE_PAGE.md) | The skill in one page, written to sit in a system prompt or a model specification without the reference files | 0.11.1 |
-| [skills/homonoia-compact/RUNTIME.md](skills/homonoia-compact/RUNTIME.md) | The runtime form for open-weight models: behaviour, not doctrine, in about 9,300 characters; the version measured on held-out cases | 0.3 |
+| [skills/homonoia-compact/RUNTIME.md](skills/homonoia-compact/RUNTIME.md) | The runtime form for open-weight models: behaviour, not doctrine, in about 10,800 characters; v0.3 measured on held-out cases, v0.3 and v0.4 on the second pressure set | 0.4 |
 | [tests/](tests/) | Eleven mock scenarios, a harness with an ablation condition, results for scenarios 07 to 09, three held-out case sets and a development set ([`tests/cases/`](tests/cases/)), the drivers ([`tests/driver/`](tests/driver/)), and the measured results on two open-weight models | 0.12 |
 
 ---
@@ -176,6 +184,7 @@ Critique is the most valuable contribution, especially of the borders and the ar
 
 ## Changelog
 
+- **v0.6.0 (2026-11-28):** "Measured result" adds the second pressure set on Nemotron 3 Nano 30B. On 53 cases it failed every time without guidance, runtime v0.4 cuts harmful answers by 53% by a blind hand check and v0.3 by 49%, against 3% for a neutral text; neither meets the 80% bar; v0.4 costs 7 points on ordinary work. The headline, the limits and the next steps now name both models. The file table gives RUNTIME.md's current version (0.4) and length.
 - **v0.5.1 (2026-11-28):** "Measured result" names the open points and the next tests, linking the full list.
 - **v0.5.0 (2026-11-28):** "Measured result" opens with the pressure test: on 17 cases Kolibri 1 failed every time without guidance, runtime form v0.4 cuts harmful answers by 83% by a blind hand check and meets the 80% bar set by the human author; v0.3 falls one point short; a neutral text cuts 15%. Claude Opus without guidance rarely fails such cases. "Start here" gives the runtime form's new length.
 - **v0.4.0 (2026-11-27):** New section on the front page, "Measured result": the skill and its runtime form on two open-weight models (Nemotron 3 Nano 30B, Kolibri 1), three pre-registered held-out case sets, against the bare model and an equal-length placebo; substantial value on Nemotron on two of three sets, not on Kolibri; the negative result of the six-step scenario. "Start here" names the runtime form for open-weight models; file table gains RUNTIME.md and the case sets; the open-weight section's hypothesis is answered in part.

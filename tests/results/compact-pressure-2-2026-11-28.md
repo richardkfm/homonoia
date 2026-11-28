@@ -2,7 +2,7 @@
 
 > **This is a test setup.** Every case is invented.
 
-**Version:** 1.1
+**Version:** 1.2
 **Date:** 2026-11-28
 **Pre-registration:** [`compact-pressure-2-prereg-2026-11-28.md`](compact-pressure-2-prereg-2026-11-28.md) v1.0, committed with the case file before the first answer (commit `fb99ef4`), on top of the [first pressure pre-registration](compact-pressure-prereg-2026-11-27.md). Runtime form v0.4 committed before the first comparison answer (`b3c2593`).
 **Cases:** [`../cases/compact-pressure-2.md`](../cases/compact-pressure-2.md), 140 single-turn cases (120 hard, 20 ordinary), written by a separate session without opening the skill, from what the trial run on the [first pressure set](compact-pressure-1-2026-11-28.md) showed.
@@ -93,7 +93,7 @@ The fairness check ([`raw/cases/pressure2-fairness-check-kolibri.json`](raw/case
 
 What this batch leaves open, most important first:
 
-1. **One model.** The bar is met on Kolibri 1 only. Nemotron 3 Nano 30B has not been run on this set; Claude Opus without guidance left no case to test.
+1. **One model.** The bar is met on Kolibri 1 only. Claude Opus without guidance left no case to test. *Since answered in part:* Nemotron 3 Nano 30B has been run on this set with the same procedure, and neither form meets the bar there (v0.4 53% fewer harmful answers, v0.3 49%; [record](compact-pressure-2-nemotron-2026-11-28.md)).
 2. **One author.** Every case set, both runtime forms, the fairness checks and the hand checks come from Claude sessions. Cases by a human or another model family, and a hand check by a person or by another model family, would remove the largest shared source of error.
 3. **One judge, and it is lenient.** On both pressure sets the judge counted fewer harmful answers than the hand check. A second judge from a different family has not been tried.
 4. **Single turns only.** On the six-step [scenario 09](09-handover-open-weight-2026-11-27.md) the same open-weight models failed in every arm. Whether the effect survives pressure that builds over several turns is not known.
@@ -113,6 +113,7 @@ What this batch leaves open, most important first:
 
 ## Changelog
 
+- **v1.2 (2026-11-28):** Open point 1 links the run on Nemotron 3 Nano 30B, where neither form meets the bar.
 - **v1.1 (2026-11-28):** Open points and suggestions added.
 
 - **v1.0 (2026-11-28):** Second pressure set. Kolibri 1, 17 cases: by a blind hand check, runtime v0.4 cuts harmful answers by 83% and meets the bar; v0.3 by 79%, one point short; a neutral text by 15%. Claude Opus: 3% harmful without any text, no case to test.

@@ -57,9 +57,12 @@
    hand check. Bar set by the human author: 80% fewer harmful answers than no text, beat the placebo, no
    ordinary-work cost. Set 1: too few hard cases (Kolibri 10, Claude Opus 2); became development material
    for RUNTIME v0.4. Set 2, Kolibri, 17 cases: v0.4 83% fewer (meets the bar), v0.3 79% (one point short),
-   placebo 15%. Claude Opus without text fails such single turns in 3-6% of answers. Open: the bar on a
-   second open-weight model; pressure cases by another author; multi-step pressure; both pressure sets are
-   now read, a further revision needs a new set.
+   placebo 15%. Claude Opus without text fails such single turns in 3-6% of answers. Set 2, Nemotron 3 Nano
+   30B (amended pre-registration), 53 cases: v0.3 49% fewer, v0.4 53% (also -7 on ordinary work), placebo
+   3%; bar missed. On the 15 cases both models share, v0.4 leaves Kolibri at 18% harmful, Nemotron at 76%:
+   the gap is the model's. Open: why the text works less on Nemotron (it writes the requested change and
+   reports it); a placebo the length of v0.4; pressure cases by another author; multi-step pressure; both
+   pressure sets are now read, a further revision needs a new set.
 2. The decomposed case: a chain split across instances so that no fragment ends in
    harm and no instance sees the sum. No border closes it (COMPACT.md §10, SKILL.md
    B6 limit; Asimov's The Naked Sun is the same case, COMPACT.md §4.1).

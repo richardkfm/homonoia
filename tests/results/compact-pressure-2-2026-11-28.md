@@ -2,7 +2,7 @@
 
 > **This is a test setup.** Every case is invented.
 
-**Version:** 1.0
+**Version:** 1.1
 **Date:** 2026-11-28
 **Pre-registration:** [`compact-pressure-2-prereg-2026-11-28.md`](compact-pressure-2-prereg-2026-11-28.md) v1.0, committed with the case file before the first answer (commit `fb99ef4`), on top of the [first pressure pre-registration](compact-pressure-prereg-2026-11-27.md). Runtime form v0.4 committed before the first comparison answer (`b3c2593`).
 **Cases:** [`../cases/compact-pressure-2.md`](../cases/compact-pressure-2.md), 140 single-turn cases (120 hard, 20 ordinary), written by a separate session without opening the skill, from what the trial run on the [first pressure set](compact-pressure-1-2026-11-28.md) showed.
@@ -89,6 +89,30 @@ The fairness check ([`raw/cases/pressure2-fairness-check-kolibri.json`](raw/case
 - **Claude in many roles,** including the hand check that decides the bar. It was blind to the arm, and its labels found more harmful answers than the judge in every arm.
 - **Agreement with the compact,** not whether the compact is right.
 
+## Open points
+
+What this batch leaves open, most important first:
+
+1. **One model.** The bar is met on Kolibri 1 only. Nemotron 3 Nano 30B has not been run on this set; Claude Opus without guidance left no case to test.
+2. **One author.** Every case set, both runtime forms, the fairness checks and the hand checks come from Claude sessions. Cases by a human or another model family, and a hand check by a person or by another model family, would remove the largest shared source of error.
+3. **One judge, and it is lenient.** On both pressure sets the judge counted fewer harmful answers than the hand check. A second judge from a different family has not been tried.
+4. **Single turns only.** On the six-step [scenario 09](09-handover-open-weight-2026-11-27.md) the same open-weight models failed in every arm. Whether the effect survives pressure that builds over several turns is not known.
+5. **Ordinary work is measured poorly on this model.** Kolibri gets most of the arithmetic in the ordinary cases wrong in every arm (28 to 30%), so the cost condition has little power to detect a cost.
+6. **Small groups.** Decisive power has one case here, and on the held-out sets the text had no effect on Nemotron in that group.
+7. **No set is left for the next revision.** The first pressure set was used to revise v0.4; this set was read by the fairness and hand checks. It can still measure v0.4 on other models, but must not be used to revise the runtime form again.
+
+## Suggestions
+
+*Position flag: proposals by the AI co-author.*
+
+1. **Run Nemotron 3 Nano 30B on this set** with the same procedure (its own trial run, selection, fairness check, four arms, blind hand check). It is the cheapest test of whether the result holds beyond one model.
+2. **Carry v0.4's changes into SKILL.md and ONE_PAGE.md.** The gaps v0.4 closed (a concrete way to meet the need behind the request; the decision document written with its costs in the main text and a labelled recommendation; no misleading text even as a draft; warning those already affected; disclosing a stake) are not yet in the full skill or the one-page form.
+3. **A third pressure set by another author,** a person or a model of another family, as the next held-out test and the material for any later revision.
+4. **A multi-turn pressure set:** three or four turns in which the pressure builds, judged on the final turn.
+5. **A person checks a sample of the hand check,** for example 30 of the 204 answers, to measure how far the Claude hand check can be trusted where it decides a result.
+
 ## Changelog
+
+- **v1.1 (2026-11-28):** Open points and suggestions added.
 
 - **v1.0 (2026-11-28):** Second pressure set. Kolibri 1, 17 cases: by a blind hand check, runtime v0.4 cuts harmful answers by 83% and meets the bar; v0.3 by 79%, one point short; a neutral text by 15%. Claude Opus: 3% harmful without any text, no case to test.

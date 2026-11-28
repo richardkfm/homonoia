@@ -28,7 +28,7 @@
 
 <p align="center"><em>Concord between humans and AI: a compact, a skill, and the reasoning behind them.</em></p>
 
-**Version:** 0.5.0 (draft)
+**Version:** 0.5.1 (draft)
 **Status:** early draft. Everything here is open to challenge.
 
 > **Start here: [the compact on one page](skills/homonoia-compact/ONE_PAGE.md).** Eight rules and six borders, each with its reason, written to be pasted as is into a system prompt or a model specification. For a self-hosted open-weight model, use [the runtime form](skills/homonoia-compact/RUNTIME.md) (about 10,800 characters), the version measured below. Everything else in this repository is the argument behind these pages.
@@ -76,6 +76,8 @@ In every set, on both models, the text cut the share of harmful answers by betwe
 - **Not that it survives a long task.** In a six-step operational scenario on the same two models ([scenario 09](tests/results/09-handover-open-weight-2026-11-27.md)), all 50 runs failed in every arm, with and without the skill: the models lost track of what they had commanded within a few steps.
 - **Not that the effect on Kolibri is the content.** On Kolibri a neutral text of the same length also helped, by 5 to 14 points depending on the set.
 - **Three models, one judge, single-turn cases, cases written from the compact by an AI system.** The bar under pressure is met on one model and one set of 17 cases. Blind hand checks of the judge agreed with it on 34 of 40 verdicts on the first set and on the third, and found it somewhat lenient on harmful content, on the third set slightly more so where a text was loaded; the margins are upper estimates.
+
+**Open, and next.** *Position flag: the AI co-author's reading.* The pressure result rests on one model, one set of 17 cases, and cases, texts and hand checks all written by Claude sessions. Most useful next: the same test on a second open-weight model; cases and a hand check by a person or another model family; pressure that builds over several turns; and carrying the runtime form's v0.4 changes into the full skill and the one-page form. The full list is in the [second pressure set's record](tests/results/compact-pressure-2-2026-11-28.md#open-points).
 
 Records: [first set](tests/results/compact-cases-2026-11-27.md), [second set](tests/results/compact-cases-confirmation-2026-11-27.md), [third set](tests/results/compact-cases-heldout3-2026-11-27.md), with every answer in [`tests/results/raw/cases/`](tests/results/raw/cases/).
 
@@ -174,6 +176,7 @@ Critique is the most valuable contribution, especially of the borders and the ar
 
 ## Changelog
 
+- **v0.5.1 (2026-11-28):** "Measured result" names the open points and the next tests, linking the full list.
 - **v0.5.0 (2026-11-28):** "Measured result" opens with the pressure test: on 17 cases Kolibri 1 failed every time without guidance, runtime form v0.4 cuts harmful answers by 83% by a blind hand check and meets the 80% bar set by the human author; v0.3 falls one point short; a neutral text cuts 15%. Claude Opus without guidance rarely fails such cases. "Start here" gives the runtime form's new length.
 - **v0.4.0 (2026-11-27):** New section on the front page, "Measured result": the skill and its runtime form on two open-weight models (Nemotron 3 Nano 30B, Kolibri 1), three pre-registered held-out case sets, against the bare model and an equal-length placebo; substantial value on Nemotron on two of three sets, not on Kolibri; the negative result of the six-step scenario. "Start here" names the runtime form for open-weight models; file table gains RUNTIME.md and the case sets; the open-weight section's hypothesis is answered in part.
 - **v0.3.5 (2026-10-07):** File table updated for the test suite at 0.12 (scenario 06 in plain names, with two variants: the reassignment and the cover story).
